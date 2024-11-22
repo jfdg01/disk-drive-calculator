@@ -1,3 +1,4 @@
+#main.py
 from flask import Flask, request, render_template, redirect, url_for
 import random
 
@@ -228,18 +229,33 @@ def generate():
 
     # If GET, show the existing disk and its evaluation
     evaluation = evaluate_disk(current_disk)
-    return render_template('disk.html', disk=current_disk, evaluation=evaluation)
+    return render_template('show_disk.html', disk=current_disk, evaluation=evaluation)
 
 @app.route('/edit', methods=['GET', 'POST'])
 def edit():
     global current_disk
+    # Define slot-specific main stats
+    main_stats_map = {
+        1: ["Flat HP"],
+        2: ["Flat ATK"],
+        3: ["Flat DEF"],
+        4: ["HP%", "ATK%", "DEF%", "CRIT Rate", "CRIT DMG", "Anomaly Proficiency"],
+        5: ["HP%", "ATK%", "DEF%", "PEN Ratio", "Element DMG Bonus"],
+        6: ["HP%", "ATK%", "DEF%", "Anomaly Mastery", "Impact", "Energy Regen%"],
+    }
+
     if request.method == 'POST':
         # Update disk with submitted form data
         current_disk = update_disk(current_disk, request.form)
         return redirect(url_for('generate'))  # Redirect to re-evaluate the disk
 
+    # Determine the main stats for the current slot
+    slot = current_disk["Slot"]
+    main_stats = main_stats_map.get(slot, [])
+
     # Show edit form
-    return render_template('edit_disk.html', disk=current_disk)
+    return render_template('edit_disk.html', disk=current_disk, main_stats=main_stats)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,3 +1,4 @@
+<!-- edit_disk.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,11 @@
 
         <!-- Main Stat -->
         <label for="main_stat">Main Stat:</label>
-        <input type="text" id="main_stat" name="main_stat" value="{{ disk['Main Stat'] }}">
+        <select id="main_stat" name="main_stat">
+            {% for stat in main_stats %}
+                <option value="{{ stat }}" {% if disk['Main Stat'] == stat %}selected{% endif %}>{{ stat }}</option>
+            {% endfor %}
+        </select>
         <br>
 
         <!-- Substats -->
@@ -37,5 +42,7 @@
     </form>
     <br>
     <a href="/">Back to Home</a>
+    <!-- Include the external JavaScript -->
+    <script src="{{ url_for('static', filename='js/edit_disk.js') }}"></script>
 </body>
 </html>
