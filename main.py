@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for
 import random
 
 app = Flask(__name__)
@@ -201,23 +201,52 @@ def input_disk():
     }
     return disk
 
+current_disk = None
+
+
+def update_disk(disk, form_data):
+    """Update disk properties based on form data."""
+    disk["Slot"] = int(form_data.get("slot", disk["Slot"]))
+    disk["Main Stat"] = form_data.get("main_stat", disk["Main Stat"])
+
+    # Update substats
+    new_substats = form_data.getlist("substats")
+    disk["Substats"] = {stat: disk["Substats"].get(stat, 0) for stat in new_substats}
+
+    return disk
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/generate', methods=['POST'])
+
+@app.route('/generate', methods=['GET', 'POST'])
 def generate():
-    disk = generate_disk()
-    evaluation = evaluate_disk(disk)
-    return render_template('disk.html', disk=disk, evaluation=evaluation)
+    global current_disk
+    if request.method == 'POST':
+        current_disk = generate_disk()  # Generate a new disk
+
+    # If GET, show the existing disk and its evaluation
+    evaluation = evaluate_disk(current_disk)
+    return render_template('disk.html', disk=current_disk, evaluation=evaluation)
+
+@app.route('/edit', methods=['GET', 'POST'])
+def edit():
+    global current_disk
+    if request.method == 'POST':
+        # Update disk with submitted form data
+        current_disk = update_disk(current_disk, request.form)
+        return redirect(url_for('generate'))  # Redirect to re-evaluate the disk
+
+    # Show edit form
+    return render_template('edit_disk.html', disk=current_disk)
 
 if __name__ == '__main__':
     app.run(debug=True)
 
-def main():
-    disk = input_disk()
-
-    display_disk(disk)
-
-    choice = input("Press ENTER to leave")
+# def main():
+#     disk = input_disk()
+#
+#     display_disk(disk)
+#
+#     choice = input("Press ENTER to leave")
