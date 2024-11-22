@@ -7,62 +7,78 @@
     <title>Disk Editor</title>
 </head>
 <body>
-<h1>Disk Editor</h1>
-<!-- Editing Section -->
-<form id="disk-form">
-    <!-- Slot Selection -->
-    <label for="slot">Slot:</label>
-    <select id="slot" name="slot">
-        {% for i in range(1, 7) %}
-        <option value="{{ i }}" {% if disk[
-        'Slot'] == i %}selected{% endif %}>{{ i }}</option>
-        {% endfor %}
-    </select>
-    <br>
+    <h1>Disk Editor</h1>
 
-    <!-- Main Stat -->
-    <label for="main_stat">Main Stat:</label>
-    <select id="main_stat" name="main_stat">
-        {% for stat in main_stats %}
-        <option value="{{ stat }}" {% if disk[
-        'Main Stat'] == stat %}selected{% endif %}>{{ stat }}</option>
-        {% endfor %}
-    </select>
-    <br>
+    <!-- Editing Section -->
+    <form id="disk-form">
+        <!-- Slot Selection -->
+        <label for="slot">Slot:</label>
+        <select id="slot" name="slot">
+            {% for i in range(1, 7) %}
+            <option value="{{ i }}" {% if disk['Slot'] == i %}selected{% endif %}>{{ i }}</option>
+            {% endfor %}
+        </select>
+        <br>
 
-    <!-- Substats -->
-    <label for="substats">Substats:</label>
-    <div>
-        {% for substat in disk['Substat Values'].keys() %}
-        <input type="checkbox" id="{{ substat }}" name="substats" value="{{ substat }}"
-               {% if substat in disk['Substats'] %}checked{% endif %}>
-        <label for="{{ substat }}">{{ substat }}</label><br>
-        {% endfor %}
+        <!-- Main Stat -->
+        <label for="main_stat">Main Stat:</label>
+        <select id="main_stat" name="main_stat">
+            {% for stat in main_stats %}
+            <option value="{{ stat }}" {% if disk['Main Stat'] == stat %}selected{% endif %}>{{ stat }}</option>
+            {% endfor %}
+        </select>
+        <br>
+
+        <!-- Substats -->
+        <h2>Substats</h2>
+        <div id="substats-container">
+            {% for stat, level in disk['Substats'].items() %}
+            <div>
+                <label>{{ stat }}</label>
+                <select name="level_{{ stat }}" data-stat="{{ stat }}">
+                    {% for i in range(6) %}
+                    <option value="{{ i }}" {% if level == i %}selected{% endif %}>+{{ i }}</option>
+                    {% endfor %}
+                </select>
+                <span id="value_{{ stat }}">Value: {{ calculated_values[stat] }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        <br>
+
+        <!-- Substat Checkboxes -->
+        <h2>Available Substats</h2>
+        <div>
+            {% for substat in disk['Substat Values'].keys() %}
+            <input type="checkbox" id="{{ substat }}" name="substats" value="{{ substat }}"
+                   {% if substat in disk['Substats'] %}checked{% endif %}>
+            <label for="{{ substat }}">{{ substat }}</label><br>
+            {% endfor %}
+        </div>
+        <br>
+
+        <button type="submit">Update Disk</button>
+    </form>
+
+    <!-- Display Section -->
+    <div id="disk-display">
+        <h2>Current Disk</h2>
+        <p>Slot: {{ disk['Slot'] }}</p>
+        <p>Main Stat: {{ disk['Main Stat'] }}</p>
+        <p>Level: {{ disk['Level'] }}</p>
+        <h2>Substats</h2>
+        <ul>
+            {% for stat, value in disk['Substats'].items() %}
+            <li>{{ stat }}: {{ value }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Evaluation</h2>
+        <p>Main Stat Score: {{ evaluation['Main Stat Score'] }}</p>
+        <p>Current Substat Score: {{ evaluation['Current Substat Score'] }}</p>
+        <p>Potential Substat Score: {{ evaluation['Potential Substat Score'] }}</p>
+        <p>Total Score: {{ evaluation['Total Score'] }}</p>
     </div>
-    <br>
-    <button type="submit">Update Disk</button>
-</form>
 
-<!-- Display Section -->
-<div id="disk-display">
-    <h2>Current Disk</h2>
-    <p>Slot: {{ disk['Slot'] }}</p>
-    <p>Main Stat: {{ disk['Main Stat'] }}</p>
-    <p>Level: {{ disk['Level'] }}</p>
-    <h2>Substats</h2>
-    <ul>
-        {% for stat, value in disk['Substats'].items() %}
-        <li>{{ stat }}: {{ value }}</li>
-        {% endfor %}
-    </ul>
-    <h2>Evaluation</h2>
-    <p>Main Stat Score: {{ evaluation['Main Stat Score'] }}</p>
-    <p>Current Substat Score: {{ evaluation['Current Substat Score'] }}</p>
-    <p>Potential Substat Score: {{ evaluation['Potential Substat Score'] }}</p>
-    <p>Total Score: {{ evaluation['Total Score'] }}</p>
-</div>
-
-<script src="{{ url_for('static', filename='js/edit_disk.js') }}"></script>
-
+    <script src="{{ url_for('static', filename='js/disk_editor.js') }}"></script>
 </body>
 </html>
