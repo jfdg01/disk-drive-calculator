@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Beautified the code (+N suffixes still missing)">
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/disk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Fixed beautification and moved functions to its own file">
+      <change afterPath="$PROJECT_DIR$/extractor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +97,7 @@
       <workItem from="1732312352415" duration="1182000" />
       <workItem from="1732361106414" duration="4951000" />
       <workItem from="1732366116775" duration="479000" />
-      <workItem from="1732367634307" duration="6117000" />
+      <workItem from="1732367634307" duration="6496000" />
     </task>
     <task id="LOCAL-00001" summary="Added html support">
       <option name="closed" value="true" />
@@ -173,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732373671902</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed beautification and moved functions to its own file">
+      <option name="closed" value="true" />
+      <created>1732374039338</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732374039338</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed beautification and moved functions to its own file">
+      <option name="closed" value="true" />
+      <created>1732374046091</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732374046091</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,10 +202,11 @@
     <MESSAGE value="Added recognition, regions and gitignore" />
     <MESSAGE value="Modularized the code" />
     <MESSAGE value="Beautified the code (+N suffixes still missing)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beautified the code (+N suffixes still missing)" />
+    <MESSAGE value="Fixed beautification and moved functions to its own file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed beautification and moved functions to its own file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373626702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732313428324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
