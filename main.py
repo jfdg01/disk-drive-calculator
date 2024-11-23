@@ -1,94 +1,139 @@
+import time
+from pydoc import resolve
+
 import cv2
 import pytesseract
 import os
-from disk import Disk
+import mss
+import numpy as np
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-def parse_disk_image(image_path):
+RESOLUTION = (1920, 1080)
+
+MAIN_STAT_REGION = {
+    "left": 74.0,
+    "top": 38.89,
+    "width": 20.83,
+    "height": 4.63
+}
+
+SUB_STAT_REGION = {
+    "left": 74.0,
+    "top": 46.3,
+    "width": 20.83,
+    "height": 18.52
+}
+
+
+def calculate_region_pixels(region_percent, resolution):
+    left = int((region_percent["left"] / 100) * resolution[0])
+    top = int((region_percent["top"] / 100) * resolution[1])
+    width = int((region_percent["width"] / 100) * resolution[0])
+    height = int((region_percent["height"] / 100) * resolution[1])
+    return {"left": left, "top": top, "width": width, "height": height}
+
+
+def capture_region(output_path, region):
+    """
+    Capture a fixed region of the screen.
+
+    :param output_path: Path to save the captured image.
+    :param region: A dictionary with the region to capture (x, y, width, height).
+    """
+    with mss.mss() as sct:
+        # Capture the specified region
+        screenshot = sct.grab(region)
+        # Convert to a numpy array and save as an image
+        img = np.array(screenshot)
+        img_bgr = cv2.cvtColor(img, cv2.COLOR_BGRA2BGR)  # Convert BGRA to BGR
+        cv2.imwrite(output_path, img_bgr)
+        print(f"Captured image saved to {output_path}")
+
+
+def parse_main_stat(image_path):
+    """
+    Parse the main stat portion using a particular configuration option for tesseract.
+
+    :param image_path: Path to the image file.
+    :return: Extracted text.
+    """
+    # Ensure the images directory exists
+    output_dir = os.path.join(os.path.dirname(__file__), 'images')
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Load the image
+    image = cv2.imread(image_path)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    _, binary = cv2.threshold(gray, 160, 255, cv2.THRESH_BINARY)
+
+    # Use Tesseract to extract text using psm 7 (single line of text)
+    text = pytesseract.image_to_string(binary, config='--psm 7')
+
+    return text
+
+
+def parse_sub_stats(image_path):
     """
     Parse a disk image to extract text.
 
     :param image_path: Path to the image file.
     :return: Extracted text.
     """
+    # Ensure the images directory exists
+    output_dir = os.path.join(os.path.dirname(__file__), 'images')
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
     # Load the image
+
     image = cv2.imread(image_path)
+    # Save each image for debugging
+    cv2.imwrite(os.path.join(output_dir, 'original.png'), image)
 
-    # Convert to grayscale for better OCR accuracy
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    cv2.imwrite(os.path.join(output_dir, 'gray.png'), gray)
 
-    # Optionally apply thresholding or other preprocessing
-    _, binary = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
+    _, binary = cv2.threshold(gray, 160, 255, cv2.THRESH_BINARY)
+    cv2.imwrite(os.path.join(output_dir, 'binary.png'), binary)
 
     # Use Tesseract to extract text
-    text = pytesseract.image_to_string(binary)
+    text = pytesseract.image_to_string(binary, config='--psm 11')
+
     return text
-
-
-def parse_all_images(folder_path):
-    """
-    Parse all images in a folder.
-
-    :param folder_path: Path to the folder containing images.
-    :return: Dictionary of filenames and their extracted text.
-    """
-    parsed_disks = {}
-    for filename in os.listdir(folder_path):
-        if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
-            image_path = os.path.join(folder_path, filename)
-            print(f"Parsing {filename}...")
-            text = parse_disk_image(image_path)
-            parsed_disks[filename] = text
-    return parsed_disks
 
 
 def main():
     print("Welcome to the Disk CLI!")
-    while True:
-        print("1. Generate Disk")
-        print("2. Parse Disk Image")
-        print("3. Exit")
-        choice = input("Choose an option: ")
-        if choice == "1":
-            disk = Disk()
-            disk.display()
-        elif choice == "2":
-            folder = "images"
-            if os.path.isdir(folder):
-                parsed_disks = parse_all_images(folder)
-                for file, text in parsed_disks.items():
-                    print(f"\n{file}:\n{text}")
-        elif choice == "3":
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid option. Please try again.")
 
+    # Output folder for captured images
+    output_folder = "captured_images"
+    os.makedirs(output_folder, exist_ok=True)
 
-def generate_best_disk(num_disks=100):
-    best_disk = None
-    best_score = -float('inf')  # Start with a very low score
+    # Give time to change screens
+    print("Waiting 2 seconds...")
+    time.sleep(2)
 
-    # Generate 'num_disks' number of disks and evaluate each one
-    for _ in range(num_disks):
-        disk = Disk()  # Generate a new disk
-        # disk.display()  # Display the disk details (optional, for debugging)
+    # Capture main stat region and parse a screenshot
+    mainstat_name = "mainstat-screenshot.png"
+    main_stat_region = calculate_region_pixels(MAIN_STAT_REGION, RESOLUTION)
 
-        # Evaluate the disk
-        evaluation = disk.evaluate()
-        total_score = evaluation["Total Score"]
+    # Capture sub stat region and parse a screenshot
+    image_name = "substat-screenshot.png"
+    sub_stat_region = calculate_region_pixels(SUB_STAT_REGION, RESOLUTION)
 
-        # Update the best disk if the current one has a higher total score
-        if total_score > best_score:
-            best_score = total_score
-            best_disk = disk
+    output_path = os.path.join(output_folder, mainstat_name)
+    capture_region(output_path, main_stat_region)
+    main_stat_text = parse_main_stat(output_path)
 
-    # After generating and evaluating all disks, display the best one
-    print("\nBest Disk:")
-    best_disk.display()  # Display the best disk's details
+    output_path = os.path.join(output_folder, image_name)
+    capture_region(output_path, sub_stat_region)
+    sub_stat_text = parse_sub_stats(output_path)
+
+    print("\nExtracted Text:")
+    print(main_stat_text + "\n" + sub_stat_text)
 
 
 if __name__ == "__main__":
     main()
-    # generate_best_disk()
