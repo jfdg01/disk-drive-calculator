@@ -28,3 +28,19 @@ SUBSTAT_WEIGHTS = {
     "Flat ATK": 5, "PEN": 5, "Anomaly Proficiency": 5,
     "Flat HP": 2, "HP%": 2, "Flat DEF": 2, "DEF%": 2,
 }
+
+RESOLUTION = (1920, 1080)
+
+MAIN_STAT_REGION = {
+    "left": 74.0,
+    "top": 38.89,
+    "width": 20.83,
+    "height": 4.63
+}
+
+SUB_STAT_REGION = {
+    "left": 74.0,
+    "top": 46.3,
+    "width": 20.83,
+    "height": 18.52
+}

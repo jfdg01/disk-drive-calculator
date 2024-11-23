@@ -1,5 +1,5 @@
 import random
-from constants import MAIN_STATS, MAIN_STAT_WEIGHTS, SUBSTATS, SUBSTAT_WEIGHTS, ELEMENTAL_TYPES
+from constants import *
 
 
 class Disk:
