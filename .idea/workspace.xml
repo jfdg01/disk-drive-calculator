@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Added extractor for better AI management">
-      <change afterPath="$PROJECT_DIR$/automated_disk_scanner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disk_scanner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid_clicker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_scanner.py" afterDir="false" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automated_disk_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/automated_disk_scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disk_scanner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid_clicker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disk_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/disk_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_scanner.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.automated_disk_scanner.executor": "Run",
     "Python.grid_clicker.executor": "Run",
     "Python.main.executor": "Run",
     "Python.run_scanner.executor": "Run",
@@ -175,7 +178,7 @@
       <workItem from="1732312352415" duration="1182000" />
       <workItem from="1732361106414" duration="4951000" />
       <workItem from="1732366116775" duration="479000" />
-      <workItem from="1732367634307" duration="8847000" />
+      <workItem from="1732367634307" duration="10381000" />
     </task>
     <task id="LOCAL-00001" summary="Added html support">
       <option name="closed" value="true" />
@@ -273,7 +276,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732374265834</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added automatic clicker through the grid">
+      <option name="closed" value="true" />
+      <created>1732376776179</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732376776179</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY">
+      <option name="closed" value="true" />
+      <created>1732377193841</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732377193841</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,12 +309,15 @@
     <MESSAGE value="Beautified the code (+N suffixes still missing)" />
     <MESSAGE value="Fixed beautification and moved functions to its own file" />
     <MESSAGE value="Added extractor for better AI management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added extractor for better AI management" />
+    <MESSAGE value="Added automatic clicker through the grid" />
+    <MESSAGE value="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$grid_clicker.coverage" NAME="grid_clicker Coverage Results" MODIFIED="1732376335129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$automated_disk_scanner.coverage" NAME="automated_disk_scanner Coverage Results" MODIFIED="1732377436862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732313428324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

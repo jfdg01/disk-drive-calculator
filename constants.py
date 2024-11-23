@@ -1,3 +1,12 @@
+START_POS = (260, 280)  # Top-left cell center
+HORIZONTAL_DIFF = 402 - 260  # Difference between adjacent columns
+VERTICAL_DIFF = 465 - 280  # Difference between adjacent rows
+CELL_SIZE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
+ROWS = 4
+COLS = 8
+GRAY_THRESHOLD = 150
+MAX_GRAY_VALUE = 255
+
 MAIN_STATS = {
     1: ["Flat HP"],
     2: ["Flat ATK"],

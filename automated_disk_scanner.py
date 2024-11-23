@@ -8,6 +8,8 @@ import mss
 import cv2
 import numpy as np
 import pytesseract
+
+from constants import *
 from stat_beautifier import beautify_stats
 
 
@@ -33,20 +35,9 @@ class AutomatedDiskScanner:
         pyautogui.PAUSE = 0.5
 
         # Resolution and regions (reusing your constants)
-        self.resolution = (1920, 1080)
-        self.main_stat_region = self._calculate_region_pixels({
-            "left": 74.0,
-            "top": 38.89,
-            "width": 20.83,
-            "height": 4.63
-        }, self.resolution)
-
-        self.sub_stat_region = self._calculate_region_pixels({
-            "left": 74.0,
-            "top": 46.3,
-            "width": 20.83,
-            "height": 18.52
-        }, self.resolution)
+        self.resolution = RESOLUTION
+        self.main_stat_region = self._calculate_region_pixels(MAIN_STAT_REGION, self.resolution)
+        self.sub_stat_region = self._calculate_region_pixels(SUB_STAT_REGION, self.resolution)
 
         # Create necessary directories
         self.image_dir = self._ensure_directory("images")
@@ -97,7 +88,7 @@ class AutomatedDiskScanner:
         """Preprocess the captured image for OCR."""
         image = cv2.imread(image_path)
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        _, binary = cv2.threshold(gray, 130, 255, cv2.THRESH_BINARY)
+        _, binary = cv2.threshold(gray, GRAY_THRESHOLD, MAX_GRAY_VALUE, cv2.THRESH_BINARY)
         return binary
 
     def parse_main_stat(self, image_path: str) -> str:
@@ -175,23 +166,17 @@ class AutomatedDiskScanner:
 
 
 def main():
-    # Use the same parameters as your working grid_clicker
-    start_pos = (260, 280)  # Top-left cell center
-    horizontal_diff = 402 - 260  # Difference between adjacent columns
-    vertical_diff = 465 - 280  # Difference between adjacent rows
-    cell_size = (horizontal_diff, vertical_diff)
-
     # Create and run the automated scanner
     scanner = AutomatedDiskScanner(
-        start_pos=start_pos,
-        cell_size=cell_size,
-        rows=4,
-        cols=8
+        start_pos=START_POS,
+        cell_size=CELL_SIZE,
+        rows=ROWS,
+        cols=COLS
     )
 
     print(f"Scanner Parameters:")
-    print(f"Starting Position: {start_pos}")
-    print(f"Cell Size: {cell_size}")
+    print(f"Starting Position: {START_POS}")
+    print(f"Cell Size: {CELL_SIZE}")
     print(f"Grid: {scanner.rows}x{scanner.cols}")
 
     # Start scanning sequence
