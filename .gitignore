@@ -1,3 +1,4 @@
 # ignore image folders and their contents
 images/
 captured_images/
+temp/

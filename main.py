@@ -51,56 +51,31 @@ def capture_region(output_path, region):
         print(f"Captured image saved to {output_path}")
 
 
-def parse_main_stat(image_path):
-    """
-    Parse the main stat portion using a particular configuration option for tesseract.
-
-    :param image_path: Path to the image file.
-    :return: Extracted text.
-    """
-    # Ensure the images directory exists
+def ensure_images_directory_exists():
     output_dir = os.path.join(os.path.dirname(__file__), 'images')
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
+    return output_dir
 
-    # Load the image
+
+def preprocess_image(image_path):
     image = cv2.imread(image_path)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     _, binary = cv2.threshold(gray, 160, 255, cv2.THRESH_BINARY)
+    return binary
 
-    # Use Tesseract to extract text using psm 7 (single line of text)
+
+def parse_main_stat(image_path):
+    ensure_images_directory_exists()
+    binary = preprocess_image(image_path)
     text = pytesseract.image_to_string(binary, config='--psm 7')
-
     return text
 
 
 def parse_sub_stats(image_path):
-    """
-    Parse a disk image to extract text.
-
-    :param image_path: Path to the image file.
-    :return: Extracted text.
-    """
-    # Ensure the images directory exists
-    output_dir = os.path.join(os.path.dirname(__file__), 'images')
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-
-    # Load the image
-
-    image = cv2.imread(image_path)
-    # Save each image for debugging
-    cv2.imwrite(os.path.join(output_dir, 'original.png'), image)
-
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    cv2.imwrite(os.path.join(output_dir, 'gray.png'), gray)
-
-    _, binary = cv2.threshold(gray, 160, 255, cv2.THRESH_BINARY)
-    cv2.imwrite(os.path.join(output_dir, 'binary.png'), binary)
-
-    # Use Tesseract to extract text
+    ensure_images_directory_exists()
+    binary = preprocess_image(image_path)
     text = pytesseract.image_to_string(binary, config='--psm 11')
-
     return text
 
 
@@ -108,7 +83,7 @@ def main():
     print("Welcome to the Disk CLI!")
 
     # Output folder for captured images
-    output_folder = "captured_images"
+    output_folder = "temp"
     os.makedirs(output_folder, exist_ok=True)
 
     # Give time to change screens
