@@ -1,6 +1,17 @@
 import random
 
+"""Main stats for each disk slot."""
 MAIN_STATS = {
+    1: ["Flat HP"],
+    2: ["Flat ATK"],
+    3: ["Flat DEF"],
+    4: ["HP%", "ATK%", "DEF%", "CRIT Rate", "CRIT DMG", "Anomaly Proficiency"],
+    5: ["HP%", "ATK%", "DEF%", "PEN Ratio", "Element DMG Bonus"],
+    6: ["HP%", "ATK%", "DEF%", "Anomaly Mastery", "Impact", "Energy Regen%"],
+}
+
+"""Weights for each main stat."""
+MAIN_STAT_WEIGHTS = {
     1: {"Flat HP": 10},
     2: {"Flat ATK": 10},
     3: {"Flat DEF": 10},
@@ -11,16 +22,23 @@ MAIN_STATS = {
 
 ELEMENTAL_TYPES = ["Physical", "Fire", "Ice", "Electric", "Ether"]
 
+"""Substats and their respective upgrading values."""
 SUBSTATS = {
     "CRIT Rate": 2.4, "CRIT DMG": 4.8, "Anomaly Proficiency": 9, "ATK%": 3, "Flat ATK": 19,
     "Flat HP": 112, "HP%": 3, "Flat DEF": 15, "DEF%": 4.8, "PEN": 9
+}
+
+SUBSTAT_WEIGHTS = {
+    "CRIT Rate": 10, "CRIT DMG": 10, "ATK%": 8,
+    "Flat ATK": 5, "PEN": 5, "Anomaly Proficiency": 5,
+    "Flat HP": 2, "HP%": 2, "Flat DEF": 2, "DEF%": 2,
 }
 
 def generate_disk():
     """Generate a disk with randomized attributes."""
 
     slot = random.randint(1, 6)
-    main_stat = random.choices(list(MAIN_STATS[slot].keys()), weights=list(MAIN_STATS[slot].values()))[0]
+    main_stat = random.choices(MAIN_STATS[slot], weights=list(MAIN_STAT_WEIGHTS[slot].values()))[0]
     if slot == 5 and main_stat == "Element DMG Bonus":
         main_stat = random.choice(ELEMENTAL_TYPES) + " DMG Bonus"
 
@@ -34,31 +52,23 @@ def generate_disk():
         "Slot": slot,
         "Main Stat": main_stat,
         "Level": 0,
-        "Rarity": "S",
         "Substats": substat_upgrades,
         "Substat Values": {stat: SUBSTATS[stat] for stat in SUBSTATS},
     }
 
 def calculate_main_stat_score(slot, main_stat):
-    slot_weights = MAIN_STATS.get(slot, {})
+    slot_weights = MAIN_STAT_WEIGHTS.get(slot, {})
     return slot_weights.get(main_stat, 4)
 
 def calculate_substat_potential(disk):
-    substat_weights = {
-        "CRIT Rate": 10, "CRIT DMG": 10, "ATK%": 8,
-        "Flat ATK": 5, "PEN": 5, "Anomaly Proficiency": 5,
-        "Flat HP": 2, "HP%": 2, "Flat DEF": 2, "DEF%": 2,
-    }
-
-    current_score = sum(substat_weights.get(stat, 0) for stat in disk["Substats"])
+    current_score = sum(SUBSTAT_WEIGHTS.get(stat, 0) for stat in disk["Substats"])
     remaining_rolls = 5
     max_potential_score = sum(
-        substat_weights.get(stat, 0) * remaining_rolls
+        SUBSTAT_WEIGHTS.get(stat, 0) * remaining_rolls
         for stat in disk["Substats"]
     )
 
     return current_score, max_potential_score
-
 
 def evaluate_disk(disk):
     main_stat_score = calculate_main_stat_score(disk["Slot"], disk["Main Stat"])
@@ -71,7 +81,6 @@ def evaluate_disk(disk):
         "Potential Substat Score": potential_score,
         "Total Score": total_score,
     }
-
 
 def display_disk(disk):
     print(f"Slot: {disk['Slot']}, Main Stat: {disk['Main Stat']}, Level: {disk['Level']}")
@@ -86,32 +95,19 @@ def display_disk(disk):
     print(f"  Potential Substat Score: {evaluation['Potential Substat Score']}")
     print(f"  Total Score: {evaluation['Total Score']}")
 
-
 def input_disk():
     slot = int(input("Enter Slot (1-6): "))
 
-    main_stats_map = {
-        1: ["Flat HP"],
-        2: ["Flat ATK"],
-        3: ["Flat DEF"],
-        4: ["HP%", "ATK%", "DEF%", "CRIT Rate", "CRIT DMG", "Anomaly Proficiency"],
-        5: ["HP%", "ATK%", "DEF%", "PEN Ratio", "Element DMG Bonus"],
-        6: ["HP%", "ATK%", "DEF%", "Anomaly Mastery", "Impact", "Energy Regen%"],
-    }
-
     if slot in [1, 2, 3]:
-        main_stat = main_stats_map[slot][0]
+        main_stat = MAIN_STATS[slot][0]
     else:
-        main_stat_options = main_stats_map[slot]
+        main_stat_options = MAIN_STATS[slot]
         for i, stat in enumerate(main_stat_options, 1):
             print(f"{i}: {stat}")
         main_stat_index = int(input("Select Main Stat: ")) - 1
         main_stat = main_stat_options[main_stat_index]
 
-    substats_map = [
-        "CRIT Rate", "CRIT DMG", "Anomaly Proficiency", "ATK%", "Flat ATK",
-        "Flat HP", "HP%", "Flat DEF", "DEF%", "PEN"
-    ]
+    substats_map = list(SUBSTATS.keys())
 
     available_substats = [s for s in substats_map if s != main_stat]
     substats_count = int(input("Enter number of initial substats (3 or 4): "))
@@ -121,20 +117,16 @@ def input_disk():
             print(f"{i}: {substat}")
         substat_index = int(input("Select Substat: ")) - 1
         selected_substats.append(available_substats[substat_index])
+        available_substats.pop(substat_index)
 
     disk = {
         "Slot": slot,
         "Main Stat": main_stat,
         "Level": 0,
-        "Rarity": "S",
         "Substats": {stat: 0 for stat in selected_substats},
-        "Substat Values": {
-            "HP%": 3, "ATK%": 3, "DEF%": 4.8, "CRIT Rate": 2.4, "CRIT DMG": 4.8,
-            "PEN": 9, "PEN Ratio": 9, "Anomaly Proficiency": 9, "Flat HP": 112, "Flat ATK": 19, "Flat DEF": 15
-        },
+        "Substat Values": SUBSTATS,
     }
     return disk
-
 
 def main():
     print("Welcome to the Disk CLI!")
@@ -154,7 +146,6 @@ def main():
             break
         else:
             print("Invalid option. Please try again.")
-
 
 if __name__ == "__main__":
     main()
