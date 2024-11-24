@@ -4,8 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Merge main">
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Prep test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_disk_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_disk_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_15_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_15_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_16_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_16_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_17_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_17_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_18_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_18_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_19_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_19_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_20_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_20_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_21_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_21_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_22_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_22_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_23_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_23_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_24_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_24_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_25_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_25_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_26_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_26_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_27_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_27_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_28_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_28_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_29_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_29_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_30_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_30_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_31_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_31_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_32_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_images/disk_32_sub.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +82,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.automated_disk_scanner.executor&quot;: &quot;Run&quot;,
-    &quot;Python.grid_clicker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.run_scanner.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.automated_disk_scanner.executor": "Run",
+    "Python.grid_clicker.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.run_scanner.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jfdg0/PycharmProjects/disk-drive-calculator/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\test" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.automated_disk_scanner">
     <configuration name="automated_disk_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
@@ -306,7 +349,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732441399573</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated gitignore + merge">
+      <option name="closed" value="true" />
+      <created>1732441584108</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732441584108</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Updated gitignore + merge">
+      <option name="closed" value="true" />
+      <created>1732441593850</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732441593850</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Prep test">
+      <option name="closed" value="true" />
+      <created>1732441943639</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1732441943639</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +393,9 @@
     <MESSAGE value="Added automatic clicker through the grid" />
     <MESSAGE value="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY" />
     <MESSAGE value="Merge main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge main" />
+    <MESSAGE value="Updated gitignore + merge" />
+    <MESSAGE value="Prep test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prep test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
