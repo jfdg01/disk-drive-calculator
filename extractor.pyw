@@ -9,7 +9,7 @@ def extract_code():
     # Manually defined list of included files or directories
     # Update this list with patterns such as 'test/*.py' or 'scripts/example.py'
     include_patterns = [
-        'test/*.py',  # Example: include all .py files in the 'test' folder
+        # 'test/*.py',  # Example: include all .py files in the 'test' folder
     ]
 
     # Get a list of all .py files in the current directory except this script
@@ -18,12 +18,13 @@ def extract_code():
         if file.endswith('.py') and file != os.path.basename(__file__)
     ]
 
-    # Add files from include_patterns
-    for pattern in include_patterns:
-        included_files = glob.glob(os.path.join(current_dir, pattern))
-        python_files.extend(
-            os.path.relpath(file, current_dir) for file in included_files
-        )
+    # Add files from include_patterns if include patterns is not empty
+    if include_patterns:
+        for pattern in include_patterns:
+            included_files = glob.glob(os.path.join(current_dir, pattern))
+            python_files.extend(
+                os.path.relpath(file, current_dir) for file in included_files
+            )
 
     # Remove duplicates and ensure only .py files are included
     python_files = list(set(file for file in python_files if file.endswith('.py')))

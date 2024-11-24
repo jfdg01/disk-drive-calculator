@@ -4,10 +4,10 @@ VERTICAL_DIFF = 465 - 280  # Difference between adjacent rows
 CELL_SIZE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
 ROWS = 4
 COLS = 8
-GRAY_THRESHOLD = 150 # test 25 50 75 100 125 150 175 200 225 250
-MAX_GRAY_VALUE = 255 # test 25 50 75 100 125 150 175 200 225 250
-MAIN_STAT_CONFIG = '--psm 7' # test from 1 to 14
-SUB_STAT_CONFIG = '--psm 11' # test from 1 to 14
+GRAY_THRESHOLD = 150
+MAX_GRAY_VALUE = 255
+MAIN_STAT_CONFIG = '--psm 7'
+SUB_STAT_CONFIG = '--psm 3'
 
 MAIN_STATS = {
     1: ["Flat HP"],
@@ -52,7 +52,7 @@ MAIN_STAT_REGION = {
 SUB_STAT_REGION = {
     "left": 74.0,
     "top": 46.3,
-    "width": 20.83,
+    "width": 20.83, # to modify how deep is the length, 20.83 original 17.0 for cropped values
     "height": 18.52
 }
 

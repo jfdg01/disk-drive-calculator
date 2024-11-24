@@ -67,8 +67,8 @@ def process_ocr_output(text):
     """
     Process OCR output and display beautified stats
     """
-    stats = beautify_stats(text)
-    display_beautified_stats(stats)
+    print(text)
+
     return stats
 
 

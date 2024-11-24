@@ -1,43 +1,72 @@
 {
   "disk_1": {
     "main_stat": {
-      "type": "ATK",
-      "value": 316.0,
+      "type": "hd",
+      "value": 2200.0,
       "is_percentage": false
     },
     "sub_stats": [
       {
-        "type": "ATK +1",
-        "value": 6.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate +3",
+        "type": "CRIT DMG +1",
         "value": 9.6,
         "is_percentage": true
       },
       {
-        "type": "HP",
-        "value": 112.0,
+        "type": "Anomaly Proficiency +2",
+        "value": 2.0,
         "is_percentage": false
       },
       {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
+        "type": "CRIT Rate",
+        "value": 2.4,
+        "is_percentage": true
+      },
+      {
+        "type": "ATK +1",
+        "value": 6.0,
         "is_percentage": true
       }
     ]
   },
   "disk_2": {
     "main_stat": {
-      "type": "ATK",
-      "value": 30.0,
-      "is_percentage": true
+      "type": "HP",
+      "value": 2200.0,
+      "is_percentage": false
     },
     "sub_stats": [
       {
-        "type": "DEF +1",
+        "type": "CRIT DMG +1",
         "value": 9.6,
+        "is_percentage": true
+      },
+      {
+        "type": "CRIT Rate +1",
+        "value": 4.8,
+        "is_percentage": true
+      },
+      {
+        "type": "ATK",
+        "value": 3.0,
+        "is_percentage": true
+      },
+      {
+        "type": "ATK +3",
+        "value": 3.0,
+        "is_percentage": false
+      }
+    ]
+  },
+  "disk_3": {
+    "main_stat": {
+      "type": "ATK",
+      "value": 316.0,
+      "is_percentage": false
+    },
+    "sub_stats": [
+      {
+        "type": "CRIT Rate +1",
+        "value": 4.8,
         "is_percentage": true
       },
       {
@@ -46,26 +75,12 @@
         "is_percentage": true
       },
       {
-        "type": "CRIT Rate",
-        "value": 24.0,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_3": {
-    "main_stat": {
-      "type": "ATK",
-      "value": 30.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
+        "type": "ATK +2",
+        "value": 9.0,
         "is_percentage": true
       },
       {
-        "type": "CRIT Rate +1",
+        "type": "CRIT DMG",
         "value": 4.8,
         "is_percentage": true
       }
@@ -73,20 +88,54 @@
   },
   "disk_4": {
     "main_stat": {
-      "type": "Impact",
-      "value": 18.0,
+      "type": "DEF",
+      "value": 184.0,
+      "is_percentage": false
+    },
+    "sub_stats": [
+      {
+        "type": "ATK",
+        "value": 19.0,
+        "is_percentage": false
+      },
+      {
+        "type": "ATK +1",
+        "value": 6.0,
+        "is_percentage": true
+      },
+      {
+        "type": "CRIT DMG +2",
+        "value": 14.4,
+        "is_percentage": true
+      },
+      {
+        "type": "PEN +2",
+        "value": 2.0,
+        "is_percentage": false
+      }
+    ]
+  },
+  "disk_5": {
+    "main_stat": {
+      "type": "ATK",
+      "value": 30.0,
       "is_percentage": true
     },
     "sub_stats": [
       {
         "type": "DEF",
-        "value": 4.8,
+        "value": 48.0,
         "is_percentage": true
       },
       {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
+        "type": "ATK +1",
+        "value": 1.0,
+        "is_percentage": false
+      },
+      {
+        "type": "DEF +3",
+        "value": 3.0,
+        "is_percentage": false
       },
       {
         "type": "CRIT Rate +1",
@@ -95,9 +144,9 @@
       }
     ]
   },
-  "disk_5": {
+  "disk_6": {
     "main_stat": {
-      "type": "Anomaly Mastery",
+      "type": "ATK",
       "value": 30.0,
       "is_percentage": true
     },
@@ -108,37 +157,13 @@
         "is_percentage": false
       },
       {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "PEN +1",
-        "value": 18.0,
+        "type": "Anomaly Proficiency +1",
+        "value": 1.0,
         "is_percentage": false
       },
       {
-        "type": "CRIT Rate +2",
-        "value": 7.2,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_6": {
-    "main_stat": {
-      "type": "Energy Regen",
-      "value": 60.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
-      {
-        "type": "HP +1",
-        "value": 6.0,
-        "is_percentage": true
-      },
-      {
-        "type": "Anomaly Proficiency +1",
-        "value": 18.0,
+        "type": "DEF +2",
+        "value": 2.0,
         "is_percentage": false
       },
       {
@@ -150,87 +175,49 @@
   },
   "disk_7": {
     "main_stat": {
-      "type": "HP",
-      "value": 2200.0,
-      "is_percentage": false
+      "type": "Impact",
+      "value": 18.0,
+      "is_percentage": true
     },
     "sub_stats": [
       {
-        "type": "CRIT Rate +3",
+        "type": "DEF +1",
+        "value": 1.0,
+        "is_percentage": false
+      },
+      {
+        "type": "ATK +1",
+        "value": 1.0,
+        "is_percentage": false
+      },
+      {
+        "type": "DEF +1",
+        "value": 1.0,
+        "is_percentage": false
+      },
+      {
+        "type": "PEN +1",
+        "value": 1.0,
+        "is_percentage": false
+      },
+      {
+        "type": "",
         "value": 9.6,
         "is_percentage": true
       },
       {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
+        "type": "",
+        "value": 6.0,
         "is_percentage": true
       },
       {
-        "type": "ATK",
-        "value": 3.0,
-        "is_percentage": true
+        "type": "",
+        "value": 18.0,
+        "is_percentage": false
       }
     ]
   },
   "disk_8": {
-    "main_stat": {
-      "type": "HP",
-      "value": 2200.0,
-      "is_percentage": false
-    },
-    "sub_stats": [
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "ATK",
-        "value": 3.0,
-        "is_percentage": true
-      },
-      {
-        "type": "HP +2",
-        "value": 9.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_9": {
-    "main_stat": {
-      "type": "HP",
-      "value": 2200.0,
-      "is_percentage": false
-    },
-    "sub_stats": [
-      {
-        "type": "ATK",
-        "value": 3.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT DMG +2",
-        "value": 14.4,
-        "is_percentage": true
-      },
-      {
-        "type": "HP +2",
-        "value": 9.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate",
-        "value": 24.0,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_10": {
     "main_stat": {
       "type": "ATK",
       "value": 316.0,
@@ -238,124 +225,52 @@
     },
     "sub_stats": [
       {
-        "type": "CRIT DMG +2",
-        "value": 14.4,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      },
-      {
-        "type": "ATK +1",
-        "value": 6.0,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_11": {
-    "main_stat": {
-      "type": "DEF",
-      "value": 184.0,
-      "is_percentage": false
-    },
-    "sub_stats": [
-      {
-        "type": "HP",
-        "value": 112.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      },
-      {
         "type": "HP +2",
         "value": 9.0,
         "is_percentage": true
       },
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_12": {
-    "main_stat": {
-      "type": "CRIT DMG",
-      "value": 48.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
       {
         "type": "ATK +2",
         "value": 9.0,
         "is_percentage": true
       },
       {
+        "type": "Anomaly Proficiency",
+        "value": 9.0,
+        "is_percentage": false
+      },
+      {
         "type": "CRIT Rate",
         "value": 24.0,
+        "is_percentage": true
+      }
+    ]
+  },
+  "disk_9": {
+    "main_stat": {
+      "type": "ATK",
+      "value": 316.0,
+      "is_percentage": false
+    },
+    "sub_stats": [
+      {
+        "type": "ATK +1",
+        "value": 6.0,
+        "is_percentage": true
+      },
+      {
+        "type": "CRIT Rate +3",
+        "value": 9.6,
         "is_percentage": true
       },
       {
         "type": "HP",
         "value": 112.0,
         "is_percentage": false
-      }
-    ]
-  },
-  "disk_13": {
-    "main_stat": {
-      "type": "Fire DMG Bonus",
-      "value": 30.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
+      },
       {
         "type": "CRIT DMG +1",
         "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "HP +1",
-        "value": 6.0,
-        "is_percentage": true
-      },
-      {
-        "type": "PEN +1",
-        "value": 18.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_14": {
-    "main_stat": {
-      "type": "ATK",
-      "value": 30.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
-      {
-        "type": "Anomaly Proficiency +1",
-        "value": 18.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      },
-      {
-        "type": "DEF +2",
-        "value": 14.4,
         "is_percentage": true
       }
     ]

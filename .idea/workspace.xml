@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Prep test">
-      <change afterPath="$PROJECT_DIR$/test/test_disk_scanner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/disc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/disc.iml" afterDir="false" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Testing configurations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automated_disk_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/automated_disk_scanner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extractor.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/extractor.pyw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disk_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/disk_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_beautifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_disk_scanner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_results/ocr_results_20241124_115119.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,7 @@
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_disk_scanner.py">
+  <component name="RunManager" selected="Python.automated_disk_scanner">
     <configuration name="automated_disk_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -198,8 +200,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_disk_scanner.py" />
         <item itemvalue="Python.automated_disk_scanner" />
+        <item itemvalue="Python tests.Python tests in test_disk_scanner.py" />
         <item itemvalue="Python.grid_clicker" />
         <item itemvalue="Python.run_scanner" />
         <item itemvalue="Python.main" />
@@ -379,7 +381,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732442679980</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Testing configurations">
+      <option name="closed" value="true" />
+      <created>1732445746934</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1732445746934</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Testing configurations">
+      <option name="closed" value="true" />
+      <created>1732445914175</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1732445914175</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,14 +419,15 @@
     <MESSAGE value="Merge main" />
     <MESSAGE value="Updated gitignore + merge" />
     <MESSAGE value="Prep test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prep test" />
+    <MESSAGE value="Testing configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing configurations" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$grid_clicker.coverage" NAME="grid_clicker Coverage Results" MODIFIED="1732376335129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$automated_disk_scanner.coverage" NAME="automated_disk_scanner Coverage Results" MODIFIED="1732377436862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732445477944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$automated_disk_scanner.coverage" NAME="automated_disk_scanner Coverage Results" MODIFIED="1732449758334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732449650471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732313428324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

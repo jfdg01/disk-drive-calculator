@@ -8,9 +8,23 @@ import mss
 import cv2
 import numpy as np
 import pytesseract
+import re
+from dataclasses import dataclass, asdict
 
 from constants import *
-from stat_beautifier import beautify_stats
+
+
+@dataclass
+class Stat:
+    type: str
+    value: float
+    is_percentage: bool
+
+
+@dataclass
+class DiskData:
+    main_stat: Stat
+    sub_stats: List[Stat]
 
 
 class AutomatedDiskScanner:
@@ -91,15 +105,69 @@ class AutomatedDiskScanner:
         _, binary = cv2.threshold(gray, GRAY_THRESHOLD, MAX_GRAY_VALUE, cv2.THRESH_BINARY)
         return binary
 
-    def parse_main_stat(self, image_path: str, config: str) -> str:
+    def parse_main_stat(self, image_path: str) -> str:
         """Parse main stat from image using OCR."""
         binary = self.preprocess_image(image_path)
-        return pytesseract.image_to_string(binary, config)
+        return pytesseract.image_to_string(binary, config=MAIN_STAT_CONFIG)
 
-    def parse_sub_stats(self, image_path: str, config: str) -> str:
+    def parse_stat_line(self, line: str) -> Stat:
+        """Parse a single stat line into structured data."""
+        # Remove any unwanted characters and normalize spaces
+        line = line.strip().replace('\n', ' ').replace('\r', '')
+
+        # Regular expression patterns
+        percentage_pattern = r'([\d.]+)%'
+        value_pattern = r'([\d.]+)(?!%)'
+        enhancement_pattern = r'\+(\d+)'
+
+        # Initialize variables
+        stat_type = line
+        value = 0.0
+        is_percentage = False
+        enhancement_level = 0
+
+        # Extract enhancement level if present
+        enhancement_match = re.search(enhancement_pattern, line)
+        if enhancement_match:
+            enhancement_level = int(enhancement_match.group(1))
+            stat_type = re.sub(r'\+\d+', '', stat_type).strip()
+
+        # Check for percentage values
+        percentage_match = re.search(percentage_pattern, line)
+        if percentage_match:
+            value = float(percentage_match.group(1))
+            is_percentage = True
+        else:
+            # Look for regular numeric values
+            value_match = re.search(value_pattern, line)
+            if value_match:
+                value = float(value_match.group(1))
+
+        # Clean up stat type by removing the value and any trailing/leading spaces
+        stat_type = re.sub(r'[\d.]+%?', '', stat_type).strip()
+
+        # Add enhancement level back to type if present
+        if enhancement_level > 0:
+            stat_type = f"{stat_type} +{enhancement_level}"
+
+        return Stat(type=stat_type, value=value, is_percentage=is_percentage)
+
+    def parse_disk_text(self, main_stat_text: str, sub_stat_text: str) -> DiskData:
+        """Parse the OCR text into structured disk data."""
+        # Parse main stat
+        main_stat_lines = [line.strip() for line in main_stat_text.split('\n') if line.strip()]
+        main_stat = self.parse_stat_line(main_stat_lines[0] if main_stat_lines else "")
+
+        # Parse sub stats
+        sub_stat_lines = [line.strip() for line in sub_stat_text.split('\n') if line.strip()]
+        sub_stats = [self.parse_stat_line(line) for line in sub_stat_lines if line]
+
+        return DiskData(main_stat=main_stat, sub_stats=sub_stats)
+
+    def parse_sub_stats(self, image_path: str) -> str:
         """Parse sub stats from image using OCR."""
         binary = self.preprocess_image(image_path)
-        return pytesseract.image_to_string(binary, config)
+        return pytesseract.image_to_string(binary, config=SUB_STAT_CONFIG)
 
     def capture_disk_data(self, disk_index: int) -> Dict:
         """Capture and process data for a single disk position."""
@@ -108,16 +176,18 @@ class AutomatedDiskScanner:
         # Capture main stat
         main_stat_path = os.path.join(self.image_dir, f"disk_{disk_index}_main.png")
         self.capture_region(main_stat_path, self.main_stat_region)
-        main_stat_text = self.parse_main_stat(main_stat_path, MAIN_STAT_CONFIG)
+        main_stat_text = self.parse_main_stat(main_stat_path)
 
         # Capture substats
         sub_stat_path = os.path.join(self.image_dir, f"disk_{disk_index}_sub.png")
         self.capture_region(sub_stat_path, self.sub_stat_region)
-        sub_stat_text = self.parse_sub_stats(sub_stat_path, SUB_STAT_CONFIG)
+        sub_stat_text = self.parse_sub_stats(sub_stat_path)
 
-        # Process the combined text
-        combined_text = main_stat_text + "\n" + sub_stat_text
-        return beautify_stats(combined_text)
+        # Parse the text into structured data
+        disk_data = self.parse_disk_text(main_stat_text, sub_stat_text)
+
+        # Convert to dictionary format
+        return asdict(disk_data)
 
     def scan_all_disks(self) -> Dict:
         """
@@ -159,7 +229,7 @@ class AutomatedDiskScanner:
             return all_disk_data
 
     def _save_results(self, data: Dict) -> None:
-        """Save the current results to a JSON file."""
+        """Save the results to a JSON file."""
         output_path = os.path.join(self.output_dir, "disk_data.json")
         with open(output_path, 'w') as f:
             json.dump(data, f, indent=2)
