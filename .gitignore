@@ -3,6 +3,6 @@ images/
 captured_images/
 temp/
 code.txt
-.idea/
+/.idea
 .idea/workspace.xml
 workspace.xml

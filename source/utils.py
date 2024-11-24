@@ -1,3 +1,4 @@
+import json
 from dataclasses import dataclass
 
 import cv2
@@ -11,6 +12,7 @@ from typing import Dict, List, Tuple
 from pytesseract import pytesseract
 
 from constants import START_POS, CELL_SIZE, GRAY_THRESHOLD, MAX_GRAY_VALUE, MAIN_STAT_CONFIG, SUB_STAT_CONFIG
+
 
 @dataclass
 class Stat:
@@ -60,7 +62,8 @@ def preprocess_image(image_path: str):
 def parse_main_stat(image_path: str) -> str:
     """Parse main stat from image using OCR."""
     binary = preprocess_image(image_path)
-    return pytesseract.image_to_string(binary, config=MAIN_STAT_CONFIG)
+    result = pytesseract.image_to_string(binary, config=MAIN_STAT_CONFIG)
+    return result
 
 
 def parse_stat_line(line: str) -> Stat:
@@ -104,19 +107,6 @@ def parse_stat_line(line: str) -> Stat:
         stat_type = f"{stat_type} +{enhancement_level}"
 
     return Stat(type=stat_type, value=value, is_percentage=is_percentage)
-
-
-def parse_disk_text(main_stat_text: str, sub_stat_text: str) -> DiskData:
-    """Parse the OCR text into structured disk data."""
-    # Parse main stat
-    main_stat_lines = [line.strip() for line in main_stat_text.split('\n') if line.strip()]
-    main_stat = parse_stat_line(main_stat_lines[0] if main_stat_lines else "")
-
-    # Parse sub stats
-    sub_stat_lines = [line.strip() for line in sub_stat_text.split('\n') if line.strip()]
-    sub_stats = [parse_stat_line(line) for line in sub_stat_lines if line]
-
-    return DiskData(main_stat=main_stat, sub_stats=sub_stats)
 
 
 def parse_sub_stats(image_path: str) -> str:
