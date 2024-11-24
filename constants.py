@@ -53,3 +53,8 @@ SUB_STAT_REGION = {
     "width": 20.83,
     "height": 18.52
 }
+
+START_POS_PERCENTAGE = (0.1354, 0.2593)  # (x%, y%)
+HORIZONTAL_DIFF_PERCENTAGE = 0.07396  # Percentage of screen width
+VERTICAL_DIFF_PERCENTAGE = 0.1713    # Percentage of screen height
+CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
