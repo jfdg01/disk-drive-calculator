@@ -32,7 +32,7 @@ class AutomatedDiskScanner:
 
         # Safety settings
         pyautogui.FAILSAFE = True
-        pyautogui.PAUSE = 0.5
+        pyautogui.PAUSE = 0.1
 
         # Resolution and regions (reusing your constants)
         self.resolution = RESOLUTION
