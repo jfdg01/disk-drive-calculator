@@ -5,44 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Prep test">
+      <change afterPath="$PROJECT_DIR$/test/test_disk_scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/disc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/disc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_disk_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_disk_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_15_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_15_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_16_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_16_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_17_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_17_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_18_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_18_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_19_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_19_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_20_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_20_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_21_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_21_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_22_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_22_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_23_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_23_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_24_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_24_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_25_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_25_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_26_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_26_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_27_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_27_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_28_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_28_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_29_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_29_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_30_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_30_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_31_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_31_sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_32_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_images/disk_32_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automated_disk_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/automated_disk_scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractor.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/extractor.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +23,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -84,6 +64,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_disk_scanner.py.executor": "Run",
     "Python.automated_disk_scanner.executor": "Run",
     "Python.grid_clicker.executor": "Run",
     "Python.main.executor": "Run",
@@ -106,7 +87,7 @@
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.automated_disk_scanner">
+  <component name="RunManager" selected="Python tests.Python tests in test_disk_scanner.py">
     <configuration name="automated_disk_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -199,8 +180,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_disk_scanner.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_disk_scanner.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_disk_scanner.py" />
         <item itemvalue="Python.automated_disk_scanner" />
         <item itemvalue="Python.grid_clicker" />
         <item itemvalue="Python.run_scanner" />
@@ -373,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732441943639</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Prep test">
+      <option name="closed" value="true" />
+      <created>1732442679980</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732442679980</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +408,7 @@
     <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$grid_clicker.coverage" NAME="grid_clicker Coverage Results" MODIFIED="1732376335129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$automated_disk_scanner.coverage" NAME="automated_disk_scanner Coverage Results" MODIFIED="1732377436862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732445477944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732313428324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

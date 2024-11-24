@@ -91,15 +91,15 @@ class AutomatedDiskScanner:
         _, binary = cv2.threshold(gray, GRAY_THRESHOLD, MAX_GRAY_VALUE, cv2.THRESH_BINARY)
         return binary
 
-    def parse_main_stat(self, image_path: str) -> str:
+    def parse_main_stat(self, image_path: str, config: str) -> str:
         """Parse main stat from image using OCR."""
         binary = self.preprocess_image(image_path)
-        return pytesseract.image_to_string(binary, config='--psm 7')
+        return pytesseract.image_to_string(binary, config)
 
-    def parse_sub_stats(self, image_path: str) -> str:
+    def parse_sub_stats(self, image_path: str, config: str) -> str:
         """Parse sub stats from image using OCR."""
         binary = self.preprocess_image(image_path)
-        return pytesseract.image_to_string(binary, config='--psm 11')
+        return pytesseract.image_to_string(binary, config)
 
     def capture_disk_data(self, disk_index: int) -> Dict:
         """Capture and process data for a single disk position."""
@@ -108,12 +108,12 @@ class AutomatedDiskScanner:
         # Capture main stat
         main_stat_path = os.path.join(self.image_dir, f"disk_{disk_index}_main.png")
         self.capture_region(main_stat_path, self.main_stat_region)
-        main_stat_text = self.parse_main_stat(main_stat_path)
+        main_stat_text = self.parse_main_stat(main_stat_path, MAIN_STAT_CONFIG)
 
         # Capture substats
         sub_stat_path = os.path.join(self.image_dir, f"disk_{disk_index}_sub.png")
         self.capture_region(sub_stat_path, self.sub_stat_region)
-        sub_stat_text = self.parse_sub_stats(sub_stat_path)
+        sub_stat_text = self.parse_sub_stats(sub_stat_path, SUB_STAT_CONFIG)
 
         # Process the combined text
         combined_text = main_stat_text + "\n" + sub_stat_text

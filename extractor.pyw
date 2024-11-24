@@ -1,16 +1,34 @@
 import os
+import glob
 
 def extract_code():
     # Define the current directory
     current_dir = os.path.dirname(os.path.abspath(__file__))
     output_file = os.path.join(current_dir, "code.txt")
 
-    # Get a list of all .py files in the directory except this script
+    # Manually defined list of included files or directories
+    # Update this list with patterns such as 'test/*.py' or 'scripts/example.py'
+    include_patterns = [
+        'test/*.py',  # Example: include all .py files in the 'test' folder
+    ]
+
+    # Get a list of all .py files in the current directory except this script
     python_files = [
         file for file in os.listdir(current_dir)
         if file.endswith('.py') and file != os.path.basename(__file__)
     ]
 
+    # Add files from include_patterns
+    for pattern in include_patterns:
+        included_files = glob.glob(os.path.join(current_dir, pattern))
+        python_files.extend(
+            os.path.relpath(file, current_dir) for file in included_files
+        )
+
+    # Remove duplicates and ensure only .py files are included
+    python_files = list(set(file for file in python_files if file.endswith('.py')))
+
+    # Open the output file in write mode (overwrites existing content)
     with open(output_file, 'w') as outfile:
         for py_file in python_files:
             file_path = os.path.join(current_dir, py_file)
