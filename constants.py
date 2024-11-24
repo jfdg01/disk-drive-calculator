@@ -8,6 +8,7 @@ GRAY_THRESHOLD = 150
 MAX_GRAY_VALUE = 255
 MAIN_STAT_CONFIG = '--psm 7'
 SUB_STAT_CONFIG = '--psm 3'
+TESSERACT_PATH = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 MAIN_STATS = {
     1: ["Flat HP"],
@@ -52,11 +53,21 @@ MAIN_STAT_REGION = {
 SUB_STAT_REGION = {
     "left": 74.0,
     "top": 46.3,
-    "width": 20.83, # to modify how deep is the length, 20.83 original 17.0 for cropped values
+    "width": 20.83,  # to modify how deep is the length, 20.83 original 17.0 for cropped values
     "height": 18.52
 }
 
 START_POS_PERCENTAGE = (0.1354, 0.2593)  # (x%, y%)
 HORIZONTAL_DIFF_PERCENTAGE = 0.07396  # Percentage of screen width
-VERTICAL_DIFF_PERCENTAGE = 0.1713    # Percentage of screen height
+VERTICAL_DIFF_PERCENTAGE = 0.1713  # Percentage of screen height
 CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
+
+
+def _calculate_region_pixels(region_percent, resolution):
+    """Calculate pixel values from percentage-based region definition."""
+    return {
+        "left": int((region_percent["left"] / 100) * resolution[0]),
+        "top": int((region_percent["top"] / 100) * resolution[1]),
+        "width": int((region_percent["width"] / 100) * resolution[0]),
+        "height": int((region_percent["height"] / 100) * resolution[1])
+    }
