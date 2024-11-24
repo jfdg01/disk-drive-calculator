@@ -7,7 +7,7 @@ COLS = 8
 GRAY_THRESHOLD = 120
 MAX_GRAY_VALUE = 255
 MAIN_STAT_CONFIG = '--psm 7'
-SUB_STAT_CONFIG = '--psm 11'
+# SUB_STAT_CONFIG = '--psm 11'
 TESSERACT_PATH = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 MAIN_STATS = {

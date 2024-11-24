@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Remodularized the code">
-      <change afterPath="$PROJECT_DIR$/source/ocr_processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/screen_scanner.py" afterDir="false" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Changed the scanner to take individual substat screenshots">
+      <change afterPath="$PROJECT_DIR$/test/parse_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automated_disk_scanner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/disk_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/disk_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/ocr_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/screen_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/screen_scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +44,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jfdg01"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jfdg01&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jfdg01/disk-drive-calculator.git",
-    "accountId": "491d0375-7e93-4430-ab60-d4ec2f4cfa0e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jfdg01/disk-drive-calculator.git&quot;,
+    &quot;accountId&quot;: &quot;491d0375-7e93-4430-ab60-d4ec2f4cfa0e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -72,11 +70,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.Python tests in parse_test.py.executor": "Debug",
     "Python tests.Python tests in test_disk_scanner.py.executor": "Run",
     "Python.automated_disk_scanner.executor": "Run",
     "Python.grid_clicker.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.ocr_processor.executor": "Run",
+    "Python.ocr_processor.executor": "Debug",
     "Python.run_scanner.executor": "Run",
     "Python.screen_scanner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -147,29 +146,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="disc" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_scanner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="screen_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -209,13 +185,29 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in parse_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/parse_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.screen_scanner" />
         <item itemvalue="Python.ocr_processor" />
+        <item itemvalue="Python tests.Python tests in parse_test.py" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Python tests in C:/Users/jfdg0/PycharmProjects/disk-drive-calculator/test/test_disk_scanner.py" />
-        <item itemvalue="Python.run_scanner" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +231,7 @@
       <workItem from="1732361106414" duration="4951000" />
       <workItem from="1732366116775" duration="479000" />
       <workItem from="1732367634307" duration="10381000" />
+      <workItem from="1732461266759" duration="1764000" />
     </task>
     <task id="LOCAL-00001" summary="Added html support">
       <option name="closed" value="true" />
@@ -440,7 +433,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732452285354</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Changed the scanner to take individual substat screenshots">
+      <option name="closed" value="true" />
+      <created>1732459147414</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1732459147414</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,16 +466,17 @@
     <MESSAGE value="Testing configurations" />
     <MESSAGE value="Not much working atm" />
     <MESSAGE value="Remodularized the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remodularized the code" />
+    <MESSAGE value="Changed the scanner to take individual substat screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the scanner to take individual substat screenshots" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732452728904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$grid_clicker.coverage" NAME="grid_clicker Coverage Results" MODIFIED="1732376335129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$automated_disk_scanner.coverage" NAME="automated_disk_scanner Coverage Results" MODIFIED="1732449758334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732458562154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732449650471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732463050497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732462365626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732313428324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732457904368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732462645111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
   </component>
 </project>

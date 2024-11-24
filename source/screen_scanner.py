@@ -56,18 +56,20 @@ class ScreenScanner:
             for row in range(ROWS):
                 for col in range(COLS):
                     disk_index += 1
-                    print(f"\nCapturing disk {disk_index} at position ({row}, {col})")
+                    disk_index_str = f"{disk_index:03}"  # Format as three digits
+
+                    print(f"\nCapturing disk {disk_index_str} at position ({row}, {col})")
 
                     # Get and click the grid position
                     x, y = get_cell_position(row, col)
                     click_position(x, y)
 
                     # Capture screenshots
-                    main_stat_path = os.path.join(self.image_dir, f"disk_{disk_index}_main.png")
-                    sub_stat_path_1 = os.path.join(self.image_dir, f"disk_{disk_index}_sub_1.png")
-                    sub_stat_path_2 = os.path.join(self.image_dir, f"disk_{disk_index}_sub_2.png")
-                    sub_stat_path_3 = os.path.join(self.image_dir, f"disk_{disk_index}_sub_3.png")
-                    sub_stat_path_4 = os.path.join(self.image_dir, f"disk_{disk_index}_sub_4.png")
+                    main_stat_path = os.path.join(self.image_dir, f"disk_{disk_index_str}_main.png")
+                    sub_stat_path_1 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_1.png")
+                    sub_stat_path_2 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_2.png")
+                    sub_stat_path_3 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_3.png")
+                    sub_stat_path_4 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_4.png")
 
                     capture_region(main_stat_path, self.main_stat_region)
                     capture_region(sub_stat_path_1, self.substat_region_1)

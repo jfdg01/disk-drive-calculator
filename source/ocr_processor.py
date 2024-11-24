@@ -2,60 +2,79 @@ import json
 import os
 from typing import Dict
 from pytesseract import pytesseract
-from utils import parse_main_stat, parse_sub_stats, DiskData, Stat
+from utils import parse_main_stat, DiskData, Stat
 from constants import TESSERACT_PATH
 
 
-def parse_disk_text(main_stat_text, sub_stat_text):
-    # Check if either of the texts are None and throw an error if so
-    if (main_stat_text is None) or (sub_stat_text is None):
-        raise ValueError("Both main_stat_text and sub_stat_text must be provided.")
+def parse_disk_text(main_stat_text, sub_stat_text_1, sub_stat_text_2, sub_stat_text_3, sub_stat_text_4):
+    # DEF +1 9.6%
+    # HP 212
+    # CRIT Rate 2.4%
+    # CRIT DMG +3 21.3%
 
-    # Parse the main stat
-    main_stat_parts = main_stat_text.strip().split()
-    main_stat = {
-        "name": main_stat_parts[0],
-        "value": main_stat_parts[1]
-    }
+    def parse_main_stat_text(main_stat_text):
+        if not main_stat_text:
+            return None
 
-    # Split the substats into lines and clean them
-    sub_stat_lines = [line.strip() for line in sub_stat_text.splitlines() if line.strip()]
-    substats = []
-    i = 0
+        parts = main_stat_text.strip().split()
+        stat_data = {
+            "name": None,
+            "value": None
+        }
 
-    while i < len(sub_stat_lines):
-        # Extract name and potential level
-        full_name = sub_stat_lines[i]
-        i += 1
+        stat_data["value"] = float(parts[-1].replace("%", ""))
 
-        level = 0
-        if "+" in full_name:
-            parts = full_name.split("+")
-            name = parts[0].strip()
-            level = int(parts[1])
+        # If the name is more than one word, join them
+        if len(parts) > 2:
+            stat_data["name"] = " ".join(parts[:-1])
         else:
-            name = full_name
+            stat_data["name"] = parts[0]
 
-        # Extract value
-        value = None
-        if i < len(sub_stat_lines):
-            value_part = sub_stat_lines[i]
-            if value_part.endswith("%") or value_part.isdigit():
-                value = value_part if value_part.endswith("%") else int(value_part)
-                i += 1
+        return stat_data
 
-        substats.append({
-            "name": name,
-            "level": level,
-            "value": value
-        })
+    def parse_sub_stat_text(stat_text):
+        if not stat_text:
+            return None
+
+        parts = stat_text.strip().split()
+        stat_data = {
+            "name": None,
+            "level": 0,
+            "value": None
+        }
+
+        # Handle special stat names (CRIT Rate, CRIT DMG, Anomaly Proficiency)
+        if parts[0] == "CRIT" or parts[0] == "Anomaly":
+            stat_data["name"] = f"{parts[0]} {parts[1]}"
+            remaining_parts = parts[2:]
+        else:
+            stat_data["name"] = parts[0]
+            remaining_parts = parts[1:]
+
+        # Process remaining parts for level and value
+        for part in remaining_parts:
+            if part.startswith("+"):
+                # Extract level number
+                stat_data["level"] = int(part.replace("+", ""))
+            else:
+                # Extract numeric value
+                stat_data["value"] = float(part.replace("%", ""))
+
+        return stat_data
+
+    # Parse main stat
+    main_stat = parse_main_stat_text(main_stat_text)
+
+    # Parse substats
+    sub_stats = []
+    for sub_stat_text in [sub_stat_text_1, sub_stat_text_2, sub_stat_text_3, sub_stat_text_4]:
+        if sub_stat_text:
+            sub_stats.append(parse_sub_stat_text(sub_stat_text))
 
     # Assemble the final dictionary
     result = {
-        "disk1": {
-            "main_stat": main_stat,
-            "substats": substats
-        }
+        "main_stat": main_stat,
+        "sub_stats": sub_stats
     }
 
     return result
@@ -80,24 +99,33 @@ class OCRProcessor:
         disk_data = {}
 
         # Iterate over all main stat images
-        for main_stat_file in sorted(os.listdir(self.image_dir)):
-            if not main_stat_file.endswith("_main.png"):
-                continue
+        pictures = os.listdir(self.image_dir)
+        for stat_picture in pictures:
 
             # Derive the disk index and corresponding sub stat file
-            disk_index = main_stat_file.split("_")[1]
-            sub_stat_file = f"disk_{disk_index}_sub.png"
+            disk_index = stat_picture.split("_")[1]
+            sub_stat_file_1 = f"disk_{disk_index}_sub_1.png"
+            sub_stat_file_2 = f"disk_{disk_index}_sub_2.png"
+            sub_stat_file_3 = f"disk_{disk_index}_sub_3.png"
+            sub_stat_file_4 = f"disk_{disk_index}_sub_4.png"
 
             # Parse the images
-            main_stat_path = os.path.join(self.image_dir, main_stat_file)
-            sub_stat_path = os.path.join(self.image_dir, sub_stat_file)
+            main_stat_path = os.path.join(self.image_dir, stat_picture)
+            sub_stat_path_1 = os.path.join(self.image_dir, sub_stat_file_1)
+            sub_stat_path_2 = os.path.join(self.image_dir, sub_stat_file_2)
+            sub_stat_path_3 = os.path.join(self.image_dir, sub_stat_file_3)
+            sub_stat_path_4 = os.path.join(self.image_dir, sub_stat_file_4)
 
             print(f"Processing disk {disk_index}...")
             main_stat_text = parse_main_stat(main_stat_path)
-            sub_stat_text = parse_sub_stats(sub_stat_path)
+            sub_stat_text_1 = parse_main_stat(sub_stat_path_1)
+            sub_stat_text_2 = parse_main_stat(sub_stat_path_2)
+            sub_stat_text_3 = parse_main_stat(sub_stat_path_3)
+            sub_stat_text_4 = parse_main_stat(sub_stat_path_4)
 
             # Parse OCR results into structured data
-            disk_data[f"disk_{disk_index}"] = parse_disk_text(main_stat_text, sub_stat_text)
+            disk_data[f"disk_{disk_index}"] = parse_disk_text(main_stat_text, sub_stat_text_1,
+                                                              sub_stat_text_2, sub_stat_text_3, sub_stat_text_4)
 
         # Save results to JSON
         self._save_results(disk_data)

@@ -11,7 +11,7 @@ from typing import Dict, List, Tuple
 
 from pytesseract import pytesseract
 
-from constants import START_POS, CELL_SIZE, GRAY_THRESHOLD, MAX_GRAY_VALUE, MAIN_STAT_CONFIG, SUB_STAT_CONFIG
+from constants import START_POS, CELL_SIZE, GRAY_THRESHOLD, MAX_GRAY_VALUE, MAIN_STAT_CONFIG
 
 
 @dataclass
@@ -39,7 +39,7 @@ def click_position(x: int, y: int, duration: float = 0.2) -> None:
     pyautogui.moveTo(x, y, duration=duration)
     time.sleep(0.1)
     pyautogui.click()
-    time.sleep(0.3)
+    time.sleep(0.1)
 
 
 def capture_region(output_path: str, region: Dict) -> None:
@@ -54,7 +54,11 @@ def capture_region(output_path: str, region: Dict) -> None:
 def preprocess_image(image_path: str):
     """Preprocess the captured image for OCR."""
     image = cv2.imread(image_path)
+    # save debug image
+    cv2.imwrite("debug.png", image)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    # save grey debug image
+    cv2.imwrite("debug_gray.png", gray)
     _, binary = cv2.threshold(gray, GRAY_THRESHOLD, MAX_GRAY_VALUE, cv2.THRESH_BINARY)
     return binary
 
@@ -107,9 +111,3 @@ def parse_stat_line(line: str) -> Stat:
         stat_type = f"{stat_type} +{enhancement_level}"
 
     return Stat(type=stat_type, value=value, is_percentage=is_percentage)
-
-
-def parse_sub_stats(image_path: str) -> str:
-    """Parse sub stats from image using OCR."""
-    binary = preprocess_image(image_path)
-    return pytesseract.image_to_string(binary, config=SUB_STAT_CONFIG)
