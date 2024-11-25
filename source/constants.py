@@ -4,10 +4,11 @@ VERTICAL_DIFF = 465 - 280  # Difference between adjacent rows
 CELL_SIZE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
 ROWS = 4
 COLS = 8
-GRAY_THRESHOLD = 150 # test 25 50 75 100 125 150 175 200 225 250
-MAX_GRAY_VALUE = 255 # test 25 50 75 100 125 150 175 200 225 250
-MAIN_STAT_CONFIG = '--psm 7' # test from 1 to 14
-SUB_STAT_CONFIG = '--psm 11' # test from 1 to 14
+GRAY_THRESHOLD = 120
+MAX_GRAY_VALUE = 255
+MAIN_STAT_CONFIG = '--psm 7'
+# SUB_STAT_CONFIG = '--psm 11'
+TESSERACT_PATH = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 MAIN_STATS = {
     1: ["Flat HP"],
@@ -49,14 +50,42 @@ MAIN_STAT_REGION = {
     "height": 4.63
 }
 
-SUB_STAT_REGION = {
+FULL_SUB_STAT_REGION = {
     "left": 74.0,
     "top": 46.3,
     "width": 20.83,
     "height": 18.52
 }
 
+SUB_STAT_REGION_1 = {
+    "left": 74.0,
+    "top": 46.3,
+    "width": 20.83,
+    "height": 4.63
+}
+
+SUB_STAT_REGION_2 = {
+    "left": 74.0,
+    "top": 46.3 + 4.63,
+    "width": 20.83,
+    "height": 4.63
+}
+
+SUB_STAT_REGION_3 = {
+    "left": 74.0,
+    "top": 46.3 + 4.63 * 2,
+    "width": 20.83,
+    "height": 4.63
+}
+
+SUB_STAT_REGION_4 = {
+    "left": 74.0,
+    "top": 46.3 + 4.63 * 3,
+    "width": 20.83,
+    "height": 4.63
+}
+
 START_POS_PERCENTAGE = (0.1354, 0.2593)  # (x%, y%)
 HORIZONTAL_DIFF_PERCENTAGE = 0.07396  # Percentage of screen width
-VERTICAL_DIFF_PERCENTAGE = 0.1713    # Percentage of screen height
+VERTICAL_DIFF_PERCENTAGE = 0.1713  # Percentage of screen height
 CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)

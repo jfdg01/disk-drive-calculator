@@ -1,363 +1,142 @@
 {
-  "disk_1": {
-    "main_stat": {
-      "type": "ATK",
-      "value": 316.0,
-      "is_percentage": false
+    "disk_10": {
+        "main_stat": {
+            "name": "PEN +2",
+            "value": 27.0
+        },
+        "sub_stats": [
+            {
+                "name": "DEF",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "HP",
+                "level": 1,
+                "value": 6.0
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 0,
+                "value": 24.0
+            },
+            {
+                "name": "PEN",
+                "level": 2,
+                "value": 27.0
+            }
+        ]
     },
-    "sub_stats": [
-      {
-        "type": "ATK +1",
-        "value": 6.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate +3",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "HP",
-        "value": 112.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_2": {
-    "main_stat": {
-      "type": "ATK",
-      "value": 30.0,
-      "is_percentage": true
+    "disk_11": {
+        "main_stat": {
+            "name": "ATK +1",
+            "value": 38.0
+        },
+        "sub_stats": [
+            {
+                "name": "DEF",
+                "level": 1,
+                "value": 30.0
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "ATK",
+                "level": 1,
+                "value": 38.0
+            }
+        ]
     },
-    "sub_stats": [
-      {
-        "type": "DEF +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "HP +1",
-        "value": 6.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate",
-        "value": 24.0,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_3": {
-    "main_stat": {
-      "type": "ATK",
-      "value": 30.0,
-      "is_percentage": true
+    "disk_12": {
+        "main_stat": {
+            "name": "CRIT Rate +1",
+            "value": 4.8
+        },
+        "sub_stats": [
+            {
+                "name": "DEF",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "PEN",
+                "level": 2,
+                "value": 27.0
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            }
+        ]
     },
-    "sub_stats": [
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_4": {
-    "main_stat": {
-      "type": "Impact",
-      "value": 18.0,
-      "is_percentage": true
+    "disk_13": {
+        "main_stat": {
+            "name": "CRIT Rate +2",
+            "value": 7.2
+        },
+        "sub_stats": [
+            {
+                "name": "ATK",
+                "level": 0,
+                "value": 19.0
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "PEN",
+                "level": 1,
+                "value": 18.0
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 2,
+                "value": 7.2
+            }
+        ]
     },
-    "sub_stats": [
-      {
-        "type": "DEF",
-        "value": 4.8,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_5": {
-    "main_stat": {
-      "type": "Anomaly Mastery",
-      "value": 30.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
-      {
-        "type": "ATK",
-        "value": 19.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "PEN +1",
-        "value": 18.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT Rate +2",
-        "value": 7.2,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_6": {
-    "main_stat": {
-      "type": "Energy Regen",
-      "value": 60.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
-      {
-        "type": "HP +1",
-        "value": 6.0,
-        "is_percentage": true
-      },
-      {
-        "type": "Anomaly Proficiency +1",
-        "value": 18.0,
-        "is_percentage": false
-      },
-      {
-        "type": "DEF +1",
-        "value": 9.6,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_7": {
-    "main_stat": {
-      "type": "HP",
-      "value": 2200.0,
-      "is_percentage": false
-    },
-    "sub_stats": [
-      {
-        "type": "CRIT Rate +3",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "ATK",
-        "value": 3.0,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_8": {
-    "main_stat": {
-      "type": "HP",
-      "value": 2200.0,
-      "is_percentage": false
-    },
-    "sub_stats": [
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "ATK",
-        "value": 3.0,
-        "is_percentage": true
-      },
-      {
-        "type": "HP +2",
-        "value": 9.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_9": {
-    "main_stat": {
-      "type": "HP",
-      "value": 2200.0,
-      "is_percentage": false
-    },
-    "sub_stats": [
-      {
-        "type": "ATK",
-        "value": 3.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT DMG +2",
-        "value": 14.4,
-        "is_percentage": true
-      },
-      {
-        "type": "HP +2",
-        "value": 9.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate",
-        "value": 24.0,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_10": {
-    "main_stat": {
-      "type": "ATK",
-      "value": 316.0,
-      "is_percentage": false
-    },
-    "sub_stats": [
-      {
-        "type": "CRIT DMG +2",
-        "value": 14.4,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      },
-      {
-        "type": "ATK +1",
-        "value": 6.0,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_11": {
-    "main_stat": {
-      "type": "DEF",
-      "value": 184.0,
-      "is_percentage": false
-    },
-    "sub_stats": [
-      {
-        "type": "HP",
-        "value": 112.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      },
-      {
-        "type": "HP +2",
-        "value": 9.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_12": {
-    "main_stat": {
-      "type": "CRIT DMG",
-      "value": 48.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
-      {
-        "type": "ATK +2",
-        "value": 9.0,
-        "is_percentage": true
-      },
-      {
-        "type": "CRIT Rate",
-        "value": 24.0,
-        "is_percentage": true
-      },
-      {
-        "type": "HP",
-        "value": 112.0,
-        "is_percentage": false
-      }
-    ]
-  },
-  "disk_13": {
-    "main_stat": {
-      "type": "Fire DMG Bonus",
-      "value": 30.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
-      {
-        "type": "CRIT DMG +1",
-        "value": 9.6,
-        "is_percentage": true
-      },
-      {
-        "type": "HP +1",
-        "value": 6.0,
-        "is_percentage": true
-      },
-      {
-        "type": "PEN +1",
-        "value": 18.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      }
-    ]
-  },
-  "disk_14": {
-    "main_stat": {
-      "type": "ATK",
-      "value": 30.0,
-      "is_percentage": true
-    },
-    "sub_stats": [
-      {
-        "type": "Anomaly Proficiency +1",
-        "value": 18.0,
-        "is_percentage": false
-      },
-      {
-        "type": "CRIT Rate +1",
-        "value": 4.8,
-        "is_percentage": true
-      },
-      {
-        "type": "DEF +2",
-        "value": 14.4,
-        "is_percentage": true
-      }
-    ]
-  }
+    "disk_14": {
+        "main_stat": {
+            "name": "ATK +1",
+            "value": 38.0
+        },
+        "sub_stats": [
+            {
+                "name": "HP",
+                "level": 1,
+                "value": 6.0
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 1,
+                "value": 18.0
+            },
+            {
+                "name": "DEF",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "ATK",
+                "level": 1,
+                "value": 38.0
+            }
+        ]
+    }
 }
