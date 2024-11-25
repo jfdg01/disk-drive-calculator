@@ -8,7 +8,7 @@ import time
 from typing import Dict, Tuple
 
 from constants import ROWS, COLS, RESOLUTION, MAIN_STAT_REGION, SUB_STAT_REGION_1, \
-    SUB_STAT_REGION_2, SUB_STAT_REGION_3, SUB_STAT_REGION_4, START_POS, CELL_SIZE
+    SUB_STAT_REGION_2, SUB_STAT_REGION_3, SUB_STAT_REGION_4, START_POS, CELL_SIZE, IMAGE_EXTENSION
 
 
 def _calculate_region_pixels(region_percent):
@@ -27,8 +27,8 @@ class ScreenScanner:
     def __init__(self):
         """Initialize ScreenScanner with grid parameters."""
         # Safety settings
-        pyautogui.FAILSAFE = True
-        pyautogui.PAUSE = 0.1
+        pydirectinput.FAILSAFE = True
+        pydirectinput.PAUSE = 0.1
 
         # Convert regions from percentages to pixels
         self.main_stat_region = _calculate_region_pixels(MAIN_STAT_REGION)
@@ -74,11 +74,11 @@ class ScreenScanner:
                     time.sleep(0.2)
 
                     # Capture screenshots
-                    main_stat_path = os.path.join(self.image_dir, f"disk_{disk_index_str}_main.png")
-                    sub_stat_path_1 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_1.png")
-                    sub_stat_path_2 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_2.png")
-                    sub_stat_path_3 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_3.png")
-                    sub_stat_path_4 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_4.png")
+                    main_stat_path = os.path.join(self.image_dir, f"disk_{disk_index_str}_main." + IMAGE_EXTENSION)
+                    sub_stat_path_1 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_1." + IMAGE_EXTENSION)
+                    sub_stat_path_2 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_2." + IMAGE_EXTENSION)
+                    sub_stat_path_3 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_3." + IMAGE_EXTENSION)
+                    sub_stat_path_4 = os.path.join(self.image_dir, f"disk_{disk_index_str}_sub_4." + IMAGE_EXTENSION)
 
                     capture_region(main_stat_path, self.main_stat_region)
                     capture_region(sub_stat_path_1, self.substat_region_1)

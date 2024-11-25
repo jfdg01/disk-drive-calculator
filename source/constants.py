@@ -1,3 +1,5 @@
+from tkinter.tix import IMAGE
+
 START_POS = (260, 280)  # Top-left cell center
 HORIZONTAL_DIFF = 402 - 260  # Difference between adjacent columns
 VERTICAL_DIFF = 465 - 280  # Difference between adjacent rows
@@ -14,6 +16,7 @@ START_POS_PERCENTAGE = (0.1354, 0.2593)  # (x%, y%)
 HORIZONTAL_DIFF_PERCENTAGE = 0.07396  # Percentage of screen width
 VERTICAL_DIFF_PERCENTAGE = 0.1713  # Percentage of screen height
 CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
+IMAGE_EXTENSION = "png"
 
 MAIN_STATS = {
     1: ["Flat HP"],

@@ -4,7 +4,172 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Moved functions around and messed with the timing of the screen capture" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Backed up pictures to use with OCR">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_001_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_001_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_001_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_001_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_001_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_002_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_002_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_002_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_002_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_002_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_003_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_003_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_003_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_003_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_003_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_004_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_004_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_004_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_004_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_004_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_005_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_005_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_005_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_005_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_005_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_006_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_006_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_006_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_006_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_006_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_007_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_007_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_007_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_007_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_007_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_008_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_008_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_008_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_008_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_008_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_009_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_009_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_009_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_009_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_009_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_010_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_010_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_010_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_010_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_010_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_011_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_011_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_011_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_011_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_011_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_012_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_012_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_012_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_012_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_012_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_013_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_013_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_013_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_013_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_013_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_014_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_014_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_014_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_014_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_014_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_015_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_015_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_015_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_015_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_015_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_016_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_016_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_016_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_016_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_016_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_017_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_017_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_017_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_017_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_017_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_018_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_018_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_018_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_018_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_018_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_019_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_019_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_019_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_019_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_019_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_020_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_020_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_020_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_020_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_020_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_021_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_021_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_021_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_021_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_021_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_022_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_022_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_022_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_022_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_022_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_023_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_023_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_023_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_023_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_023_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_024_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_024_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_024_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_024_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_024_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_025_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_025_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_025_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_025_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_025_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_026_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_026_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_026_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_026_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_026_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_027_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_027_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_027_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_027_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_027_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_028_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_028_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_028_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_028_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_028_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_029_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_029_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_029_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_029_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_029_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_030_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_030_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_030_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_030_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_030_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_031_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_031_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_031_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_031_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_031_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_032_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_032_sub_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_032_sub_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_032_sub_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/disk_032_sub_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disk_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/disk_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/ocr_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/screen_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/screen_scanner.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +195,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -60,9 +226,9 @@
     &quot;Python.automated_disk_scanner.executor&quot;: &quot;Run&quot;,
     &quot;Python.grid_clicker.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ocr_processor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ocr_processor.executor&quot;: &quot;Debug&quot;,
     &quot;Python.run_scanner.executor&quot;: &quot;Run&quot;,
-    &quot;Python.screen_scanner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.screen_scanner.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -81,7 +247,7 @@
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.screen_scanner">
+  <component name="RunManager" selected="Python.ocr_processor">
     <configuration name="automated_disk_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -174,7 +340,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_disk_scanner.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in C:/Users/gara/Desktop/disc/test/test_disk_scanner.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,9 +358,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.screen_scanner" />
         <item itemvalue="Python.ocr_processor" />
-        <item itemvalue="Python tests.Python tests in test_disk_scanner.py" />
+        <item itemvalue="Python.screen_scanner" />
+        <item itemvalue="Python tests.Python tests in C:/Users/gara/Desktop/disc/test/test_disk_scanner.py" />
         <item itemvalue="Python.automated_disk_scanner" />
         <item itemvalue="Python.grid_clicker" />
       </list>
@@ -220,7 +386,12 @@
       <workItem from="1732361106414" duration="4951000" />
       <workItem from="1732366116775" duration="479000" />
       <workItem from="1732367634307" duration="10381000" />
-      <workItem from="1732550625211" duration="1931000" />
+      <workItem from="1732550625211" duration="3364000" />
+      <workItem from="1732554347760" duration="448000" />
+      <workItem from="1732554882088" duration="728000" />
+      <workItem from="1732555629742" duration="707000" />
+      <workItem from="1732556350344" duration="357000" />
+      <workItem from="1732556773240" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="Added html support">
       <option name="closed" value="true" />
@@ -406,7 +577,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732552882582</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Moved functions around and messed with the timing of the screen capture">
+      <option name="closed" value="true" />
+      <created>1732552895828</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1732552895828</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Backed up pictures to use with OCR">
+      <option name="closed" value="true" />
+      <created>1732553120965</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1732553120965</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,24 +628,32 @@
     <MESSAGE value="Prep test" />
     <MESSAGE value="idk" />
     <MESSAGE value="Moved functions around and messed with the timing of the screen capture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved functions around and messed with the timing of the screen capture" />
+    <MESSAGE value="Backed up pictures to use with OCR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backed up pictures to use with OCR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/source/ocr_processor.py</url>
-          <line>125</line>
-          <option name="timeStamp" value="1" />
+          <line>165</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disc$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732551527767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732550918792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732554173102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732557227309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732313428324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disc$.coverage" NAME=" Coverage Results" MODIFIED="1732550827631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$automated_disk_scanner.coverage" NAME="automated_disk_scanner Coverage Results" MODIFIED="1732377436862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
