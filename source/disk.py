@@ -1,7 +1,7 @@
 import json
 import os
 from operator import itemgetter
-from constants import MAIN_STATS, MAIN_STAT_WEIGHTS, SUBSTAT_WEIGHTS, MAIN_STAT_LEVELS
+from constants import SUBSTAT_WEIGHTS
 
 
 class DiskManager:
@@ -49,7 +49,8 @@ class DiskManager:
         )
 
         # If main_stat_level is 15 put score at 0
-        if disk_data["main_stat"]["level"] == 15:
+        main_stat = disk_data.get("main_stat") or {}
+        if main_stat.get("level") == 15:
             main_stat_score = 0
             current_score = 0
             potential_score = 0

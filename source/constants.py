@@ -72,8 +72,8 @@ MAIN_STATS_UPGRADE_VALUES = {
 
 SUBSTAT_WEIGHTS = {
     "CRIT Rate": 10, "CRIT DMG": 10, "ATK%": 8,
-    "Flat ATK": 5, "PEN": 5, "Anomaly Proficiency": 5,
-    "Flat HP": 2, "HP%": 2, "Flat DEF": 2, "DEF%": 2,
+    "Flat ATK": 1, "PEN": 0, "Anomaly Proficiency": 0,
+    "Flat HP": 0, "HP%": 0, "Flat DEF": 0, "DEF%": 0,
 }
 
 MAIN_STAT_REGION = {
