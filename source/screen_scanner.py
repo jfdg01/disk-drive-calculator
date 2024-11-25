@@ -7,7 +7,7 @@ import pydirectinput
 import time
 from typing import Dict, Tuple
 
-from constants import ROWS, COLS, RESOLUTION, MAIN_STAT_REGION, FULL_SUB_STAT_REGION, SUB_STAT_REGION_1, \
+from constants import ROWS, COLS, RESOLUTION, MAIN_STAT_REGION, SUB_STAT_REGION_1, \
     SUB_STAT_REGION_2, SUB_STAT_REGION_3, SUB_STAT_REGION_4, START_POS, CELL_SIZE
 
 
