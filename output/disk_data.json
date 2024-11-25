@@ -1,1 +1,895 @@
-{}
+{
+    "disk_001": {
+        "main_stat": {
+            "name": "HP",
+            "value": "2200"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 2,
+                "value": 27
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 0,
+                "value": 2.4
+            },
+            {
+                "name": "ATK%",
+                "level": 1,
+                "value": 6
+            }
+        ]
+    },
+    "disk_002": {
+        "main_stat": {
+            "name": "HP",
+            "value": "2200"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "ATK%",
+                "level": 0,
+                "value": 3
+            },
+            {
+                "name": "Flat ATK",
+                "level": 3,
+                "value": 76
+            }
+        ]
+    },
+    "disk_003": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "316"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "Flat HP",
+                "level": 1,
+                "value": 224
+            },
+            {
+                "name": "ATK%",
+                "level": 2,
+                "value": 9
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 0,
+                "value": 4.8
+            }
+        ]
+    },
+    "disk_004": {
+        "main_stat": {
+            "name": "DEF",
+            "value": "184"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat ATK",
+                "level": 0,
+                "value": 19
+            },
+            {
+                "name": "ATK%",
+                "level": 1,
+                "value": 6
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 2,
+                "value": 14.399999999999999
+            },
+            {
+                "name": "PEN",
+                "level": 2,
+                "value": 27
+            }
+        ]
+    },
+    "disk_005": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "30"
+        },
+        "sub_stats": [
+            {
+                "name": "DEF%",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "Flat ATK",
+                "level": 1,
+                "value": 38
+            },
+            {
+                "name": "Flat DEF",
+                "level": 3,
+                "value": 60
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            }
+        ]
+    },
+    "disk_006": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "30"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat ATK",
+                "level": 0,
+                "value": 19
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 1,
+                "value": 18
+            },
+            {
+                "name": "Flat DEF",
+                "level": 2,
+                "value": 45
+            },
+            {
+                "name": "DEF%",
+                "level": 1,
+                "value": 9.6
+            }
+        ]
+    },
+    "disk_007": {
+        "main_stat": {
+            "name": "Impact",
+            "value": "18"
+        },
+        "sub_stats": [
+            {
+                "name": "DEF%",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "Flat ATK",
+                "level": 1,
+                "value": 38
+            },
+            {
+                "name": "Flat DEF",
+                "level": 1,
+                "value": 30
+            },
+            {
+                "name": "PEN",
+                "level": 1,
+                "value": 18
+            }
+        ]
+    },
+    "disk_008": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "316"
+        },
+        "sub_stats": [
+            {
+                "name": "HP%",
+                "level": 2,
+                "value": 9
+            },
+            {
+                "name": "ATK%",
+                "level": 2,
+                "value": 9
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 0,
+                "value": 9
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 0,
+                "value": 2.4
+            }
+        ]
+    },
+    "disk_009": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "316"
+        },
+        "sub_stats": [
+            {
+                "name": "ATK%",
+                "level": 1,
+                "value": 6
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 3,
+                "value": 9.6
+            },
+            {
+                "name": "Flat HP",
+                "level": 0,
+                "value": 112
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            }
+        ]
+    },
+    "disk_010": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "30"
+        },
+        "sub_stats": [
+            {
+                "name": "DEF%",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "HP%",
+                "level": 1,
+                "value": 6
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 0,
+                "value": 2.4
+            },
+            {
+                "name": "PEN",
+                "level": 2,
+                "value": 27
+            }
+        ]
+    },
+    "disk_011": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "30"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat DEF",
+                "level": 1,
+                "value": 30
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "Flat ATK",
+                "level": 1,
+                "value": 38
+            }
+        ]
+    },
+    "disk_012": {
+        "main_stat": {
+            "name": "Impact",
+            "value": "18"
+        },
+        "sub_stats": [
+            {
+                "name": "DEF%",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "PEN",
+                "level": 2,
+                "value": 27
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            }
+        ]
+    },
+    "disk_013": {
+        "main_stat": {
+            "name": "Anomaly Mastery",
+            "value": "30"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat ATK",
+                "level": 0,
+                "value": 19
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "PEN",
+                "level": 1,
+                "value": 18
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 2,
+                "value": 7.199999999999999
+            }
+        ]
+    },
+    "disk_014": {
+        "main_stat": {
+            "name": "Energy Regen",
+            "value": "60"
+        },
+        "sub_stats": [
+            {
+                "name": "HP%",
+                "level": 1,
+                "value": 6
+            },
+            {
+                "name": "Anomaly Proficlency",
+                "level": 1,
+                "value": 0
+            },
+            {
+                "name": "DEF%",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "Flat ATK",
+                "level": 1,
+                "value": 38
+            }
+        ]
+    },
+    "disk_015": {
+        "main_stat": {
+            "name": "HP",
+            "value": "2200"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT Rate",
+                "level": 3,
+                "value": 9.6
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 0,
+                "value": 9
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "ATK%",
+                "level": 0,
+                "value": 3
+            }
+        ]
+    },
+    "disk_016": {
+        "main_stat": {
+            "name": "HP",
+            "value": "2200"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "ATK%",
+                "level": 0,
+                "value": 3
+            },
+            {
+                "name": "4",
+                "level": 0,
+                "value": 0
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            }
+        ]
+    },
+    "disk_017": {
+        "main_stat": {
+            "name": "HP",
+            "value": "2200"
+        },
+        "sub_stats": [
+            {
+                "name": "ATK%",
+                "level": 0,
+                "value": 3
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 2,
+                "value": 14.399999999999999
+            },
+            {
+                "name": "HP%",
+                "level": 2,
+                "value": 9
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 0,
+                "value": 2.4
+            }
+        ]
+    },
+    "disk_018": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "316"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT DMG",
+                "level": 2,
+                "value": 14.399999999999999
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "ATK%",
+                "level": 1,
+                "value": 6
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 0,
+                "value": 9
+            }
+        ]
+    },
+    "disk_019": {
+        "main_stat": {
+            "name": "DEF",
+            "value": "184"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat HP",
+                "level": 0,
+                "value": 112
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "HP%",
+                "level": 2,
+                "value": 9
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            }
+        ]
+    },
+    "disk_020": {
+        "main_stat": {
+            "name": "CRIT DMG",
+            "value": "48"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat ATK",
+                "level": 2,
+                "value": 57
+            },
+            {
+                "name": "ATK%",
+                "level": 2,
+                "value": 9
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 0,
+                "value": 2.4
+            },
+            {
+                "name": "Flat HP",
+                "level": 0,
+                "value": 112
+            }
+        ]
+    },
+    "disk_021": {
+        "main_stat": {
+            "name": "Fire DMG Bonus",
+            "value": "30"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "HP%",
+                "level": 1,
+                "value": 6
+            },
+            {
+                "name": "PEN",
+                "level": 1,
+                "value": 18
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            }
+        ]
+    },
+    "disk_022": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "30"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat DEF",
+                "level": 1,
+                "value": 30
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 1,
+                "value": 18
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "DEF%",
+                "level": 2,
+                "value": 14.399999999999999
+            }
+        ]
+    },
+    "disk_023": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "316"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "ATK%",
+                "level": 3,
+                "value": 12
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 1,
+                "value": 18
+            },
+            {
+                "name": "HP%",
+                "level": 0,
+                "value": 3
+            }
+        ]
+    },
+    "disk_024": {
+        "main_stat": {
+            "name": "DEF",
+            "value": "184"
+        },
+        "sub_stats": [
+            {
+                "name": "PEN",
+                "level": 0,
+                "value": 9
+            },
+            {
+                "name": "ATK%",
+                "level": 2,
+                "value": 9
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            }
+        ]
+    },
+    "disk_025": {
+        "main_stat": {
+            "name": "CRIT Rate",
+            "value": "24"
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            },
+            {
+                "name": "ATK%",
+                "level": 0,
+                "value": 3
+            },
+            {
+                "name": "PEN",
+                "level": 1,
+                "value": 18
+            },
+            {
+                "name": "4",
+                "level": 0,
+                "value": 0
+            }
+        ]
+    },
+    "disk_026": {
+        "main_stat": {
+            "name": "ATK",
+            "value": "30"
+        },
+        "sub_stats": [
+            {
+                "name": "HP%",
+                "level": 2,
+                "value": 9
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 0,
+                "value": 2.4
+            },
+            {
+                "name": "PEN",
+                "level": 1,
+                "value": 18
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 1,
+                "value": 9.6
+            }
+        ]
+    },
+    "disk_027": {
+        "main_stat": {
+            "name": "Energy Regen",
+            "value": "33"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat HP",
+                "level": 0,
+                "value": 112
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "DEF%",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "CRIT Rate",
+                "level": 1,
+                "value": 4.8
+            }
+        ]
+    },
+    "disk_028": {
+        "main_stat": null,
+        "sub_stats": [
+            {
+                "name": "HP%",
+                "level": 0,
+                "value": 3
+            },
+            {
+                "name": "Flat ATK",
+                "level": 0,
+                "value": 19
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "ATK%",
+                "level": 0,
+                "value": 3
+            }
+        ]
+    },
+    "disk_029": {
+        "main_stat": {
+            "name": "CRIT Rate",
+            "value": "6"
+        },
+        "sub_stats": [
+            {
+                "name": "ATK%",
+                "level": 0,
+                "value": 3
+            },
+            {
+                "name": "Flat DEF",
+                "level": 0,
+                "value": 15
+            },
+            {
+                "name": "DEF%",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "Set",
+                "level": 0,
+                "value": 0
+            }
+        ]
+    },
+    "disk_030": {
+        "main_stat": {
+            "name": "Electric DMG Bonus",
+            "value": "7.5"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat ATK",
+                "level": 0,
+                "value": 19
+            },
+            {
+                "name": "DEF%",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "Flat DEF",
+                "level": 0,
+                "value": 15
+            },
+            {
+                "name": "Set",
+                "level": 0,
+                "value": 0
+            }
+        ]
+    },
+    "disk_031": {
+        "main_stat": {
+            "name": "Physical DMG Bonus",
+            "value": "7.5"
+        },
+        "sub_stats": [
+            {
+                "name": "Flat HP",
+                "level": 0,
+                "value": 112
+            },
+            {
+                "name": "DEF%",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "Flat ATK",
+                "level": 0,
+                "value": 19
+            },
+            {
+                "name": "Set",
+                "level": 0,
+                "value": 0
+            }
+        ]
+    },
+    "disk_032": {
+        "main_stat": {
+            "name": "PEN Ratio",
+            "value": "6"
+        },
+        "sub_stats": [
+            {
+                "name": "ATK%",
+                "level": 0,
+                "value": 3
+            },
+            {
+                "name": "CRIT DMG",
+                "level": 0,
+                "value": 4.8
+            },
+            {
+                "name": "Flat ATK",
+                "level": 0,
+                "value": 19
+            },
+            {
+                "name": "PEN",
+                "level": 0,
+                "value": 9
+            }
+        ]
+    }
+}
