@@ -1,17 +1,12 @@
-import json
 from dataclasses import dataclass
 
 import cv2
-import numpy as np
-import mss
-import pyautogui
-import time
 import re
-from typing import Dict, List, Tuple
+from typing import List
 
 from pytesseract import pytesseract
 
-from constants import START_POS, CELL_SIZE, GRAY_THRESHOLD, MAX_GRAY_VALUE, MAIN_STAT_CONFIG
+from constants import GRAY_THRESHOLD, MAX_GRAY_VALUE, MAIN_STAT_CONFIG
 
 
 @dataclass
@@ -27,38 +22,10 @@ class DiskData:
     sub_stats: List[Stat]
 
 
-def get_cell_position(row: int, col: int) -> Tuple[int, int]:
-    """Calculate the screen coordinates for a given grid position."""
-    x = START_POS[0] + (col * CELL_SIZE[0])
-    y = START_POS[1] + (row * CELL_SIZE[1])
-    return x, y
-
-
-def click_position(x: int, y: int, duration: float = 0.2) -> None:
-    """Click at the specified coordinates with smooth movement."""
-    pyautogui.moveTo(x, y, duration=duration)
-    time.sleep(0.1)
-    pyautogui.click()
-    time.sleep(0.1)
-
-
-def capture_region(output_path: str, region: Dict) -> None:
-    """Capture a specific region of the screen."""
-    with mss.mss() as sct:
-        screenshot = sct.grab(region)
-        img = np.array(screenshot)
-        img_bgr = cv2.cvtColor(img, cv2.COLOR_BGRA2BGR)
-        cv2.imwrite(output_path, img_bgr)
-
-
 def preprocess_image(image_path: str):
     """Preprocess the captured image for OCR."""
     image = cv2.imread(image_path)
-    # save debug image
-    cv2.imwrite("debug.png", image)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    # save grey debug image
-    cv2.imwrite("debug_gray.png", gray)
     _, binary = cv2.threshold(gray, GRAY_THRESHOLD, MAX_GRAY_VALUE, cv2.THRESH_BINARY)
     return binary
 

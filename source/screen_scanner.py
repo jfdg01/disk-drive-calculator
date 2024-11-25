@@ -1,9 +1,14 @@
 import os
-import time
+import cv2
+import numpy as np
+import mss
 import pyautogui
+import pydirectinput
+import time
+from typing import Dict, Tuple
+
 from constants import ROWS, COLS, RESOLUTION, MAIN_STAT_REGION, FULL_SUB_STAT_REGION, SUB_STAT_REGION_1, \
-    SUB_STAT_REGION_2, SUB_STAT_REGION_3, SUB_STAT_REGION_4
-from utils import capture_region, get_cell_position, click_position
+    SUB_STAT_REGION_2, SUB_STAT_REGION_3, SUB_STAT_REGION_4, START_POS, CELL_SIZE
 
 
 def _calculate_region_pixels(region_percent, resolution):
@@ -21,7 +26,6 @@ class ScreenScanner:
         """Initialize ScreenScanner with grid parameters."""
         # Safety settings
         pyautogui.FAILSAFE = True
-        pyautogui.PAUSE = 0.1
 
         # Convert regions from percentages to pixels
         self.main_stat_region = _calculate_region_pixels(MAIN_STAT_REGION, RESOLUTION)
@@ -81,6 +85,30 @@ class ScreenScanner:
             print(f"Error during screen scanning: {e}")
         finally:
             print("\nScreen scanning complete!")
+
+
+def get_cell_position(row: int, col: int) -> Tuple[int, int]:
+    """Calculate the screen coordinates for a given grid position."""
+    x = START_POS[0] + (col * CELL_SIZE[0])
+    y = START_POS[1] + (row * CELL_SIZE[1])
+    return x, y
+
+
+def click_position(x: int, y: int) -> None:
+    """Click at the specified coordinates with smooth movement."""
+    pydirectinput.moveTo(100, 150, 0.1)
+    time.sleep(0.05)
+    pydirectinput.click()
+    time.sleep(0.05)
+
+
+def capture_region(output_path: str, region: Dict) -> None:
+    """Capture a specific region of the screen."""
+    with mss.mss() as sct:
+        screenshot = sct.grab(region)
+        img = np.array(screenshot)
+        img_bgr = cv2.cvtColor(img, cv2.COLOR_BGRA2BGR)
+        cv2.imwrite(output_path, img_bgr)
 
 
 if __name__ == "__main__":

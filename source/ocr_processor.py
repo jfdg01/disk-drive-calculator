@@ -2,7 +2,7 @@ import json
 import os
 from typing import Dict
 from pytesseract import pytesseract
-from utils import parse_main_stat, DiskData, Stat
+from utils import parse_main_stat
 from constants import TESSERACT_PATH
 
 
@@ -101,7 +101,6 @@ class OCRProcessor:
         # Iterate over all main stat images
         pictures = os.listdir(self.image_dir)
         for stat_picture in pictures:
-
             # Derive the disk index and corresponding sub stat file
             disk_index = stat_picture.split("_")[1]
             sub_stat_file_1 = f"disk_{disk_index}_sub_1.png"
