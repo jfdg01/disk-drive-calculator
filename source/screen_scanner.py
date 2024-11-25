@@ -53,7 +53,7 @@ class ScreenScanner:
         """Capture screenshots for all disk positions in the grid."""
         print("Starting screen scanning in 5 seconds...")
         print("Move mouse to upper-left corner to abort.")
-        for i in range(5, 0, -1):
+        for i in range(3, 0, -1):
             print(f"{i}...")
             time.sleep(1)
 

@@ -92,44 +92,50 @@ MAIN_STATS_UPGRADE_VALUES = {
     "Anomaly Proficiency": 10, "PEN": 10, "Element DMG Bonus": 10,
 }
 
+TOP = 46.1
+LEFT = 73.7
+WIDTH = 21.2
+HEIGHT = 4.77
+
+
 MAIN_STAT_REGION = {
-    "left": 74.0,
+    "left": LEFT,
     "top": 38.89,
-    "width": 20.83,
-    "height": 4.63
+    "width": WIDTH,
+    "height": HEIGHT
 }
 
 FULL_SUB_STAT_REGION = {
-    "left": 74.0,
-    "top": 46.3,
-    "width": 20.83,
-    "height": 18.52
+    "left": LEFT,
+    "top": TOP,
+    "width": WIDTH,
+    "height": HEIGHT * 4
 }
 
 SUB_STAT_REGION_1 = {
-    "left": 74.0,
-    "top": 46.3,
-    "width": 20.83,
-    "height": 4.63
+    "left": LEFT,
+    "top": TOP,
+    "width": WIDTH,
+    "height": HEIGHT
 }
 
 SUB_STAT_REGION_2 = {
-    "left": 74.0,
-    "top": 46.3 + 4.63,
-    "width": 20.83,
-    "height": 4.63
+    "left": LEFT,
+    "top": TOP + HEIGHT,
+    "width": WIDTH,
+    "height": HEIGHT
 }
 
 SUB_STAT_REGION_3 = {
-    "left": 74.0,
-    "top": 46.3 + 4.63 * 2,
-    "width": 20.83,
-    "height": 4.63
+    "left": LEFT,
+    "top": TOP + HEIGHT * 2,
+    "width": WIDTH,
+    "height": HEIGHT
 }
 
 SUB_STAT_REGION_4 = {
-    "left": 74.0,
-    "top": 46.3 + 4.63 * 3,
-    "width": 20.83,
-    "height": 4.63
+    "left": LEFT,
+    "top": TOP + HEIGHT * 3,
+    "width": WIDTH,
+    "height": HEIGHT
 }
