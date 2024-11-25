@@ -108,11 +108,27 @@ def parse_disk_text(main_stat_text, sub_stat_texts):
     return result
 
 
+def _save_results(disk_data: Dict[str, Dict], filename: str = "../output/disk_data.json") -> None:
+    """
+    Save the processed disk data into a JSON file.
+
+    Args:
+        disk_data (Dict[str, Dict]): The structured data for the disks.
+        filename (str): The name of the JSON file to save. Default is "disk_data.json".
+    """
+    try:
+        with open(filename, 'w', encoding='utf-8') as file:
+            json.dump(disk_data, file, indent=4, ensure_ascii=False)
+        print(f"Data successfully saved to {filename}.")
+    except Exception as e:
+        print(f"An error occurred while saving data to {filename}: {e}")
+
+
 class OCRProcessor:
     def __init__(self):
         """Initialize OCRProcessor with paths and configurations."""
         # self.image_dir = self._ensure_directory("../images")
-        self.image_dir = self._ensure_directory("../test/problematic_images")
+        self.image_dir = self._ensure_directory("../images")
         self.output_dir = self._ensure_directory("../output")
         pytesseract.tesseract_cmd = TESSERACT_PATH
 
@@ -130,13 +146,10 @@ class OCRProcessor:
         # Iterate over all main stat images
         pictures = os.listdir(self.image_dir)
 
-        centinela = 0
         for stat_picture in pictures:
+            # since pictures contains all the files in the directory, we need to filter only the main stat images
             if not stat_picture.endswith("_main." + IMAGE_EXTENSION):
                 continue
-            if centinela == 24:
-                print("This")
-            centinela += 1
             # Derive the disk index and corresponding sub stat file
             disk_index = stat_picture.split("_")[1]
             sub_stat_file_1 = f"disk_{disk_index}_sub_1." + IMAGE_EXTENSION
@@ -164,23 +177,10 @@ class OCRProcessor:
 
         # Save results to JSON
         print("disk_data", disk_data)
-        self._save_results(disk_data)
+        if disk_data == {}:
+            print("Make sure we are checking the correct extension in the images, we are searching for: ", IMAGE_EXTENSION)
+        _save_results(disk_data)
         return disk_data
-
-    def _save_results(self, disk_data: Dict[str, Dict], filename: str = "../output/disk_data.json") -> None:
-        """
-        Save the processed disk data into a JSON file.
-
-        Args:
-            disk_data (Dict[str, Dict]): The structured data for the disks.
-            filename (str): The name of the JSON file to save. Default is "disk_data.json".
-        """
-        try:
-            with open(filename, 'w', encoding='utf-8') as file:
-                json.dump(disk_data, file, indent=4, ensure_ascii=False)
-            print(f"Data successfully saved to {filename}.")
-        except Exception as e:
-            print(f"An error occurred while saving data to {filename}: {e}")
 
 
 if __name__ == "__main__":
