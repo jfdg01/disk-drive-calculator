@@ -1,9 +1,35 @@
-from tkinter.tix import IMAGE
+SUBSTAT_WEIGHTS = {
+    "CRIT Rate": 10,
+    "CRIT DMG": 10,
+    "ATK%": 7,
+    "Flat ATK": 5,
+    "PEN": 5,
+    "Anomaly Proficiency": 5,
+    "Flat HP": 0,
+    "HP%": 0,
+    "Flat DEF": 0,
+    "DEF%": 0,
+}
 
-START_POS = (260, 280)  # Top-left cell center
-HORIZONTAL_DIFF = 402 - 260  # Difference between adjacent columns
-VERTICAL_DIFF = 465 - 280  # Difference between adjacent rows
-CELL_SIZE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
+# RESOLUTION = (1920, 1080)
+RESOLUTION = (2560, 1440)
+
+# START_POS = (260, 280)  # Top-left cell center
+START_POS_PERCENTAGE = (0.1354, 0.2593)  # (x%, y%)
+START_POS = (int(START_POS_PERCENTAGE[0] * RESOLUTION[0]), int(START_POS_PERCENTAGE[1] * RESOLUTION[1]))
+
+# HORIZONTAL_DIFF = 402 - 260  # Difference between adjacent columns
+HORIZONTAL_DIFF_PERCENTAGE = 0.07396  # Percentage of screen width
+HORIZONTAL_DIFF = int(HORIZONTAL_DIFF_PERCENTAGE * RESOLUTION[0])
+
+# VERTICAL_DIFF = 465 - 280  # Difference between adjacent rows
+VERTICAL_DIFF_PERCENTAGE = 0.1713  # Percentage of screen height
+VERTICAL_DIFF = int(VERTICAL_DIFF_PERCENTAGE * RESOLUTION[1])
+
+# CELL_SIZE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
+CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
+CELL_SIZE = (int(HORIZONTAL_DIFF_PERCENTAGE * RESOLUTION[0]), int(VERTICAL_DIFF_PERCENTAGE * RESOLUTION[1]))
+
 ROWS = 4
 COLS = 8
 GRAY_THRESHOLD = 120
@@ -11,11 +37,6 @@ MAX_GRAY_VALUE = 255
 MAIN_STAT_CONFIG = '--psm 7'
 # SUB_STAT_CONFIG = '--psm 11'
 TESSERACT_PATH = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-RESOLUTION = (1920, 1080)
-START_POS_PERCENTAGE = (0.1354, 0.2593)  # (x%, y%)
-HORIZONTAL_DIFF_PERCENTAGE = 0.07396  # Percentage of screen width
-VERTICAL_DIFF_PERCENTAGE = 0.1713  # Percentage of screen height
-CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
 IMAGE_EXTENSION = "jpg"
 
 MAIN_STATS = {
@@ -45,7 +66,8 @@ SUBSTATS = {
 
 MAIN_STATS_STARTING_VALUES = {
     "Flat HP": 550, "Flat ATK": 79, "Flat DEF": 46, "HP%": 7.5, "ATK%": 7.5, "DEF%": 12, "CRIT Rate": 6, "CRIT DMG": 12,
-    "Anomaly Proficiency": 23, "PEN": 6, "Element DMG Bonus": 7.5, "Anomaly Mastery": 7.5, "Impact": 4.5, "Energy Regen%": 15
+    "Anomaly Proficiency": 23, "PEN": 6, "Element DMG Bonus": 7.5, "Anomaly Mastery": 7.5, "Impact": 4.5,
+    "Energy Regen%": 15
 }
 
 MAIN_STAT_LEVELS = {
@@ -68,12 +90,6 @@ MAIN_STAT_LEVELS = {
 MAIN_STATS_UPGRADE_VALUES = {
     "Flat HP": 10, "Flat ATK": 10, "Flat DEF": 10, "HP%": 10, "ATK%": 10, "DEF%": 10, "CRIT Rate": 10, "CRIT DMG": 10,
     "Anomaly Proficiency": 10, "PEN": 10, "Element DMG Bonus": 10,
-}
-
-SUBSTAT_WEIGHTS = {
-    "CRIT Rate": 10, "CRIT DMG": 10, "ATK%": 8,
-    "Flat ATK": 1, "PEN": 0, "Anomaly Proficiency": 0,
-    "Flat HP": 0, "HP%": 0, "Flat DEF": 0, "DEF%": 0,
 }
 
 MAIN_STAT_REGION = {
