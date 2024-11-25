@@ -1,5 +1,5 @@
 # ignore image folders and their contents
-images/
+# images/
 captured_images/
 temp/
 code.txt

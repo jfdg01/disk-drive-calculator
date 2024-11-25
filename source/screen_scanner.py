@@ -11,14 +11,16 @@ from constants import ROWS, COLS, RESOLUTION, MAIN_STAT_REGION, FULL_SUB_STAT_RE
     SUB_STAT_REGION_2, SUB_STAT_REGION_3, SUB_STAT_REGION_4, START_POS, CELL_SIZE
 
 
-def _calculate_region_pixels(region_percent, resolution):
+def _calculate_region_pixels(region_percent):
     """Calculate pixel values from percentage-based region definition."""
-    return {
+    resolution = RESOLUTION
+    region =  {
         "left": int((region_percent["left"] / 100) * resolution[0]),
         "top": int((region_percent["top"] / 100) * resolution[1]),
         "width": int((region_percent["width"] / 100) * resolution[0]),
         "height": int((region_percent["height"] / 100) * resolution[1])
     }
+    return region
 
 
 class ScreenScanner:
@@ -26,15 +28,16 @@ class ScreenScanner:
         """Initialize ScreenScanner with grid parameters."""
         # Safety settings
         pyautogui.FAILSAFE = True
+        pyautogui.PAUSE = 0.1
 
         # Convert regions from percentages to pixels
-        self.main_stat_region = _calculate_region_pixels(MAIN_STAT_REGION, RESOLUTION)
-        self.full_sub_stat_region = _calculate_region_pixels(FULL_SUB_STAT_REGION, RESOLUTION)
+        self.main_stat_region = _calculate_region_pixels(MAIN_STAT_REGION)
+        # self.full_sub_stat_region = _calculate_region_pixels(FULL_SUB_STAT_REGION)
         # create a region for each of the 4 substats
-        self.substat_region_1 = _calculate_region_pixels(SUB_STAT_REGION_1, RESOLUTION)
-        self.substat_region_2 = _calculate_region_pixels(SUB_STAT_REGION_2, RESOLUTION)
-        self.substat_region_3 = _calculate_region_pixels(SUB_STAT_REGION_3, RESOLUTION)
-        self.substat_region_4 = _calculate_region_pixels(SUB_STAT_REGION_4, RESOLUTION)
+        self.substat_region_1 = _calculate_region_pixels(SUB_STAT_REGION_1)
+        self.substat_region_2 = _calculate_region_pixels(SUB_STAT_REGION_2)
+        self.substat_region_3 = _calculate_region_pixels(SUB_STAT_REGION_3)
+        self.substat_region_4 = _calculate_region_pixels(SUB_STAT_REGION_4)
 
         # Directories for screenshots
         self.image_dir = self._ensure_directory("../images")
@@ -67,6 +70,8 @@ class ScreenScanner:
                     # Get and click the grid position
                     x, y = get_cell_position(row, col)
                     click_position(x, y)
+                    # Wait for the screen to update
+                    time.sleep(0.2)
 
                     # Capture screenshots
                     main_stat_path = os.path.join(self.image_dir, f"disk_{disk_index_str}_main.png")
@@ -96,7 +101,7 @@ def get_cell_position(row: int, col: int) -> Tuple[int, int]:
 
 def click_position(x: int, y: int) -> None:
     """Click at the specified coordinates with smooth movement."""
-    pydirectinput.moveTo(100, 150, 0.1)
+    pydirectinput.moveTo(x, y, 0.1)
     time.sleep(0.05)
     pydirectinput.click()
     time.sleep(0.05)

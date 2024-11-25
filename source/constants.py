@@ -9,6 +9,11 @@ MAX_GRAY_VALUE = 255
 MAIN_STAT_CONFIG = '--psm 7'
 # SUB_STAT_CONFIG = '--psm 11'
 TESSERACT_PATH = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+RESOLUTION = (1920, 1080)
+START_POS_PERCENTAGE = (0.1354, 0.2593)  # (x%, y%)
+HORIZONTAL_DIFF_PERCENTAGE = 0.07396  # Percentage of screen width
+VERTICAL_DIFF_PERCENTAGE = 0.1713  # Percentage of screen height
+CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
 
 MAIN_STATS = {
     1: ["Flat HP"],
@@ -40,8 +45,6 @@ SUBSTAT_WEIGHTS = {
     "Flat ATK": 5, "PEN": 5, "Anomaly Proficiency": 5,
     "Flat HP": 2, "HP%": 2, "Flat DEF": 2, "DEF%": 2,
 }
-
-RESOLUTION = (1920, 1080)
 
 MAIN_STAT_REGION = {
     "left": 74.0,
@@ -84,8 +87,3 @@ SUB_STAT_REGION_4 = {
     "width": 20.83,
     "height": 4.63
 }
-
-START_POS_PERCENTAGE = (0.1354, 0.2593)  # (x%, y%)
-HORIZONTAL_DIFF_PERCENTAGE = 0.07396  # Percentage of screen width
-VERTICAL_DIFF_PERCENTAGE = 0.1713  # Percentage of screen height
-CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
