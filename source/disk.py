@@ -1,7 +1,7 @@
 import json
 import os
 from operator import itemgetter
-from constants import MAIN_STATS, MAIN_STAT_WEIGHTS, SUBSTAT_WEIGHTS
+from constants import MAIN_STATS, MAIN_STAT_WEIGHTS, SUBSTAT_WEIGHTS, MAIN_STAT_LEVELS
 
 
 class DiskManager:
@@ -48,8 +48,15 @@ class DiskManager:
             for stat in sub_stats
         )
 
+        # If main_stat_level is 15 put score at 0
+        if disk_data["main_stat"]["level"] == 15:
+            main_stat_score = 0
+            current_score = 0
+            potential_score = 0
+
         # Total score combines main stat and substat scores
         total_score = main_stat_score + current_score + potential_score
+
         return {
             "Disk ID": disk_id,
             "Main Stat Score": main_stat_score,
@@ -71,6 +78,7 @@ class DiskManager:
         # Sort by total score in descending order
         ranked_disks = sorted(evaluations, key=itemgetter("Total Score"), reverse=True)
         return ranked_disks
+
 
     def display_ranking(self, ranked_disks):
         """

@@ -1,8 +1,9 @@
 {
     "disk_001": {
         "main_stat": {
-            "name": "HP",
-            "value": "2200"
+            "name": "Flat HP",
+            "value": 2200.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -29,8 +30,9 @@
     },
     "disk_002": {
         "main_stat": {
-            "name": "HP",
-            "value": "2200"
+            "name": "Flat HP",
+            "value": 2200.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -57,8 +59,9 @@
     },
     "disk_003": {
         "main_stat": {
-            "name": "ATK",
-            "value": "316"
+            "name": "Flat ATK",
+            "value": 316.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -85,8 +88,9 @@
     },
     "disk_004": {
         "main_stat": {
-            "name": "DEF",
-            "value": "184"
+            "name": "Flat DEF",
+            "value": 184.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -102,7 +106,7 @@
             {
                 "name": "CRIT DMG",
                 "level": 2,
-                "value": 14.399999999999999
+                "value": 14.4
             },
             {
                 "name": "PEN",
@@ -113,8 +117,9 @@
     },
     "disk_005": {
         "main_stat": {
-            "name": "ATK",
-            "value": "30"
+            "name": "Flat ATK",
+            "value": 30.0,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -141,8 +146,9 @@
     },
     "disk_006": {
         "main_stat": {
-            "name": "ATK",
-            "value": "30"
+            "name": "Flat ATK",
+            "value": 30.0,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -170,7 +176,8 @@
     "disk_007": {
         "main_stat": {
             "name": "Impact",
-            "value": "18"
+            "value": 18.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -197,8 +204,9 @@
     },
     "disk_008": {
         "main_stat": {
-            "name": "ATK",
-            "value": "316"
+            "name": "Flat ATK",
+            "value": 316.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -225,8 +233,9 @@
     },
     "disk_009": {
         "main_stat": {
-            "name": "ATK",
-            "value": "316"
+            "name": "Flat ATK",
+            "value": 316.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -253,8 +262,9 @@
     },
     "disk_010": {
         "main_stat": {
-            "name": "ATK",
-            "value": "30"
+            "name": "Flat ATK",
+            "value": 30.0,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -281,8 +291,9 @@
     },
     "disk_011": {
         "main_stat": {
-            "name": "ATK",
-            "value": "30"
+            "name": "Flat ATK",
+            "value": 30.0,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -310,7 +321,8 @@
     "disk_012": {
         "main_stat": {
             "name": "Impact",
-            "value": "18"
+            "value": 18.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -338,7 +350,8 @@
     "disk_013": {
         "main_stat": {
             "name": "Anomaly Mastery",
-            "value": "30"
+            "value": 30.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -359,14 +372,15 @@
             {
                 "name": "CRIT Rate",
                 "level": 2,
-                "value": 7.199999999999999
+                "value": 7.2
             }
         ]
     },
     "disk_014": {
         "main_stat": {
             "name": "Energy Regen",
-            "value": "60"
+            "value": 60.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -393,8 +407,9 @@
     },
     "disk_015": {
         "main_stat": {
-            "name": "HP",
-            "value": "2200"
+            "name": "Flat HP",
+            "value": 2200.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -421,8 +436,9 @@
     },
     "disk_016": {
         "main_stat": {
-            "name": "HP",
-            "value": "2200"
+            "name": "Flat HP",
+            "value": 2200.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -449,8 +465,9 @@
     },
     "disk_017": {
         "main_stat": {
-            "name": "HP",
-            "value": "2200"
+            "name": "Flat HP",
+            "value": 2200.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -461,7 +478,7 @@
             {
                 "name": "CRIT DMG",
                 "level": 2,
-                "value": 14.399999999999999
+                "value": 14.4
             },
             {
                 "name": "HP%",
@@ -477,14 +494,15 @@
     },
     "disk_018": {
         "main_stat": {
-            "name": "ATK",
-            "value": "316"
+            "name": "Flat ATK",
+            "value": 316.0,
+            "level": 15
         },
         "sub_stats": [
             {
                 "name": "CRIT DMG",
                 "level": 2,
-                "value": 14.399999999999999
+                "value": 14.4
             },
             {
                 "name": "CRIT Rate",
@@ -505,8 +523,9 @@
     },
     "disk_019": {
         "main_stat": {
-            "name": "DEF",
-            "value": "184"
+            "name": "Flat DEF",
+            "value": 184.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -534,7 +553,8 @@
     "disk_020": {
         "main_stat": {
             "name": "CRIT DMG",
-            "value": "48"
+            "value": 48.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -562,7 +582,8 @@
     "disk_021": {
         "main_stat": {
             "name": "Fire DMG Bonus",
-            "value": "30"
+            "value": 30.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -589,8 +610,9 @@
     },
     "disk_022": {
         "main_stat": {
-            "name": "ATK",
-            "value": "30"
+            "name": "Flat ATK",
+            "value": 30.0,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -611,14 +633,15 @@
             {
                 "name": "DEF%",
                 "level": 2,
-                "value": 14.399999999999999
+                "value": 14.4
             }
         ]
     },
     "disk_023": {
         "main_stat": {
-            "name": "ATK",
-            "value": "316"
+            "name": "Flat ATK",
+            "value": 316.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -645,8 +668,9 @@
     },
     "disk_024": {
         "main_stat": {
-            "name": "DEF",
-            "value": "184"
+            "name": "Flat DEF",
+            "value": 184.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -674,7 +698,8 @@
     "disk_025": {
         "main_stat": {
             "name": "CRIT Rate",
-            "value": "24"
+            "value": 24.0,
+            "level": 15
         },
         "sub_stats": [
             {
@@ -701,8 +726,9 @@
     },
     "disk_026": {
         "main_stat": {
-            "name": "ATK",
-            "value": "30"
+            "name": "Flat ATK",
+            "value": 30.0,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -730,7 +756,8 @@
     "disk_027": {
         "main_stat": {
             "name": "Energy Regen",
-            "value": "33"
+            "value": 33.0,
+            "level": 6
         },
         "sub_stats": [
             {
@@ -783,7 +810,8 @@
     "disk_029": {
         "main_stat": {
             "name": "CRIT Rate",
-            "value": "6"
+            "value": 6.0,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -811,7 +839,8 @@
     "disk_030": {
         "main_stat": {
             "name": "Electric DMG Bonus",
-            "value": "7.5"
+            "value": 7.5,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -839,7 +868,8 @@
     "disk_031": {
         "main_stat": {
             "name": "Physical DMG Bonus",
-            "value": "7.5"
+            "value": 7.5,
+            "level": 0
         },
         "sub_stats": [
             {
@@ -867,7 +897,8 @@
     "disk_032": {
         "main_stat": {
             "name": "PEN Ratio",
-            "value": "6"
+            "value": 6.0,
+            "level": 0
         },
         "sub_stats": [
             {

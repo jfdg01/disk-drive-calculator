@@ -3,7 +3,7 @@ import os
 from typing import Dict
 from pytesseract import pytesseract
 from utils import parse_main_stat
-from constants import TESSERACT_PATH, SUBSTATS, IMAGE_EXTENSION
+from constants import TESSERACT_PATH, SUBSTATS, IMAGE_EXTENSION, MAIN_STAT_LEVELS
 
 
 def parse_disk_text(main_stat_text, sub_stat_texts):
@@ -17,19 +17,39 @@ def parse_disk_text(main_stat_text, sub_stat_texts):
             return None
 
         parts = stat_text.strip().split()
-        # Extracts the last part of the text, removes any '%' character, and converts it to a float
-        stat_data = {"name": None, "value": parts[-1].replace("%", "")}
-        # Hack to handle the "2a" value
-        if stat_data["value"] == "2a":
-            stat_data["value"] = "24"
+        stat_name = " ".join(parts[:-1]) if len(parts) > 2 else parts[0]
+        stat_value = float(parts[-1].replace("%", "").replace("a", "4"))  # Handle "2a" case
 
-        # If the name is more than one word, join them
-        if len(parts) > 2:
-            stat_data["name"] = " ".join(parts[:-1])
-        else:
-            stat_data["name"] = parts[0]
+        # Normalize stat name
+        if stat_name == "ATK":
+            stat_name = "Flat ATK"
+        elif stat_name == "HP":
+            stat_name = "Flat HP"
+        elif stat_name == "DEF":
+            stat_name = "Flat DEF"
 
-        return stat_data
+        # Infer level
+        level = infer_main_stat_level(stat_name, stat_value)
+
+        return {
+            "name": stat_name,
+            "value": stat_value,
+            "level": level
+        }
+
+    def infer_main_stat_level(stat_name, stat_value):
+        if stat_name not in MAIN_STAT_LEVELS:
+            # check if it contains the string "Bonus"
+            if stat_name.endswith("Bonus"):
+                stat_name = "Element DMG Bonus"
+            else:
+                return None
+        levels = MAIN_STAT_LEVELS[stat_name]
+        for level, value in enumerate(levels):
+            if stat_value <= value:
+                return level - 1 if level > 0 else 0
+        return len(levels) - 1
+
 
     def parse_sub_stat_text(stat_text):
         if not stat_text:
@@ -82,7 +102,8 @@ def parse_disk_text(main_stat_text, sub_stat_texts):
 
         # Calculate the value based on the stat name and the level using the map
         if stat_data["name"] in SUBSTATS and stat_data["level"] > 0:
-            stat_data["value"] = SUBSTATS[stat_data["name"]] * (stat_data["level"] + 1)
+            # round the value to 2 decimals
+            stat_data["value"] = round(SUBSTATS[stat_data["name"]] * (stat_data["level"] + 1), 2)
         elif stat_data["name"] in SUBSTATS:
             stat_data["value"] = SUBSTATS[stat_data["name"]]
         else:
@@ -100,6 +121,7 @@ def parse_disk_text(main_stat_text, sub_stat_texts):
             sub_stats.append(parse_sub_stat_text(sub_stat_text))
 
     # Assemble the final dictionary
+    # Check if the substats contain and is lvl 2 CRIT DMG
     result = {
         "main_stat": main_stat,
         "sub_stats": sub_stats
@@ -147,6 +169,10 @@ class OCRProcessor:
         pictures = os.listdir(self.image_dir)
 
         for stat_picture in pictures:
+            # only check the name that contains "28"
+            # if "28" not in stat_picture:
+                # continue
+
             # since pictures contains all the files in the directory, we need to filter only the main stat images
             if not stat_picture.endswith("_main." + IMAGE_EXTENSION):
                 continue
