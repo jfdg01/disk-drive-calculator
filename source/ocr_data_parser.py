@@ -6,6 +6,7 @@ class OCRDataParser:
     @staticmethod
     def parse_disk_text(main_stat_text, sub_stat_texts):
         """Parse main and sub stats from raw OCR text into structured data."""
+
         def parse_main_stat_text(stat_text):
             if not stat_text:
                 return None
@@ -14,12 +15,24 @@ class OCRDataParser:
             stat_name = " ".join(parts[:-1]) if len(parts) > 2 else parts[0]
             stat_value = float(parts[-1].replace("%", "").replace("a", "4"))
 
-            if stat_name == "ATK":
-                stat_name = "Flat ATK"
-            elif stat_name == "HP":
-                stat_name = "Flat HP"
-            elif stat_name == "DEF":
-                stat_name = "Flat DEF"
+            percentage = False
+            if "%" in parts[-1]:
+                percentage = True
+
+            if not percentage:
+                if stat_name == "ATK":
+                    stat_name = "Flat ATK"
+                elif stat_name == "HP":
+                    stat_name = "Flat HP"
+                elif stat_name == "DEF":
+                    stat_name = "Flat DEF"
+            else:
+                if stat_name == "ATK":
+                    stat_name = "ATK%"
+                elif stat_name == "HP":
+                    stat_name = "HP%"
+                elif stat_name == "DEF":
+                    stat_name = "DEF%"
 
             level = infer_main_stat_level(stat_name, stat_value)
 
@@ -43,6 +56,8 @@ class OCRDataParser:
 
         def parse_sub_stat_text(stat_text):
             if not stat_text:
+                return None
+            if "Set Effect" in stat_text:
                 return None
 
             parts = stat_text.strip().split()
@@ -90,7 +105,8 @@ class OCRDataParser:
             return stat_data
 
         main_stat = parse_main_stat_text(main_stat_text)
-        sub_stats = [parse_sub_stat_text(sub_text) for sub_text in sub_stat_texts if sub_text]
+        sub_stats = [result for sub_text in sub_stat_texts if
+                     sub_text and (result := parse_sub_stat_text(sub_text)) is not None]
 
         return {"main_stat": main_stat, "sub_stats": sub_stats}
 

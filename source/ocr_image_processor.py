@@ -8,7 +8,7 @@ import json
 class OCRImageProcessor:
     def __init__(self):
         """Initialize OCRImageProcessor with paths and configurations."""
-        self.image_dir = self._ensure_directory("../images")
+        self.image_dir = self._ensure_directory("../images_6")
         self.output_dir = self._ensure_directory("../output")
         pytesseract.tesseract_cmd = TESSERACT_PATH
 
