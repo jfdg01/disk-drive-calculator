@@ -34,10 +34,9 @@ ROWS = 4
 COLS = 8
 GRAY_THRESHOLD = 120
 MAX_GRAY_VALUE = 255
-MAIN_STAT_CONFIG = '--psm 7'
-# SUB_STAT_CONFIG = '--psm 11'
+MAIN_STAT_CONFIG = '--psm 7' # Treat the image as a single text line
 TESSERACT_PATH = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-IMAGE_EXTENSION = "jpg"
+IMAGE_EXTENSION = "jpg" # Extension to use for the output: jpg or png, seems to be no difference
 
 MAIN_STATS = {
     1: ["Flat HP"],
@@ -92,15 +91,15 @@ MAIN_STATS_UPGRADE_VALUES = {
     "Anomaly Proficiency": 10, "PEN": 10, "Element DMG Bonus": 10,
 }
 
-TOP = 46.1
-LEFT = 73.7
-WIDTH = 21.2
-HEIGHT = 4.77
-
+TOP = 46.09375
+LEFT = 73.4
+WIDTH = 21.97
+HEIGHT = 4.84375
+TOP_MAIN = 38.854166666
 
 MAIN_STAT_REGION = {
     "left": LEFT,
-    "top": 38.89,
+    "top": TOP_MAIN,
     "width": WIDTH,
     "height": HEIGHT
 }
@@ -114,14 +113,14 @@ FULL_SUB_STAT_REGION = {
 
 SUB_STAT_REGION_1 = {
     "left": LEFT,
-    "top": TOP,
+    "top": TOP + HEIGHT * 0,
     "width": WIDTH,
     "height": HEIGHT
 }
 
 SUB_STAT_REGION_2 = {
     "left": LEFT,
-    "top": TOP + HEIGHT,
+    "top": TOP + HEIGHT * 1,
     "width": WIDTH,
     "height": HEIGHT
 }

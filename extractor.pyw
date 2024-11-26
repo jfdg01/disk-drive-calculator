@@ -9,7 +9,7 @@ def extract_code():
     # Manually defined list of included files or directories
     # Update this list with patterns such as 'test/*.py' or 'scripts/example.py'
     include_patterns = [
-        # 'test/*.py',  # Example: include all .py files in the 'test' folder
+        'source/*.py',  # Example: include all .py files in the 'source' folder
     ]
 
     # Get a list of all .py files in the current directory except this script

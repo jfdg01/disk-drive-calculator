@@ -1,6 +1,7 @@
 import json
 import os
 from operator import itemgetter
+
 from constants import SUBSTAT_WEIGHTS
 
 
@@ -80,7 +81,6 @@ class DiskManager:
         ranked_disks = sorted(evaluations, key=itemgetter("Total Score"), reverse=True)
         return ranked_disks
 
-
     def display_ranking(self, ranked_disks):
         """
         Display the ranked disks in a readable format.
@@ -92,6 +92,7 @@ class DiskManager:
         for rank, disk in enumerate(ranked_disks, start=1):
             print(
                 f"{rank:<5} {disk['Disk ID']:<10} {disk['Main Stat Score']:<12.2f} {disk['Current Substat Score']:<15.2f} {disk['Potential Substat Score']:<18.2f} {disk['Total Score']:<12.2f}")
+
 
 # run the program
 if __name__ == "__main__":
