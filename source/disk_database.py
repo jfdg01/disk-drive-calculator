@@ -2,7 +2,7 @@ import sqlite3
 
 
 class DiskDatabase:
-    def __init__(self, db_file="../output/disk_database.db"):
+    def __init__(self, db_file="../db/disk_database.db"):
         self.db_file = db_file
         self.connection = sqlite3.connect(self.db_file)
         self._create_tables()

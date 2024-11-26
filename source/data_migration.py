@@ -44,7 +44,7 @@ def migrate_json_to_db(json_file, database: DiskDatabase):
 
 def main():
     json_file = "../output/disk_data.json"
-    database_file = "../output/disk_database.db"
+    database_file = "../db/disk_database.db"
 
     # Initialize the database connection
     database = DiskDatabase(database_file)
