@@ -1,85 +1,107 @@
-import json
 import os
 from operator import itemgetter
+from typing import List
 
 from constants import SUBSTAT_WEIGHTS
+from source.disk import Disk, Stat
+from source.disk_database import DiskDatabase
 
 
 class DiskManager:
-    def __init__(self, disk_data_file):
-        """
-        Initialize the DiskManager instance.
-        :param disk_data_file: Path to the JSON file containing disk data.
-        """
-        self.disk_data_file = disk_data_file
-        self.disks = {}
 
-    def load_disks(self):
-        """
-        Load disk data from the JSON file.
-        """
-        if not os.path.exists(self.disk_data_file):
-            raise FileNotFoundError(f"Disk data file '{self.disk_data_file}' not found.")
+    def __init__(self, database: DiskDatabase):
+        self.database = database
 
-        with open(self.disk_data_file, "r") as file:
-            self.disks = json.load(file)
-        print(f"Loaded {len(self.disks)} disks from {self.disk_data_file}.")
+    def add_disk(self, disk: Disk):
+        """Add a new disk to the database."""
+        with self.database.connection as conn:
+            # Insert into disks table without specifying an ID
+            cursor = conn.execute("""
+                INSERT INTO disks (main_stat_name, main_stat_value, main_stat_level)
+                VALUES (?, ?, ?)
+            """, (disk.main_stat.name, disk.main_stat.value, disk.main_stat.level))
 
-    def evaluate_disk(self, disk_id, disk_data):
+            # Retrieve the auto-generated ID for the disk
+            disk_id = cursor.lastrowid
+
+            # Insert sub_stats linked to the new disk
+            for sub_stat in disk.sub_stats:
+                conn.execute("""
+                    INSERT INTO sub_stats (disk_id, name, value, level)
+                    VALUES (?, ?, ?, ?)
+                """, (disk_id, sub_stat.name, sub_stat.value, sub_stat.level))
+
+    def get_disks(self) -> List[Disk]:
+        """Retrieve all disks from the database."""
+        disks = []
+        with self.database.connection as conn:
+            cursor = conn.execute("SELECT id, main_stat_name, main_stat_value, main_stat_level FROM disks")
+            for row in cursor.fetchall():
+                disk_id, main_name, main_value, main_level = row
+                main_stat = Stat(name=main_name, value=main_value, level=main_level)
+
+                sub_cursor = conn.execute("SELECT name, value, level FROM sub_stats WHERE disk_id = ?", (disk_id,))
+                sub_stats = [Stat(name=sub_row[0], value=sub_row[1], level=sub_row[2]) for sub_row in sub_cursor]
+
+                disks.append(
+                    Disk(id=str(disk_id), main_stat=main_stat, sub_stats=sub_stats))  # Cast ID to str if needed
+        return disks
+
+    def remove_disk(self, disk_id: str):
+        """Remove a disk and its sub-stats from the database."""
+        with self.database.connection as conn:
+            conn.execute("DELETE FROM sub_stats WHERE disk_id = ?", (disk_id,))
+            conn.execute("DELETE FROM disks WHERE id = ?", (disk_id,))
+
+    def update_disk(self, disk: Disk):
+        """Update an existing disk."""
+        with self.database.connection as conn:
+            conn.execute("""
+                UPDATE disks SET main_stat_name = ?, main_stat_value = ?, main_stat_level = ?
+                WHERE id = ?
+            """, (disk.main_stat.name, disk.main_stat.value, disk.main_stat.level, disk.id))
+
+            # Delete and re-insert sub_stats to simplify updates
+            conn.execute("DELETE FROM sub_stats WHERE disk_id = ?", (disk.id,))
+            for sub_stat in disk.sub_stats:
+                conn.execute("""
+                    INSERT INTO sub_stats (disk_id, name, value, level)
+                    VALUES (?, ?, ?, ?)
+                """, (disk.id, sub_stat.name, sub_stat.value, sub_stat.level))
+
+    def evaluate_disk(self, disk: Disk) -> dict:
         """
-        Evaluate a single disk based solely on substats.
-        Assumes every main stat contributes a fixed score of 10.
-        :param disk_id: Identifier for the disk.
-        :param disk_data: Data dictionary for the disk.
-        :return: Evaluation scores and total score.
+        Evaluate a single disk using its methods.
+        :param disk: A Disk object.
+        :return: Evaluation scores and total score as a dictionary.
         """
         # Fixed main stat score
-        main_stat_score = 0
+        main_stat_score = 0 if disk.main_stat.level == 15 else 10  # Example score for non-maxed main stat
 
-        # Validate and calculate substats
-        sub_stats = disk_data.get("sub_stats", [])
-        if not isinstance(sub_stats, list) or not all(isinstance(stat, dict) for stat in sub_stats):
-            raise ValueError(f"Invalid sub stats for disk ID {disk_id}: {sub_stats}")
-
-        # Calculate current and potential scores
-        current_score = sum(SUBSTAT_WEIGHTS.get(stat.get("name"), 0) for stat in sub_stats)
-        remaining_rolls = 5  # Assume max rolls
-        potential_score = sum(
-            SUBSTAT_WEIGHTS.get(stat.get("name"), 0) * (remaining_rolls / 5)
-            for stat in sub_stats
-        )
-
-        # If main_stat_level is 15 put score at 0
-        main_stat = disk_data.get("main_stat") or {}
-        if main_stat.get("level") == 15:
-            main_stat_score = 0
-            current_score = 0
-            potential_score = 0
+        # Calculate scores using Disk methods
+        current_score = disk.total_substat_score(SUBSTAT_WEIGHTS)
+        potential_score = disk.potential_score(SUBSTAT_WEIGHTS)
 
         # Total score combines main stat and substat scores
         total_score = main_stat_score + current_score + potential_score
 
         return {
-            "Disk ID": disk_id,
+            "Disk ID": disk.id,
             "Main Stat Score": main_stat_score,
             "Current Substat Score": current_score,
             "Potential Substat Score": potential_score,
             "Total Score": total_score,
         }
 
-    def rank_disks(self):
+    def rank_disks(self) -> List[dict]:
         """
         Rank all disks based on their total scores.
         :return: Sorted list of disk evaluations.
         """
-        evaluations = []
-        for disk_id, disk_data in self.disks.items():
-            evaluation = self.evaluate_disk(disk_id, disk_data)
-            evaluations.append(evaluation)
-
+        disks = self.get_disks()  # Fetch disks from the database
+        evaluations = [self.evaluate_disk(disk) for disk in disks]
         # Sort by total score in descending order
-        ranked_disks = sorted(evaluations, key=itemgetter("Total Score"), reverse=True)
-        return ranked_disks
+        return sorted(evaluations, key=itemgetter("Total Score"), reverse=True)
 
     def display_ranking(self, ranked_disks):
         """
@@ -94,13 +116,12 @@ class DiskManager:
                 f"{rank:<5} {disk['Disk ID']:<10} {disk['Main Stat Score']:<12.2f} {disk['Current Substat Score']:<15.2f} {disk['Potential Substat Score']:<18.2f} {disk['Total Score']:<12.2f}")
 
 
-# run the program
+# Example usage with database
 if __name__ == "__main__":
-    # Example usage
-    disk_file = "../output/disk_data.json"
-    disk_manager = DiskManager(disk_file)
+    # Initialize DiskDatabase (assumes implementation exists)
+    db = DiskDatabase()
+    disk_manager = DiskManager(db)
 
-    # Load, rank, and display disks
-    disk_manager.load_disks()
+    # Example: Add, rank, and display disks
     ranked_disks = disk_manager.rank_disks()
     disk_manager.display_ranking(ranked_disks)
