@@ -2,7 +2,6 @@ import os
 import cv2
 import numpy as np
 import mss
-import pyautogui
 import pydirectinput
 import time
 from typing import Dict, Tuple
@@ -14,7 +13,7 @@ from constants import ROWS, COLS, RESOLUTION, MAIN_STAT_REGION, SUB_STAT_REGION_
 def _calculate_region_pixels(region_percent):
     """Calculate pixel values from percentage-based region definition."""
     resolution = RESOLUTION
-    region =  {
+    region = {
         "left": int((region_percent["left"] / 100) * resolution[0]),
         "top": int((region_percent["top"] / 100) * resolution[1]),
         "width": int((region_percent["width"] / 100) * resolution[0]),
