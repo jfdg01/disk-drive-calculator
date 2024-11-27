@@ -7,9 +7,12 @@ from source.screen_scanner import ScreenScanner
 
 
 def main():
+    suffix = "" # "_test"
+
     images_path = "../images"
-    raw_output_path = "../output/raw_data.json"
-    disk_output_path = "../output/disk_data.json"
+    raw_json_path = "../output/raw_data" + suffix + ".json"
+    disk_json_path = "../output/disk_data" + suffix + ".json"
+    database_path = "../db/disk_database" + suffix + ".db"
 
     # Screenshot and save all the images on the game screen
     # screen_scanner = ScreenScanner(images_path)
@@ -17,13 +20,13 @@ def main():
 
     # Process all images with OCR and dump the raw data into a JSON file
     image_processor = OCRImageProcessor()
-    image_processor.process_images(images_path, raw_output_path)
+    image_processor.process_images(images_path, raw_json_path)
 
     # Load the raw data from the JSON file and beautify it
-    OCRDataParser.load_and_parse_ocr_file(raw_output_path, disk_output_path)
+    OCRDataParser.load_and_parse_ocr_file(raw_json_path, disk_json_path)
 
     # Convert the JSON data to the database
-    convert_json_to_db(disk_output_path)
+    convert_json_to_db(disk_json_path, database_path)
 
 
 if __name__ == "__main__":

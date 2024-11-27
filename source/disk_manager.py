@@ -167,7 +167,7 @@ class DiskManager:
 # Example usage with database
 if __name__ == "__main__":
     # Initialize DiskDatabase (assumes implementation exists)
-    db = DiskDatabase()
+    db = DiskDatabase("../db/disk_database.db")
     disk_manager = DiskManager(db)
 
     # Example: Add, rank, and display disks

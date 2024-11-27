@@ -31,33 +31,31 @@ class ScreenScanner:
 
         # Convert regions from percentages to pixels
         self.main_stat_region = _calculate_region_pixels(MAIN_STAT_REGION)
-        # self.full_sub_stat_region = _calculate_region_pixels(FULL_SUB_STAT_REGION)
-        # create a region for each of the 4 substats
         self.substat_region_1 = _calculate_region_pixels(SUB_STAT_REGION_1)
         self.substat_region_2 = _calculate_region_pixels(SUB_STAT_REGION_2)
         self.substat_region_3 = _calculate_region_pixels(SUB_STAT_REGION_3)
         self.substat_region_4 = _calculate_region_pixels(SUB_STAT_REGION_4)
 
         # Directories for screenshots
-        self.image_dir = self._ensure_directory(images_path)
+        self.images_root = self._ensure_root_directory(images_path)
+        self.image_dir = self._get_next_subdirectory()
 
     @staticmethod
-    def _ensure_directory(dir_name: str) -> str:
-        """Create a unique directory if the base directory exists and return its path."""
+    def _ensure_root_directory(dir_name: str) -> str:
+        """Ensure the root directory exists."""
         base_path = os.path.join(os.path.dirname(__file__), dir_name)
-
-        # If the directory does not exist, create it
         if not os.path.exists(base_path):
             os.makedirs(base_path)
-            return base_path
+        return base_path
 
-        # If the directory exists, find the next available numbered folder
+    def _get_next_subdirectory(self) -> str:
+        """Create the next available numbered subdirectory."""
         suffix = 1
         while True:
-            new_dir_name = f"{base_path}_{suffix}"
-            if not os.path.exists(new_dir_name):
-                os.makedirs(new_dir_name)
-                return new_dir_name
+            sub_dir = os.path.join(self.images_root, f"images_{suffix}")
+            if not os.path.exists(sub_dir):
+                os.makedirs(sub_dir)
+                return sub_dir
             suffix += 1
 
     def capture_and_save_disk_images(self) -> None:

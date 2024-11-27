@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Parametrized all file path data and combined every class in main">
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Modified screen scanner to create files sequentially">
+      <change beforePath="$PROJECT_DIR$/.idea/disc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/disc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/disk_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/disk_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/json_to_db_data_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/json_to_db_data_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/ocr_image_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_image_processor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/screen_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/screen_scanner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,13 +110,14 @@
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gara\Desktop\disc\images" />
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\db" />
       <recent name="C:\Users\gara\Desktop\disc\source" />
       <recent name="C:\Users\gara\Desktop\disc\output" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ocr_data_parser">
-    <configuration name="data_migration (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="json_to_db_data_converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +131,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/data_migration.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\source\json_to_db_data_converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="data_migration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="json_to_db_data_converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,7 +154,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\source\data_migration.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\source\json_to_db_data_converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="disk_manager (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,7 +177,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/disk_manager.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,13 +232,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="screen_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/screen_scanner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.screen_scanner" />
         <item itemvalue="Python.ocr_data_parser" />
         <item itemvalue="Python.ocr_image_processor" />
-        <item itemvalue="Python.data_migration (1)" />
-        <item itemvalue="Python.disk_manager (1)" />
-        <item itemvalue="Python.data_migration" />
+        <item itemvalue="Python.json_to_db_data_converter" />
       </list>
     </recent_temporary>
   </component>
@@ -620,7 +651,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732707368044</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Modified screen scanner to create files sequentially">
+      <option name="closed" value="true" />
+      <created>1732707924446</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1732707924446</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Modified screen scanner to create files sequentially">
+      <option name="closed" value="true" />
+      <created>1732707973255</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1732707973255</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Modified screen scanner to create files sequentially">
+      <option name="closed" value="true" />
+      <created>1732707994293</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1732707994293</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +694,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fixed heuristic and added a massive disk generator" />
     <MESSAGE value="Added recognition, regions and gitignore" />
     <MESSAGE value="Modularized the code" />
     <MESSAGE value="Beautified the code (+N suffixes still missing)" />
@@ -664,7 +718,8 @@
     <MESSAGE value="Combined migration and reading the images + modified disk_id to INTEGER in sub_stat table definition + made image processor read all directories in patter &quot;images*&quot;" />
     <MESSAGE value="Deleted unused files" />
     <MESSAGE value="Parametrized all file path data and combined every class in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parametrized all file path data and combined every class in main" />
+    <MESSAGE value="Modified screen scanner to create files sequentially" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified screen scanner to create files sequentially" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,12 +734,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/disc$data_migration__1_.coverage" NAME="data_migration (1) Coverage Results" MODIFIED="1732704645537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732551527767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disc$ocr_data_parser.coverage" NAME="ocr_data_parser Coverage Results" MODIFIED="1732707054499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732708021638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$data_migration.coverage" NAME="data_migration Coverage Results" MODIFIED="1732622405285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/disc$disk.coverage" NAME="disk Coverage Results" MODIFIED="1732566667804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732313428324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732708800116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$ocr_image_processor.coverage" NAME="ocr_image_processor Coverage Results" MODIFIED="1732704922851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732445477944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -6,9 +6,9 @@ from source.disk_database import DiskDatabase
 from source.disk_manager import DiskManager
 
 
-def convert_json_to_db(json_file):
+def convert_json_to_db(json_file, db_file):
 
-    database = DiskDatabase()
+    database = DiskDatabase(db_file)
 
     """Migrate data from JSON to SQLite database."""
     if not os.path.exists(json_file):

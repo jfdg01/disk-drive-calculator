@@ -18,7 +18,7 @@ def parse_main_stat(image_path: str) -> str:
     """Parse main stat from image using OCR."""
     binary = preprocess_image(image_path)
     result = pytesseract.image_to_string(binary, config=MAIN_STAT_CONFIG)
-    return result
+    return result.strip()  # Strip any trailing spaces or newlines
 
 
 class OCRImageProcessor:
@@ -27,16 +27,19 @@ class OCRImageProcessor:
         pytesseract.tesseract_cmd = TESSERACT_PATH
 
     @staticmethod
-    def _get_matching_image_dirs(base_pattern: str) -> list:
-        """Retrieve all directories matching the given pattern."""
-        base_dir = os.path.dirname(base_pattern)
-        prefix = os.path.basename(base_pattern)
-        matching_dirs = [
-            os.path.join(base_dir, d)
-            for d in os.listdir(base_dir)
-            if os.path.isdir(os.path.join(base_dir, d)) and d.startswith(prefix)
+    def _get_image_subdirectories(base_dir: str) -> list:
+        """Retrieve all subdirectories in the base directory."""
+        base_dir = os.path.abspath(base_dir)
+        if not os.path.exists(base_dir):
+            print(f"Base directory {base_dir} does not exist.")
+            return []
+
+        subdirectories = [
+            os.path.join(base_dir, sub_dir)
+            for sub_dir in os.listdir(base_dir)
+            if os.path.isdir(os.path.join(base_dir, sub_dir))
         ]
-        return matching_dirs
+        return sorted(subdirectories)
 
     @staticmethod
     def _ensure_directory(dir_name: str) -> str:
@@ -45,18 +48,17 @@ class OCRImageProcessor:
         os.makedirs(dir_path, exist_ok=True)
         return dir_path
 
-    def process_images(self, base_pattern: str, output_file: str):
-        """Process images from directories matching the pattern and save results.
+    def process_images(self, base_dir: str, output_file: str):
+        """Process images from subdirectories in the base directory and save results.
 
         Args:
-            base_pattern (str): Base directory pattern to search for image folders.
-                                Example: "../images" will match "../images*", "../images_1", etc.
+            base_dir (str): Parent directory containing subdirectories with images.
             output_file (str): Path to the output JSON file for saving results.
         """
-        image_dirs = self._get_matching_image_dirs(base_pattern)
+        image_dirs = self._get_image_subdirectories(base_dir)
 
         if not image_dirs:
-            print(f"No directories found matching pattern: {base_pattern}")
+            print(f"No subdirectories found in base directory: {base_dir}")
             return {}
 
         ocr_data = {}
@@ -117,8 +119,8 @@ class OCRImageProcessor:
 
 if __name__ == "__main__":
     # Example usage
-    base_pattern = "../images"  # Base directory to match patterns like "../images*", "../images_1", etc.
+    base_dir = "../images"  # Parent directory containing subdirectories like "images_1", "images_2", etc.
     output_file_path = "../output/raw_data.json"  # Provide the output file path
 
     processor = OCRImageProcessor()
-    processor.process_images(base_pattern, output_file_path)
+    processor.process_images(base_dir, output_file_path)
