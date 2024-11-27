@@ -1,5 +1,3 @@
-from lib2to3.pytree import convert
-
 from source.disk_database import DiskDatabase
 from source.disk_manager import DiskManager
 from source.json_to_db_data_converter import convert_json_to_db

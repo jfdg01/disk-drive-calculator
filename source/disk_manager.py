@@ -123,11 +123,17 @@ class DiskManager:
         :return: Evaluation scores and total score as a dictionary.
         """
         # Fixed main stat score
-        main_stat_score = 0 if disk.main_stat.level >= 15 else 10  # Example score for non-maxed main stat
+        main_stat_score = 10
 
         # Calculate scores using Disk methods
         current_score = disk.total_substat_score(SUBSTAT_WEIGHTS)
         potential_score = disk.potential_score(SUBSTAT_WEIGHTS)
+
+        if disk.main_stat.level >= 15:
+            # Evaluate at 0 any disk that is maxed out
+            current_score = 0
+            potential_score = 0
+            main_stat_score = 0
 
         # Total score combines main stat and substat scores
         total_score = main_stat_score + current_score + potential_score
@@ -152,15 +158,33 @@ class DiskManager:
 
     def display_ranking(self, ranked_disks):
         """
-        Display the ranked disks in a readable format.
+        Display the ranked disks in a readable format, including main and substats.
         :param ranked_disks: List of ranked disks.
         """
         print(
             f"{'Rank':<5} {'Disk ID':<10} {'Main Score':<12} {'Current Score':<15} {'Potential Score':<18} {'Total Score':<12}")
         print("=" * 75)
-        for rank, disk in enumerate(ranked_disks, start=1):
+
+        top_disks = ranked_disks[:20]
+
+        for rank, disk_data in enumerate(top_disks, start=1):
+            # Print general stats for the disk
             print(
-                f"{rank:<5} {disk['Disk ID']:<10} {disk['Main Stat Score']:<12.2f} {disk['Current Substat Score']:<15.2f} {disk['Potential Substat Score']:<18.2f} {disk['Total Score']:<12.2f}")
+                f"{rank:<5} {disk_data['Disk ID']:<10} {disk_data['Main Stat Score']:<12.2f} {disk_data['Current Substat Score']:<15.2f} {disk_data['Potential Substat Score']:<18.2f} {disk_data['Total Score']:<12.2f}"
+            )
+
+            # Fetch full disk details from database for main stat and substats
+            disk = next((d for d in self.get_disks() if d.id == disk_data["Disk ID"]), None)
+            if disk:
+                # Print main stat details
+                print(f"  Main Stat: {disk.main_stat.name} - {disk.main_stat.value} (Level {disk.main_stat.level})")
+
+                # Print substat details
+                print("  Sub Stats:")
+                for sub_stat in disk.sub_stats:
+                    print(f"    - {sub_stat.name}: {sub_stat.value} (Level {sub_stat.level})")
+
+            print("-" * 75)
 
 
 # Example usage with database
