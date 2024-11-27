@@ -1,9 +1,9 @@
 import json
 import os
 
-from source.disk import Stat, Disk
-from source.disk_database import DiskDatabase
-from source.disk_manager import DiskManager
+from source.disk_related.disk import Stat, Disk
+from source.disk_related.disk_database import DiskDatabase
+from source.disk_related.disk_manager import DiskManager
 
 
 def convert_json_to_db(json_file, db_file):
@@ -54,4 +54,4 @@ def convert_json_to_db(json_file, db_file):
 
 
 if __name__ == "__main__":
-    convert_json_to_db("../output/disk_data.json")
+    convert_json_to_db("../../output/disk_data.json")

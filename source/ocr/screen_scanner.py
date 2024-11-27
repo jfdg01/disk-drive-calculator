@@ -6,7 +6,7 @@ import pydirectinput
 import time
 from typing import Dict, Tuple
 
-from constants import ROWS, COLS, RESOLUTION, MAIN_STAT_REGION, SUB_STAT_REGION_1, \
+from source.constants import ROWS, COLS, RESOLUTION, MAIN_STAT_REGION, SUB_STAT_REGION_1, \
     SUB_STAT_REGION_2, SUB_STAT_REGION_3, SUB_STAT_REGION_4, START_POS, CELL_SIZE, IMAGE_EXTENSION
 
 
@@ -126,5 +126,5 @@ def capture_region(output_path: str, region: Dict) -> None:
 
 
 if __name__ == "__main__":
-    scanner = ScreenScanner("../images")
+    scanner = ScreenScanner("../../images")
     scanner.capture_and_save_disk_images()

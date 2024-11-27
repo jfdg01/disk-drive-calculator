@@ -1,7 +1,7 @@
 import json
 import os
 
-from constants import SUBSTATS, MAIN_STAT_LEVELS
+from source.constants import SUBSTATS, MAIN_STAT_LEVELS
 
 
 class OCRDataParser:
@@ -85,7 +85,8 @@ class OCRDataParser:
             if stat_data["name"] == "Anomaly Proficlency":
                 stat_data["name"] = "Anomaly Proficiency"
 
-            if stat_data["name"] == "MP" or stat_data["name"] == "AP" or stat_data["name"] == "Ld" or stat_data["name"] == "uP" or stat_data["name"] == "hd":
+            if stat_data["name"] == "MP" or stat_data["name"] == "AP" or stat_data["name"] == "Ld" or stat_data[
+                "name"] == "uP" or stat_data["name"] == "hd":
                 stat_data["name"] = "HP"
 
             if not percentage:
@@ -150,4 +151,4 @@ class OCRDataParser:
 
 
 if __name__ == "__main__":
-    OCRDataParser.load_and_parse_ocr_file("../output/raw_data.json", "../output/disk_data.json")
+    OCRDataParser.load_and_parse_ocr_file("../../output/raw_data.json", "../output/disk_data.json")

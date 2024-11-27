@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Trying to correct all OCR mistakes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/disk_database.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/disk_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/disk_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/raw_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/raw_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ocr_data_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_data_parser.py" afterDir="false" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Moved everything to differentiated folders">
+      <change beforePath="$PROJECT_DIR$/extractor.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/extractor.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/disk_related/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +75,7 @@
     "Python.disk_manager (1).executor": "Run",
     "Python.disk_manager.executor": "Debug",
     "Python.grid_clicker.executor": "Run",
+    "Python.main (1).executor": "Run",
     "Python.main.executor": "Run",
     "Python.ocr_data_parser.executor": "Run",
     "Python.ocr_image_processor.executor": "Run",
@@ -110,13 +107,14 @@
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gara\Desktop\disc\source" />
+      <recent name="C:\Users\gara\Desktop\disc\source\ocr" />
+      <recent name="C:\Users\gara\Desktop\disc\disk_related" />
       <recent name="C:\Users\gara\Desktop\disc\images" />
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\db" />
-      <recent name="C:\Users\gara\Desktop\disc\source" />
-      <recent name="C:\Users\gara\Desktop\disc\output" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -154,7 +152,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/disk_manager.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\disk_related\disk_manager.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,12 +193,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/disk_related" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\source\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\disk_related\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,30 +244,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/ocr_data_parser.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="screen_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="disc" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/screen_scanner.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\source\ocr\ocr_data_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.ocr_data_parser" />
         <item itemvalue="Python.disk_manager" />
         <item itemvalue="Python.calc" />
-        <item itemvalue="Python.screen_scanner" />
       </list>
     </recent_temporary>
   </component>
@@ -306,14 +304,6 @@
       <workItem from="1732569001483" duration="2956000" />
       <workItem from="1732619942923" duration="1781000" />
       <workItem from="1732621749833" duration="1141000" />
-    </task>
-    <task id="LOCAL-00001" summary="Added html support">
-      <option name="closed" value="true" />
-      <created>1732312463495</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1732312463495</updated>
     </task>
     <task id="LOCAL-00002" summary="Added editing">
       <option name="closed" value="true" />
@@ -691,7 +681,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732716202303</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Added conditions to fix incorrect OCR reading of value HP">
+      <option name="closed" value="true" />
+      <created>1732717235873</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1732717235873</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Moved everything to differentiated folders">
+      <option name="closed" value="true" />
+      <created>1732717519094</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1732717519094</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -710,8 +716,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Beautified the code (+N suffixes still missing)" />
-    <MESSAGE value="Fixed beautification and moved functions to its own file" />
     <MESSAGE value="Added extractor for better AI management" />
     <MESSAGE value="Added automatic clicker through the grid" />
     <MESSAGE value="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY" />
@@ -735,7 +739,9 @@
     <MESSAGE value="Modified screen scanner to create files sequentially" />
     <MESSAGE value="Make it display the best 20 non-maxed disks" />
     <MESSAGE value="Trying to correct all OCR mistakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to correct all OCR mistakes" />
+    <MESSAGE value="Added conditions to fix incorrect OCR reading of value HP" />
+    <MESSAGE value="Moved everything to differentiated folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved everything to differentiated folders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -755,6 +761,7 @@
     <SUITE FILE_PATH="coverage/disc$ocr_data_parser.coverage" NAME="ocr_data_parser Coverage Results" MODIFIED="1732716521828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$data_migration.coverage" NAME="data_migration Coverage Results" MODIFIED="1732622405285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/disc$calc.coverage" NAME="calc Coverage Results" MODIFIED="1732712784416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1732717487851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/disk_related" />
     <SUITE FILE_PATH="coverage/disc$disk.coverage" NAME="disk Coverage Results" MODIFIED="1732566667804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732716868936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$ocr_image_processor.coverage" NAME="ocr_image_processor Coverage Results" MODIFIED="1732704922851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />

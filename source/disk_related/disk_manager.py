@@ -1,9 +1,9 @@
 from operator import itemgetter
 from typing import List
 
-from constants import SUBSTAT_WEIGHTS
-from source.disk import Disk, Stat
-from source.disk_database import DiskDatabase
+from source.constants import SUBSTAT_WEIGHTS
+from source.disk_related.disk import Disk, Stat
+from source.disk_related.disk_database import DiskDatabase
 
 
 class DiskManager:
