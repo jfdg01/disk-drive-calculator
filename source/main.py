@@ -1,5 +1,3 @@
-from lib2to3.pytree import convert
-
 from source.json_to_db_data_converter import convert_json_to_db
 from source.ocr_data_parser import OCRDataParser
 from source.ocr_image_processor import OCRImageProcessor
