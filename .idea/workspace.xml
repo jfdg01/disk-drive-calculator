@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Modified screen scanner to create files sequentially">
-      <change beforePath="$PROJECT_DIR$/.idea/disc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/disc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/disk_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/disk_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/json_to_db_data_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/json_to_db_data_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ocr_image_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_image_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/screen_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/screen_scanner.py" afterDir="false" />
-    </list>
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Deleted test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -675,7 +666,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732707994293</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Reworked code to work with root images folder and subfolders">
+      <option name="closed" value="true" />
+      <created>1732709126671</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1732709126671</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Deleted test">
+      <option name="closed" value="true" />
+      <created>1732709266289</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1732709266289</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Deleted test">
+      <option name="closed" value="true" />
+      <created>1732709291448</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1732709291448</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,8 +709,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added recognition, regions and gitignore" />
-    <MESSAGE value="Modularized the code" />
     <MESSAGE value="Beautified the code (+N suffixes still missing)" />
     <MESSAGE value="Fixed beautification and moved functions to its own file" />
     <MESSAGE value="Added extractor for better AI management" />
@@ -719,7 +732,9 @@
     <MESSAGE value="Deleted unused files" />
     <MESSAGE value="Parametrized all file path data and combined every class in main" />
     <MESSAGE value="Modified screen scanner to create files sequentially" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified screen scanner to create files sequentially" />
+    <MESSAGE value="Reworked code to work with root images folder and subfolders" />
+    <MESSAGE value="Deleted test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
