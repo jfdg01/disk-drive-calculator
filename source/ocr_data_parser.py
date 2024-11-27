@@ -82,6 +82,12 @@ class OCRDataParser:
             if value_part.endswith("%"):
                 percentage = True
 
+            if stat_data["name"] == "Anomaly Proficlency":
+                stat_data["name"] = "Anomaly Proficiency"
+
+            if stat_data["name"] == "MP" or stat_data["name"] == "AP":
+                stat_data["name"] = "HP"
+
             if not percentage:
                 if stat_data["name"] == "ATK":
                     stat_data["name"] = "Flat ATK"

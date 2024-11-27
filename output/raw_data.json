@@ -1,2054 +1,1973 @@
 {
-    "images_disk_001": {
-        "main_stat": "Anomaly Mastery 30%\n",
-        "sub_stats": [
-            "ATK 19\n",
-            "CRIT DMG +1 9.6%\n",
-            "PEN +1 18\n",
-            "CRIT Rate +2 7.2%\n"
-        ]
-    },
-    "images_disk_002": {
-        "main_stat": "Anomaly Mastery 30%\n",
-        "sub_stats": [
-            "ATK 19\n",
-            "CRIT DMG +1 9.6%\n",
-            "PEN +1 18\n",
-            "CRIT Rate +2 7.2%\n"
-        ]
-    },
-    "images_disk_003": {
-        "main_stat": "Anomaly Mastery 30%\n",
-        "sub_stats": [
-            "ATK 19\n",
-            "CRIT DMG +1 9.6%\n",
-            "PEN +1 18\n",
-            "CRIT Rate +2 7.2%\n"
-        ]
-    },
-    "images_disk_004": {
-        "main_stat": "Anomaly Mastery 30%\n",
-        "sub_stats": [
-            "ATK 18\n",
-            "CRIT DMG +1 9.6%\n",
-            "PEN +1 18\n",
-            "CRIT Rate +2 7.2%\n"
-        ]
-    },
     "images_1_disk_001": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "ATK 19\n",
-            "PEN 9\n",
-            "Anomaly Proficlency +2 27\n",
-            "ATK 42 9%\n"
+            "ATK 19",
+            "PEN 9",
+            "Anomaly Proficlency +2 27",
+            "ATK 42 9%"
         ]
     },
     "images_1_disk_002": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n",
-            "DEF +2 45\n",
-            "Anomaly Proficiency +2 27\n"
+            "ATK 3%",
+            "CRIT DMG 4.8%",
+            "DEF +2 45",
+            "Anomaly Proficiency +2 27"
         ]
     },
     "images_1_disk_003": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "MP +1 224\n",
-            "Anomaly Proficiency +2 27\n",
-            "PEN 9\n",
-            "CRIT Rate +1 4.8%\n"
+            "MP +1 224",
+            "Anomaly Proficiency +2 27",
+            "PEN 9",
+            "CRIT Rate +1 4.8%"
         ]
     },
     "images_1_disk_004": {
-        "main_stat": "DEF 184\n",
+        "main_stat": "DEF 184",
         "sub_stats": [
-            "Anomaly Proficiency +1 18\n",
-            "PEN +1 18\n",
-            "HP +1 6%\n",
-            "CRIT Rate +1 4.8%\n"
+            "Anomaly Proficiency +1 18",
+            "PEN +1 18",
+            "HP +1 6%",
+            "CRIT Rate +1 4.8%"
         ]
     },
     "images_1_disk_005": {
-        "main_stat": "Anomaly Mastery 30%\n",
+        "main_stat": "Anomaly Mastery 30%",
         "sub_stats": [
-            "ATK +1 38\n",
-            "HP +2 336\n",
-            "ATK 3%\n",
-            "DEF +2 144%\n"
+            "ATK +1 38",
+            "HP +2 336",
+            "ATK 3%",
+            "DEF +2 144%"
         ]
     },
     "images_1_disk_006": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "CRIT DMG +3 19.2%\n",
-            "HP +1 6%\n",
-            "CRIT Rate +1 4.8%\n",
-            "Anomaly Proficiency 9\n"
+            "CRIT DMG +3 19.2%",
+            "HP +1 6%",
+            "CRIT Rate +1 4.8%",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_1_disk_007": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "CRIT Rate +1 4.8%\n",
-            "MP +1 6%\n",
-            "Anomaly Proficiency +2 27\n"
+            "CRIT DMG 4.8%",
+            "CRIT Rate +1 4.8%",
+            "MP +1 6%",
+            "Anomaly Proficiency +2 27"
         ]
     },
     "images_1_disk_008": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "DEF 15\n",
-            "CRIT DMG +3 19.2%\n",
-            "CRIT Rate 24%\n",
-            "DEF +1 9.6%\n"
+            "DEF 15",
+            "CRIT DMG +3 19.2%",
+            "CRIT Rate 24%",
+            "DEF +1 9.6%"
         ]
     },
     "images_1_disk_009": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "ATK +1 6%\n",
-            "MP +1 6%\n",
-            "CRIT DMG +2 144%\n"
+            "CRIT Rate 24%",
+            "ATK +1 6%",
+            "MP +1 6%",
+            "CRIT DMG +2 144%"
         ]
     },
     "images_1_disk_010": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "CRIT Rate +2 7.2%\n",
-            "DEF 4.8%\n",
-            "MP +1 6%\n",
-            "CRIT DMG +1 9.6%\n"
+            "CRIT Rate +2 7.2%",
+            "DEF 4.8%",
+            "MP +1 6%",
+            "CRIT DMG +1 9.6%"
         ]
     },
     "images_1_disk_011": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "CRIT Rate +1 4.8%\n",
-            "ATK +2 9%\n",
-            "DEF +1 9.6%\n",
-            "CRIT DMG 4.8%\n"
+            "CRIT Rate +1 4.8%",
+            "ATK +2 9%",
+            "DEF +1 9.6%",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_1_disk_012": {
-        "main_stat": "DEF 184\n",
+        "main_stat": "DEF 184",
         "sub_stats": [
-            "CRIT Rate +1 48%\n",
-            "PEN +1 18\n",
-            "CRIT DMG +1 9.6%\n",
-            "AP +1 6%\n"
+            "CRIT Rate +1 48%",
+            "PEN +1 18",
+            "CRIT DMG +1 9.6%",
+            "AP +1 6%"
         ]
     },
     "images_1_disk_013": {
-        "main_stat": "DEF 184\n",
+        "main_stat": "DEF 184",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "Anomaly Proficiency 9\n",
-            "PEN +2 27\n",
-            "CRIT Rate +2 7.2%\n"
+            "CRIT DMG 4.8%",
+            "Anomaly Proficiency 9",
+            "PEN +2 27",
+            "CRIT Rate +2 7.2%"
         ]
     },
     "images_1_disk_014": {
-        "main_stat": "CRIT Rate 24%\n",
+        "main_stat": "CRIT Rate 24%",
         "sub_stats": [
-            "ATK +2 s7\n",
-            "HP 112\n",
-            "DEF +1 9.6%\n",
-            "Anomaly Proficiency +1 18\n"
+            "ATK +2 s7",
+            "HP 112",
+            "DEF +1 9.6%",
+            "Anomaly Proficiency +1 18"
         ]
     },
     "images_1_disk_015": {
-        "main_stat": "Ice DMG Bonus 30%\n",
+        "main_stat": "Ice DMG Bonus 30%",
         "sub_stats": [
-            "Anomaly Proficiency +2 27\n",
-            "CRIT DMG +1 9.6%\n",
-            "DEF 4.8%\n",
-            "MP +1 224\n"
+            "Anomaly Proficiency +2 27",
+            "CRIT DMG +1 9.6%",
+            "DEF 4.8%",
+            "MP +1 224"
         ]
     },
     "images_1_disk_016": {
-        "main_stat": "Ice DMG Bonus 30%\n",
+        "main_stat": "Ice DMG Bonus 30%",
         "sub_stats": [
-            "ATK +2 s7\n",
-            "CRIT Rate +1 4.8%\n",
-            "DEF +1 9.6%\n",
-            "PEN 9\n"
+            "ATK +2 s7",
+            "CRIT Rate +1 4.8%",
+            "DEF +1 9.6%",
+            "PEN 9"
         ]
     },
     "images_1_disk_017": {
-        "main_stat": "Physical DMG Bonus 30%\n",
+        "main_stat": "Physical DMG Bonus 30%",
         "sub_stats": [
-            "DEF +1 9.6%\n",
-            "ATK +1 38\n",
-            "CRIT DMG +1 9.6%\n",
-            "CRIT Rate +2 7.2%\n"
+            "DEF +1 9.6%",
+            "ATK +1 38",
+            "CRIT DMG +1 9.6%",
+            "CRIT Rate +2 7.2%"
         ]
     },
     "images_1_disk_018": {
-        "main_stat": "ATK 30%\n",
+        "main_stat": "ATK 30%",
         "sub_stats": [
-            "PEN +2 27\n",
-            "CRIT Rate 24%\n",
-            "CRIT DMG +2 144%\n",
-            "DEF 15\n"
+            "PEN +2 27",
+            "CRIT Rate 24%",
+            "CRIT DMG +2 144%",
+            "DEF 15"
         ]
     },
     "images_1_disk_019": {
-        "main_stat": "ATK 30%\n",
+        "main_stat": "ATK 30%",
         "sub_stats": [
-            "ATK +1 38\n",
-            "DEF +3 60\n",
-            "CRIT DMG 4.8%\n",
-            "Anomaly Proficiency 9\n"
+            "ATK +1 38",
+            "DEF +3 60",
+            "CRIT DMG 4.8%",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_1_disk_020": {
-        "main_stat": "ATK 30%\n",
+        "main_stat": "ATK 30%",
         "sub_stats": [
-            "DEF +1 30\n",
-            "DEF +2 14.4%\n",
-            "PEN +1 18\n",
-            "CRIT Rate 24%\n"
+            "DEF +1 30",
+            "DEF +2 14.4%",
+            "PEN +1 18",
+            "CRIT Rate 24%"
         ]
     },
     "images_1_disk_021": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "HP +1 6%\n",
-            "ATK +1 6%\n",
-            "Anomaly Proficiency +2 27\n"
+            "CRIT DMG 4.8%",
+            "HP +1 6%",
+            "ATK +1 6%",
+            "Anomaly Proficiency +2 27"
         ]
     },
     "images_1_disk_022": {
-        "main_stat": "Anomaly Proficiency 92\n",
+        "main_stat": "Anomaly Proficiency 92",
         "sub_stats": [
-            "ATK +1 38\n",
-            "PEN +2 27\n",
-            "CRIT DMG +1 9.6%\n",
-            "ATK 3%\n"
+            "ATK +1 38",
+            "PEN +2 27",
+            "CRIT DMG +1 9.6%",
+            "ATK 3%"
         ]
     },
     "images_1_disk_023": {
-        "main_stat": "Anomaly Proficiency 92\n",
+        "main_stat": "Anomaly Proficiency 92",
         "sub_stats": [
-            "PEN +1 18\n",
-            "CRIT DMG +2 14.4%\n",
-            "ATK +1 6%\n",
-            "DEF 15\n"
+            "PEN +1 18",
+            "CRIT DMG +2 14.4%",
+            "ATK +1 6%",
+            "DEF 15"
         ]
     },
     "images_1_disk_024": {
-        "main_stat": "Fire DMG Bonus 30%\n",
+        "main_stat": "Fire DMG Bonus 30%",
         "sub_stats": [
-            "ATK +3 12%\n",
-            "DEF +1 30\n",
-            "Anomaly Proficiency +1 18\n",
-            "PEN 9\n"
+            "ATK +3 12%",
+            "DEF +1 30",
+            "Anomaly Proficiency +1 18",
+            "PEN 9"
         ]
     },
     "images_1_disk_025": {
-        "main_stat": "Anomaly Mastery 30%\n",
+        "main_stat": "Anomaly Mastery 30%",
         "sub_stats": [
-            "HP +2 9%\n",
-            "PEN +1 18\n",
-            "HP +1 224\n",
-            "Anomaly Proficiency 9\n"
+            "HP +2 9%",
+            "PEN +1 18",
+            "HP +1 224",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_1_disk_026": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "ATK +2 9%\n",
-            "Anomaly Proficiency +1 18\n",
-            "DEF +1 30\n",
-            "DEF +1 9.6%\n"
+            "ATK +2 9%",
+            "Anomaly Proficiency +1 18",
+            "DEF +1 30",
+            "DEF +1 9.6%"
         ]
     },
     "images_1_disk_027": {
-        "main_stat": "ATK 30%\n",
+        "main_stat": "ATK 30%",
         "sub_stats": [
-            "PEN +1 18\n",
-            "ATK 19\n",
-            "DEF +2 45\n",
-            "HP +1 224\n"
+            "PEN +1 18",
+            "ATK 19",
+            "DEF +2 45",
+            "HP +1 224"
         ]
     },
     "images_1_disk_028": {
-        "main_stat": "CRIT DMG 48%\n",
+        "main_stat": "CRIT DMG 48%",
         "sub_stats": [
-            "HP +1 6%\n",
-            "DEF 15\n",
-            "ATK +3 12%\n",
-            "PEN 9\n"
+            "HP +1 6%",
+            "DEF 15",
+            "ATK +3 12%",
+            "PEN 9"
         ]
     },
     "images_1_disk_029": {
-        "main_stat": "ATK 30%\n",
+        "main_stat": "ATK 30%",
         "sub_stats": [
-            "Anomaly Proficiency +1 18\n",
-            "ATK 19\n",
-            "PEN +2 27\n",
-            "MP +2 336\n"
+            "Anomaly Proficiency +1 18",
+            "ATK 19",
+            "PEN +2 27",
+            "MP +2 336"
         ]
     },
     "images_1_disk_030": {
-        "main_stat": "Ice DMG Bonus 30%\n",
+        "main_stat": "Ice DMG Bonus 30%",
         "sub_stats": [
-            "HP +3 12%\n",
-            "Anomaly Proficiency +1 18\n",
-            "ATK +1 38\n",
-            "CRIT Rate 24%\n"
+            "HP +3 12%",
+            "Anomaly Proficiency +1 18",
+            "ATK +1 38",
+            "CRIT Rate 24%"
         ]
     },
     "images_1_disk_031": {
-        "main_stat": "ATK 30%\n",
+        "main_stat": "ATK 30%",
         "sub_stats": [
-            "PEN 9\n",
-            "HP +2 336\n",
-            "CRIT Rate 24%\n",
-            "ATK 42 57\n"
+            "PEN 9",
+            "HP +2 336",
+            "CRIT Rate 24%",
+            "ATK 42 57"
         ]
     },
     "images_1_disk_032": {
-        "main_stat": "ATK 30%\n",
+        "main_stat": "ATK 30%",
         "sub_stats": [
-            "CRIT DMG +2 14.4%\n",
-            "DEF +1 30\n",
-            "PEN 9\n",
-            "HP +2 9%\n"
+            "CRIT DMG +2 14.4%",
+            "DEF +1 30",
+            "PEN 9",
+            "HP +2 9%"
         ]
     },
     "images_2_disk_001": {
-        "main_stat": "Impact 18%\n",
+        "main_stat": "Impact 18%",
         "sub_stats": [
-            "PEN +1 18\n",
-            "ATK +1 6%\n",
-            "CRIT DMG +2 144%\n",
-            "DEF 4.8%\n"
+            "PEN +1 18",
+            "ATK +1 6%",
+            "CRIT DMG +2 144%",
+            "DEF 4.8%"
         ]
     },
     "images_2_disk_002": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "ATK +1 6%\n",
-            "DEF +2 14.4%\n",
-            "HP +1 6%\n",
-            "Anomaly Proficiency 9\n"
+            "ATK +1 6%",
+            "DEF +2 14.4%",
+            "HP +1 6%",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_2_disk_003": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "CRIT DMG +1 9.6%\n",
-            "DEF +2 14.4%\n",
-            "ATK +2 9%\n",
-            "CRIT Rate 24%\n"
+            "CRIT DMG +1 9.6%",
+            "DEF +2 14.4%",
+            "ATK +2 9%",
+            "CRIT Rate 24%"
         ]
     },
     "images_2_disk_004": {
-        "main_stat": "DEF 184\n",
+        "main_stat": "DEF 184",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "CRIT Rate +2 7.2%\n",
-            "CRIT DMG +1 9.6%\n",
-            "ATK +1 38\n"
+            "Anomaly Proficiency 3",
+            "CRIT Rate +2 7.2%",
+            "CRIT DMG +1 9.6%",
+            "ATK +1 38"
         ]
     },
     "images_2_disk_005": {
-        "main_stat": "CRIT DMG 48%\n",
+        "main_stat": "CRIT DMG 48%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "HP +1 224\n",
-            "ATK +1 38\n",
-            "DEF +2 144%\n"
+            "CRIT Rate 24%",
+            "HP +1 224",
+            "ATK +1 38",
+            "DEF +2 144%"
         ]
     },
     "images_2_disk_006": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "ATK +1 38\n",
-            "PEN +1 18\n",
-            "Anomaly Proficlency +2 27\n",
-            "CRIT DMG 4.8%\n"
+            "ATK +1 38",
+            "PEN +1 18",
+            "Anomaly Proficlency +2 27",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_2_disk_007": {
-        "main_stat": "HP 2200\n",
+        "main_stat": "HP 2200",
         "sub_stats": [
-            "ATK 3%\n",
-            "ATK +1 38\n",
-            "CRIT DMG +2 144%\n",
-            "Anomaly Proficiency +1 18\n"
+            "ATK 3%",
+            "ATK +1 38",
+            "CRIT DMG +2 144%",
+            "Anomaly Proficiency +1 18"
         ]
     },
     "images_2_disk_008": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "Anomaly Proficiency +2 27\n",
-            "ATK +1 6%\n",
-            "CRIT Rate +1 4.8%\n",
-            "HP 3%\n"
+            "Anomaly Proficiency +2 27",
+            "ATK +1 6%",
+            "CRIT Rate +1 4.8%",
+            "HP 3%"
         ]
     },
     "images_2_disk_009": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "HP +1 224\n",
-            "CRIT DMG +1 9.6%\n",
-            "Anomaly Proficiency +1 18\n",
-            "ATK +1 6%\n"
+            "HP +1 224",
+            "CRIT DMG +1 9.6%",
+            "Anomaly Proficiency +1 18",
+            "ATK +1 6%"
         ]
     },
     "images_2_disk_010": {
-        "main_stat": "ATK 316\n",
+        "main_stat": "ATK 316",
         "sub_stats": [
-            "HP 112\n",
-            "ATK +1 6%\n",
-            "Anomaly Proficlency +2 27\n",
-            "CRIT DMG +1 9.6%\n"
+            "HP 112",
+            "ATK +1 6%",
+            "Anomaly Proficlency +2 27",
+            "CRIT DMG +1 9.6%"
         ]
     },
     "images_2_disk_011": {
-        "main_stat": "DEF 184\n",
+        "main_stat": "DEF 184",
         "sub_stats": [
-            "ATK 3%\n",
-            "Anomaly Proficiency +4 45\n",
-            "PEN 8\n",
-            "DEF 4.8%\n"
+            "ATK 3%",
+            "Anomaly Proficiency +4 45",
+            "PEN 8",
+            "DEF 4.8%"
         ]
     },
     "images_2_disk_012": {
-        "main_stat": "Physical DMG Bonus 30%\n",
+        "main_stat": "Physical DMG Bonus 30%",
         "sub_stats": [
-            "DEF +2 45\n",
-            "PEN 9\n",
-            "Anomaly Proficiency 9\n",
-            "ATK 42 9%\n"
+            "DEF +2 45",
+            "PEN 9",
+            "Anomaly Proficiency 9",
+            "ATK 42 9%"
         ]
     },
     "images_2_disk_013": {
-        "main_stat": "Physical DMG Bonus 30%\n",
+        "main_stat": "Physical DMG Bonus 30%",
         "sub_stats": [
-            "ATK +1 6%\n",
-            "HP +1 224\n",
-            "ATK +2 57\n",
-            "PEN +1 18\n"
+            "ATK +1 6%",
+            "HP +1 224",
+            "ATK +2 57",
+            "PEN +1 18"
         ]
     },
     "images_2_disk_014": {
-        "main_stat": "Anomaly Mastery 30%\n",
+        "main_stat": "Anomaly Mastery 30%",
         "sub_stats": [
-            "HP +2 9%\n",
-            "CRIT Rate 24%\n",
-            "MP +1 224\n",
-            "CRIT DMG +1 9.6%\n"
+            "HP +2 9%",
+            "CRIT Rate 24%",
+            "MP +1 224",
+            "CRIT DMG +1 9.6%"
         ]
     },
     "images_2_disk_015": {
-        "main_stat": "HP 1540\n",
+        "main_stat": "HP 1540",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "CRIT DMG 4.8%\n",
-            "ATK +2 57\n",
-            "Anomaly Proficiency 9\n"
+            "CRIT Rate 24%",
+            "CRIT DMG 4.8%",
+            "ATK +2 57",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_2_disk_016": {
-        "main_stat": "HP 1210\n",
+        "main_stat": "HP 1210",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "Anomaly Proficiency 3\n",
-            "CRIT DMG +1 9.6%\n",
-            "ATK 19\n"
+            "DEF 4.8%",
+            "Anomaly Proficiency 3",
+            "CRIT DMG +1 9.6%",
+            "ATK 19"
         ]
     },
     "images_2_disk_017": {
-        "main_stat": "Physical DMG Bonus 16.5%\n",
+        "main_stat": "Physical DMG Bonus 16.5%",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "CRIT DMG 4.8%\n",
-            "DEF 15\n",
-            "HP +1 6%\n"
+            "Anomaly Proficiency 3",
+            "CRIT DMG 4.8%",
+            "DEF 15",
+            "HP +1 6%"
         ]
     },
     "images_2_disk_018": {
-        "main_stat": "DEF 101\n",
+        "main_stat": "DEF 101",
         "sub_stats": [
-            "ATK 19\n",
-            "CRIT Rate 24%\n",
-            "MP +1 224\n",
-            "Anomaly Proficiency 9\n"
+            "ATK 19",
+            "CRIT Rate 24%",
+            "MP +1 224",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_2_disk_019": {
-        "main_stat": "Fire DMG Bonus 16.5%\n",
+        "main_stat": "Fire DMG Bonus 16.5%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "HP +1 6%\n",
-            "PEN 9\n",
-            "ATK 3%\n"
+            "CRIT Rate 24%",
+            "HP +1 6%",
+            "PEN 9",
+            "ATK 3%"
         ]
     },
     "images_2_disk_020": {
-        "main_stat": "ATK 16.5%\n",
+        "main_stat": "ATK 16.5%",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "PEN +1 18\n",
-            "DEF 4.8%\n",
-            "DEF 15\n"
+            "Anomaly Proficiency 3",
+            "PEN +1 18",
+            "DEF 4.8%",
+            "DEF 15"
         ]
     },
     "images_2_disk_021": {
-        "main_stat": "Anomaly Proficiency 50\n",
+        "main_stat": "Anomaly Proficiency 50",
         "sub_stats": [
-            "ATK 19\n",
-            "PEN 9\n",
-            "MP +1 224\n",
-            "DEF 15\n"
+            "ATK 19",
+            "PEN 9",
+            "MP +1 224",
+            "DEF 15"
         ]
     },
     "images_2_disk_022": {
-        "main_stat": "CRIT Rate 10.8%\n",
+        "main_stat": "CRIT Rate 10.8%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "ATK 19\n",
-            "DEF 15\n",
-            "ATK 3%\n"
+            "DEF 4.8%",
+            "ATK 19",
+            "DEF 15",
+            "ATK 3%"
         ]
     },
     "images_2_disk_023": {
-        "main_stat": "CRIT DMG 21.6%\n",
+        "main_stat": "CRIT DMG 21.6%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "HP 3%\n",
-            "DEF 15\n",
-            "Anomaly Proficiency 9\n"
+            "DEF 4.8%",
+            "HP 3%",
+            "DEF 15",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_2_disk_024": {
-        "main_stat": "ATK 13.5%\n",
+        "main_stat": "ATK 13.5%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "CRIT Rate 24%\n",
-            "DEF 15\n",
-            "Anomaly Proficiency 9\n"
+            "CRIT DMG 4.8%",
+            "CRIT Rate 24%",
+            "DEF 15",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_2_disk_025": {
-        "main_stat": "Anomaly Mastery 13.5%\n",
+        "main_stat": "Anomaly Mastery 13.5%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n",
-            "HP 112\n"
+            "DEF 4.8%",
+            "ATK 3%",
+            "CRIT DMG 4.8%",
+            "HP 112"
         ]
     },
     "images_2_disk_026": {
-        "main_stat": "Energy Regen 24%\n",
+        "main_stat": "Energy Regen 24%",
         "sub_stats": [
-            "Anomaly Proficiency 9\n",
-            "CRIT DMG 4.8%\n",
-            "HP 112\n",
-            "DEF 15\n"
+            "Anomaly Proficiency 9",
+            "CRIT DMG 4.8%",
+            "HP 112",
+            "DEF 15"
         ]
     },
     "images_2_disk_027": {
         "main_stat": "",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "DEF 4.8%\n",
-            "CRIT Rate 24%\n"
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "DEF 4.8%",
+            "CRIT Rate 24%"
         ]
     },
     "images_2_disk_028": {
-        "main_stat": "ATK 126\n",
+        "main_stat": "ATK 126",
         "sub_stats": [
-            "DEF +1 9.6%\n",
-            "Anomaly Proficiency 3\n",
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n"
+            "DEF +1 9.6%",
+            "Anomaly Proficiency 3",
+            "ATK 3%",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_2_disk_029": {
-        "main_stat": "Anomaly Proficiency 36\n",
+        "main_stat": "Anomaly Proficiency 36",
         "sub_stats": [
-            "DEF 15\n",
-            "ATK 3%\n",
-            "HP 3%\n",
-            "CRIT Rate 24%\n"
+            "DEF 15",
+            "ATK 3%",
+            "HP 3%",
+            "CRIT Rate 24%"
         ]
     },
     "images_2_disk_030": {
-        "main_stat": "Energy Regen 24%\n",
+        "main_stat": "Energy Regen 24%",
         "sub_stats": [
-            "HP 112\n",
-            "DEF 15\n",
-            "DEF 4.8%\n",
-            "HP 3%\n"
+            "HP 112",
+            "DEF 15",
+            "DEF 4.8%",
+            "HP 3%"
         ]
     },
     "images_2_disk_031": {
-        "main_stat": "Anomaly Proficiency 36\n",
+        "main_stat": "Anomaly Proficiency 36",
         "sub_stats": [
-            "ATK 19\n",
-            "CRIT Rate 24%\n",
-            "ATK 3%\n",
-            "HP 112\n"
+            "ATK 19",
+            "CRIT Rate 24%",
+            "ATK 3%",
+            "HP 112"
         ]
     },
     "images_2_disk_032": {
-        "main_stat": "Energy Regen 24%\n",
+        "main_stat": "Energy Regen 24%",
         "sub_stats": [
-            "ATK 3%\n",
-            "PEN 9\n",
-            "CRIT Rate 24%\n",
-            "HP 112\n"
+            "ATK 3%",
+            "PEN 9",
+            "CRIT Rate 24%",
+            "HP 112"
         ]
     },
     "images_3_disk_001": {
-        "main_stat": "Anomaly Mastery 12%\n",
+        "main_stat": "Anomaly Mastery 12%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "CRIT Rate 24%\n",
-            "PEN 9\n",
-            "HP 3%\n"
+            "DEF 4.8%",
+            "CRIT Rate 24%",
+            "PEN 9",
+            "HP 3%"
         ]
     },
     "images_3_disk_002": {
         "main_stat": "",
         "sub_stats": [
-            "HP 3%\n",
-            "Anomaly Proficiency 9\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "HP 3%",
+            "Anomaly Proficiency 9",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_3_disk_003": {
-        "main_stat": "Fire DMG Bonus 7.5%\n",
+        "main_stat": "Fire DMG Bonus 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "ATK 3%\n",
-            "ATK 19\n",
-            "PEN 9\n"
+            "HP 112",
+            "ATK 3%",
+            "ATK 19",
+            "PEN 9"
         ]
     },
     "images_3_disk_004": {
-        "main_stat": "Physical DMG Bonus 7.5%\n",
+        "main_stat": "Physical DMG Bonus 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "ATK 19\n",
-            "HP 3%\n",
-            "CRIT Rate 24%\n"
+            "HP 112",
+            "ATK 19",
+            "HP 3%",
+            "CRIT Rate 24%"
         ]
     },
     "images_3_disk_005": {
-        "main_stat": "Ice DMG Bonus 7.5%\n",
+        "main_stat": "Ice DMG Bonus 7.5%",
         "sub_stats": [
-            "Anomaly Proficiency 9\n",
-            "DEF 15\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 9",
+            "DEF 15",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_3_disk_006": {
-        "main_stat": "Ice DMG Bonus 7.5%\n",
+        "main_stat": "Ice DMG Bonus 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "Anomaly Proficiency 3\n",
-            "DEF 15\n",
-            "ATK 19\n"
+            "HP 112",
+            "Anomaly Proficiency 3",
+            "DEF 15",
+            "ATK 19"
         ]
     },
     "images_3_disk_007": {
-        "main_stat": "Energy Regen 15%\n",
+        "main_stat": "Energy Regen 15%",
         "sub_stats": [
-            "Anomaly Proficiency 9\n",
-            "PEN 9\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 9",
+            "PEN 9",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_3_disk_008": {
         "main_stat": "",
         "sub_stats": [
-            "HP 3%\n",
-            "ATK 19\n",
-            "Anomaly Proficiency 9\n",
-            "CRIT DMG 4.8%\n"
+            "HP 3%",
+            "ATK 19",
+            "Anomaly Proficiency 9",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_3_disk_009": {
         "main_stat": "",
         "sub_stats": [
-            "PEN 9\n",
-            "DEF 4.8%\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "PEN 9",
+            "DEF 4.8%",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_3_disk_010": {
         "main_stat": "",
         "sub_stats": [
-            "ATK 3%\n",
-            "HP 3%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "HP 3%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_3_disk_011": {
         "main_stat": "",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "ATK 19\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 3",
+            "ATK 19",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_3_disk_012": {
         "main_stat": "",
         "sub_stats": [
-            "ATK 3%\n",
-            "ATK 19\n",
-            "CRIT Rate 24%\n",
-            "DEF 15\n"
+            "ATK 3%",
+            "ATK 19",
+            "CRIT Rate 24%",
+            "DEF 15"
         ]
     },
     "images_3_disk_013": {
         "main_stat": "",
         "sub_stats": [
-            "PEN 9\n",
-            "HP 3%\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "PEN 9",
+            "HP 3%",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_3_disk_014": {
         "main_stat": "",
         "sub_stats": [
-            "ATK 3%\n",
-            "HP 3%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "HP 3%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_3_disk_015": {
         "main_stat": "",
         "sub_stats": [
-            "DEF 15\n",
-            "ATK 3%\n",
-            "PEN 9\n",
-            "CRIT DMG 4.8%\n"
+            "DEF 15",
+            "ATK 3%",
+            "PEN 9",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_3_disk_016": {
-        "main_stat": "ATK 79\n",
+        "main_stat": "ATK 79",
         "sub_stats": [
-            "PEN 9\n",
-            "DEF 4.8%\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "PEN 9",
+            "DEF 4.8%",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_3_disk_017": {
-        "main_stat": "ATK 73\n",
+        "main_stat": "ATK 73",
         "sub_stats": [
-            "PEN 9\n",
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n",
-            "DEF 4.8%\n"
+            "PEN 9",
+            "ATK 3%",
+            "CRIT DMG 4.8%",
+            "DEF 4.8%"
         ]
     },
     "images_3_disk_018": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "Anomaly Proficiency 9\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "Anomaly Proficiency 9",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_3_disk_019": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "HP 112\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "HP 112",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_3_disk_020": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "HP 3%\n",
-            "Anomaly Proficiency 9\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "HP 3%",
+            "Anomaly Proficiency 9",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_3_disk_021": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "PEN 9\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "PEN 9",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_3_disk_022": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_3_disk_023": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "HP 3%\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "HP 3%",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_3_disk_024": {
-        "main_stat": "CRIT DMG 12%\n",
+        "main_stat": "CRIT DMG 12%",
         "sub_stats": [
-            "HP 112\n",
-            "Anomaly Proficiency 9\n",
-            "CRIT Rate 24%\n",
-            "ATK 3%\n"
+            "HP 112",
+            "Anomaly Proficiency 9",
+            "CRIT Rate 24%",
+            "ATK 3%"
         ]
     },
     "images_3_disk_025": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "ATK 19\n",
-            "PEN 9\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "PEN 9",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_3_disk_026": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "HP 3%\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "HP 3%",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_3_disk_027": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "DEF 48%\n",
-            "CRIT Rate 24%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "DEF 48%",
+            "CRIT Rate 24%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_3_disk_028": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "HP 112\n",
-            "Anomaly Proficiency 3\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "HP 112",
+            "Anomaly Proficiency 3",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_3_disk_029": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "CRIT DMG 4.8%\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "HP 112",
+            "CRIT DMG 4.8%",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_3_disk_030": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "ATK 19\n",
-            "CRIT DMG 4.8%\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "ATK 19",
+            "CRIT DMG 4.8%",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_3_disk_031": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "HP 112\n",
-            "ATK 3%\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "HP 112",
+            "ATK 3%",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_3_disk_032": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "HP 112\n",
-            "DEF 4.8%\n",
-            "DEF 15\n"
+            "CRIT DMG 4.8%",
+            "HP 112",
+            "DEF 4.8%",
+            "DEF 15"
         ]
     },
     "images_4_disk_001": {
-        "main_stat": "Fire DMG Bonus 7.5%\n",
+        "main_stat": "Fire DMG Bonus 7.5%",
         "sub_stats": [
-            "PEN 9\n",
-            "HP 112\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "PEN 9",
+            "HP 112",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_4_disk_002": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "DEF 15\n",
-            "Anomaly Proficiency 9\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "DEF 15",
+            "Anomaly Proficiency 9",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_4_disk_003": {
-        "main_stat": "Electric DMG Bonus 7.5%\n",
+        "main_stat": "Electric DMG Bonus 7.5%",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "PEN 9\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 3",
+            "PEN 9",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_4_disk_004": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "ATK 19\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "ATK 19",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_4_disk_005": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "PEN 9\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "PEN 9",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_4_disk_006": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "PEN 9\n",
-            "ATK 3%\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "PEN 9",
+            "ATK 3%",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_4_disk_007": {
-        "main_stat": "Impact 45%\n",
+        "main_stat": "Impact 45%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "CRIT Rate 24%\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "CRIT Rate 24%",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_4_disk_008": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "ATK 3%\n",
-            "HP 112\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "HP 112",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_4_disk_009": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "HP 3%\n",
-            "DEF 15\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "HP 3%",
+            "DEF 15",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_4_disk_010": {
-        "main_stat": "Anomaly Mastery 7.5%\n",
+        "main_stat": "Anomaly Mastery 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "ATK 3%\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "HP 112",
+            "ATK 3%",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_4_disk_011": {
-        "main_stat": "ATK 79\n",
+        "main_stat": "ATK 79",
         "sub_stats": [
-            "ATK 3%\n",
-            "HP 112\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "HP 112",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_4_disk_012": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "ATK 19\n",
-            "ATK 3%\n",
-            "HP 112\n",
-            "CRIT DMG 4.8%\n"
+            "ATK 19",
+            "ATK 3%",
+            "HP 112",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_4_disk_013": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "ATK 3%\n",
-            "HP 3%\n",
-            "Anomaly Proficlency 9\n",
-            "PEN 9\n"
+            "ATK 3%",
+            "HP 3%",
+            "Anomaly Proficlency 9",
+            "PEN 9"
         ]
     },
     "images_4_disk_014": {
-        "main_stat": "Physical DMG Bonus 7.5%\n",
+        "main_stat": "Physical DMG Bonus 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "HP 3%\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "HP 112",
+            "HP 3%",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_4_disk_015": {
-        "main_stat": "Physical DMG Bonus 7.5%\n",
+        "main_stat": "Physical DMG Bonus 7.5%",
         "sub_stats": [
-            "ATK 3%\n",
-            "Anomaly Proficiency 9\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "Anomaly Proficiency 9",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_4_disk_016": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "ATK 19\n",
-            "Anomaly Proficiency 9\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "ATK 19",
+            "Anomaly Proficiency 9",
+            "Set Effect"
         ]
     },
     "images_4_disk_017": {
-        "main_stat": "Anomaly Mastery 7.5%\n",
+        "main_stat": "Anomaly Mastery 7.5%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "Ld 112\n",
-            "PEN 9\n",
-            "Anomaly Proficiency 9\n"
+            "CRIT Rate 24%",
+            "Ld 112",
+            "PEN 9",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_4_disk_018": {
-        "main_stat": "Impact 45%\n",
+        "main_stat": "Impact 45%",
         "sub_stats": [
-            "DEF 15\n",
-            "DEF 4.8%\n",
-            "Anomaly Proficiency 9\n",
-            "Set Effect\n"
+            "DEF 15",
+            "DEF 4.8%",
+            "Anomaly Proficiency 9",
+            "Set Effect"
         ]
     },
     "images_4_disk_019": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "PEN 9\n",
-            "DEF 4.8%\n",
-            "CRIT DMG 4.8%\n"
+            "Anomaly Proficiency 3",
+            "PEN 9",
+            "DEF 4.8%",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_4_disk_020": {
-        "main_stat": "Electric DMG Bonus 7.5%\n",
+        "main_stat": "Electric DMG Bonus 7.5%",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "HP 3%\n",
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n"
+            "Anomaly Proficiency 3",
+            "HP 3%",
+            "CRIT DMG 4.8%",
+            "ATK 3%"
         ]
     },
     "images_4_disk_021": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "DEF 15\n",
-            "Anomaly Proficiency 3\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "DEF 15",
+            "Anomaly Proficiency 3",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_4_disk_022": {
-        "main_stat": "ATK 79\n",
+        "main_stat": "ATK 79",
         "sub_stats": [
-            "HP 112\n",
-            "CRIT Rate 24%\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "HP 112",
+            "CRIT Rate 24%",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_4_disk_023": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "HP 3%\n",
-            "PEN 9\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "HP 3%",
+            "PEN 9",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_4_disk_024": {
-        "main_stat": "Anomaly Proficiency 23\n",
+        "main_stat": "Anomaly Proficiency 23",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "HP 112\n",
-            "ATK 19\n",
-            "DEF 15\n"
+            "CRIT Rate 24%",
+            "HP 112",
+            "ATK 19",
+            "DEF 15"
         ]
     },
     "images_4_disk_025": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "PEN 9\n",
-            "CRIT DMG 4.8%\n",
-            "HP 112\n",
-            "Anomaly Proficiency 9\n"
+            "PEN 9",
+            "CRIT DMG 4.8%",
+            "HP 112",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_4_disk_026": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "HP 112\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "HP 112",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_4_disk_027": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "Anomaly Proficiency 9\n",
-            "HP 112\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 9",
+            "HP 112",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_4_disk_028": {
-        "main_stat": "PEN Ratio 6%\n",
+        "main_stat": "PEN Ratio 6%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "PEN 9\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "PEN 9",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_4_disk_029": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "CRIT Rate 24%\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "CRIT Rate 24%",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_4_disk_030": {
-        "main_stat": "Energy Regen 15%\n",
+        "main_stat": "Energy Regen 15%",
         "sub_stats": [
-            "ATK 3%\n",
-            "PEN 9\n",
-            "HP 112\n",
-            "DEF 15\n"
+            "ATK 3%",
+            "PEN 9",
+            "HP 112",
+            "DEF 15"
         ]
     },
     "images_4_disk_031": {
         "main_stat": "",
         "sub_stats": [
-            "ATK 19\n",
-            "CRIT Rate 24%\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "CRIT Rate 24%",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_4_disk_032": {
         "main_stat": "",
         "sub_stats": [
-            "DEF 15\n",
-            "CRIT Rate 24%\n",
-            "ATK 19\n",
-            "HP 3%\n"
+            "DEF 15",
+            "CRIT Rate 24%",
+            "ATK 19",
+            "HP 3%"
         ]
     },
     "images_5_disk_001": {
         "main_stat": "",
         "sub_stats": [
-            "ATK 19\n",
-            "Anomaly Proficiency 3\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "ATK 19",
+            "Anomaly Proficiency 3",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_5_disk_002": {
-        "main_stat": "ATK 73\n",
+        "main_stat": "ATK 73",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "ATK 3%\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "ATK 3%",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_5_disk_003": {
-        "main_stat": "ATK 79\n",
+        "main_stat": "ATK 79",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "CRIT Rate 24%\n",
-            "PEN 9\n",
-            "HP 112\n"
+            "Anomaly Proficiency 3",
+            "CRIT Rate 24%",
+            "PEN 9",
+            "HP 112"
         ]
     },
     "images_5_disk_004": {
-        "main_stat": "ATK 79\n",
+        "main_stat": "ATK 79",
         "sub_stats": [
-            "ATK 3%\n",
-            "Anomaly Proficiency 3\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "Anomaly Proficiency 3",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_5_disk_005": {
-        "main_stat": "ATK 73\n",
+        "main_stat": "ATK 73",
         "sub_stats": [
-            "HP 3%\n",
-            "CRIT DMG 4.8%\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "HP 3%",
+            "CRIT DMG 4.8%",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_5_disk_006": {
-        "main_stat": "ATK 73\n",
+        "main_stat": "ATK 73",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "Anomaly Proficiency 9\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "Anomaly Proficiency 9",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_5_disk_007": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "HP 3%\n",
-            "Anomaly Proficiency 9\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "HP 3%",
+            "Anomaly Proficiency 9",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_5_disk_008": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "ATK 3%\n",
-            "DEF 4.8%\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "DEF 4.8%",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_5_disk_009": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "ATK 19\n",
-            "PEN 9\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "PEN 9",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_5_disk_010": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "HP 112\n",
-            "uP 3%\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "HP 112",
+            "uP 3%",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_5_disk_011": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "PEN 9\n",
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "PEN 9",
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_5_disk_012": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "DEF 4.8%\n",
-            "Anomaly Proficiency 9\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "DEF 4.8%",
+            "Anomaly Proficiency 9",
+            "Set Effect"
         ]
     },
     "images_5_disk_013": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "ATK 3%\n",
-            "CRIT Rate 24%\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "CRIT Rate 24%",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_5_disk_014": {
-        "main_stat": "CRIT DMG 12%\n",
+        "main_stat": "CRIT DMG 12%",
         "sub_stats": [
-            "PEN 9\n",
-            "ATK 3%\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "PEN 9",
+            "ATK 3%",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_5_disk_015": {
-        "main_stat": "Anomaly Proficiency 23\n",
+        "main_stat": "Anomaly Proficiency 23",
         "sub_stats": [
-            "PEN 9\n",
-            "CRIT Rate 24%\n",
-            "HP 3%\n",
-            "CRIT DMG 4.8%\n"
+            "PEN 9",
+            "CRIT Rate 24%",
+            "HP 3%",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_5_disk_016": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "PEN 9\n",
-            "HP 3%\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "PEN 9",
+            "HP 3%",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_5_disk_017": {
-        "main_stat": "Anomaly Proficiency 23\n",
+        "main_stat": "Anomaly Proficiency 23",
         "sub_stats": [
-            "ATK 3%\n",
-            "CRIT Rate 24%\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "CRIT Rate 24%",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_5_disk_018": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "ATK 19\n",
-            "Anomaly Proficiency 9\n",
-            "MP 112\n",
-            "Set Effect\n"
+            "ATK 19",
+            "Anomaly Proficiency 9",
+            "MP 112",
+            "Set Effect"
         ]
     },
     "images_5_disk_019": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "DEF 15\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "HP 112",
+            "DEF 15",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_5_disk_020": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "HP 3%\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "HP 3%",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_5_disk_021": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "PEN 9\n",
-            "HP 3%\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "PEN 9",
+            "HP 3%",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_5_disk_022": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "ATK 3%\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 3",
+            "ATK 3%",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_5_disk_023": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "ATK 3%\n",
-            "Anomaly Proficiency 9\n",
-            "Set Effect\n"
+            "HP 112",
+            "ATK 3%",
+            "Anomaly Proficiency 9",
+            "Set Effect"
         ]
     },
     "images_5_disk_024": {
-        "main_stat": "Anomaly Proficiency 23\n",
+        "main_stat": "Anomaly Proficiency 23",
         "sub_stats": [
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "CRIT DMG 4.8%",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_5_disk_025": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "DEF 15\n",
-            "ATK 19\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "DEF 15",
+            "ATK 19",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_5_disk_026": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "Anomaly Proficiency 9\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "Anomaly Proficiency 9",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_5_disk_027": {
-        "main_stat": "Fire DMG Bonus 7.5%\n",
+        "main_stat": "Fire DMG Bonus 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "HP 3%\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "HP 112",
+            "HP 3%",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_5_disk_028": {
-        "main_stat": "PEN Ratio 6%\n",
+        "main_stat": "PEN Ratio 6%",
         "sub_stats": [
-            "DEF 15\n",
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "DEF 15",
+            "ATK 3%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_5_disk_029": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "ATK 3%\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "HP 112",
+            "ATK 3%",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_5_disk_030": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "HP 112\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "HP 112",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_5_disk_031": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "ATK 3%\n",
-            "DEF 15\n",
-            "CRIT DMG 4.8%\n",
-            "Anomaly Proficiency 9\n"
+            "ATK 3%",
+            "DEF 15",
+            "CRIT DMG 4.8%",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_5_disk_032": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "HP 112\n",
-            "CRIT DMG 4.8%\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "HP 112",
+            "CRIT DMG 4.8%",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_6_disk_001": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "ATK 19\n",
-            "CRIT DMG 4.8%\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "CRIT DMG 4.8%",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_002": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "ATK 19\n",
-            "PEN 9\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "PEN 9",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_6_disk_003": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "HP 112\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "HP 112",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_6_disk_004": {
-        "main_stat": "Impact 45%\n",
+        "main_stat": "Impact 45%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "ATK 3%\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "ATK 3%",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_6_disk_005": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "PEN 9\n",
-            "ATK 3%\n",
-            "HP 112\n"
+            "CRIT DMG 4.8%",
+            "PEN 9",
+            "ATK 3%",
+            "HP 112"
         ]
     },
     "images_6_disk_006": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "ATK 3%\n",
-            "DEF 4.8%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "DEF 4.8%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_6_disk_007": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "HP 112\n",
-            "HP 3%\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "HP 112",
+            "HP 3%",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_6_disk_008": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "ATK 19\n",
-            "DEF 15\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "DEF 15",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_009": {
         "main_stat": "",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "PEN 9\n",
-            "Anomaly Proficiency 9\n"
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "PEN 9",
+            "Anomaly Proficiency 9"
         ]
     },
     "images_6_disk_010": {
         "main_stat": "",
         "sub_stats": [
-            "ATK 19\n",
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "ATK 3%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_6_disk_011": {
-        "main_stat": "ATK 79\n",
+        "main_stat": "ATK 79",
         "sub_stats": [
-            "HP 112\n",
-            "CRIT DMG 4.8%\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "HP 112",
+            "CRIT DMG 4.8%",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_6_disk_012": {
-        "main_stat": "ATK 79\n",
+        "main_stat": "ATK 79",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_013": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "Anomaly Proficiency 9\n",
-            "PEN 9\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 9",
+            "PEN 9",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_014": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "HP 3%\n",
-            "ATK 3%\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "HP 3%",
+            "ATK 3%",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_6_disk_015": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "PEN 9\n",
-            "uP 3%\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "PEN 9",
+            "uP 3%",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_016": {
-        "main_stat": "Anomaly Proficiency 23\n",
+        "main_stat": "Anomaly Proficiency 23",
         "sub_stats": [
-            "CRIT DMG 48%\n",
-            "ATK 3%\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "CRIT DMG 48%",
+            "ATK 3%",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_017": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "PEN 9\n",
-            "MP 112\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "PEN 9",
+            "MP 112",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_6_disk_018": {
-        "main_stat": "Electric DMG Bonus 7.5%\n",
+        "main_stat": "Electric DMG Bonus 7.5%",
         "sub_stats": [
-            "Anomaly Proficiency 9\n",
-            "CRIT DMG 4.8%\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 9",
+            "CRIT DMG 4.8%",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_6_disk_019": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "Anomaly Proficiency 3\n",
-            "DEF 15\n",
-            "PEN 9\n",
-            "Set Effect\n"
+            "Anomaly Proficiency 3",
+            "DEF 15",
+            "PEN 9",
+            "Set Effect"
         ]
     },
     "images_6_disk_020": {
-        "main_stat": "Electric DMG Bonus 7.5%\n",
+        "main_stat": "Electric DMG Bonus 7.5%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "PEN 9\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "PEN 9",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_021": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "DEF 15\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "DEF 15",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_6_disk_022": {
-        "main_stat": "Anomaly Mastery 7.5%\n",
+        "main_stat": "Anomaly Mastery 7.5%",
         "sub_stats": [
-            "HP 112\n",
-            "PEN 9\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "HP 112",
+            "PEN 9",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_6_disk_023": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "DEF 4.8%\n",
-            "DEF 15\n",
-            "HP 3%\n"
+            "CRIT DMG 4.8%",
+            "DEF 4.8%",
+            "DEF 15",
+            "HP 3%"
         ]
     },
     "images_6_disk_024": {
-        "main_stat": "DEF 12%\n",
+        "main_stat": "DEF 12%",
         "sub_stats": [
-            "HP 3%\n",
-            "HP 112\n",
-            "ATK 19\n",
-            "ATK 3%\n"
+            "HP 3%",
+            "HP 112",
+            "ATK 19",
+            "ATK 3%"
         ]
     },
     "images_6_disk_025": {
-        "main_stat": "ATK 73\n",
+        "main_stat": "ATK 73",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "CRIT Rate 24%\n",
-            "PEN 9\n"
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "CRIT Rate 24%",
+            "PEN 9"
         ]
     },
     "images_6_disk_026": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "HP 3%\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "HP 3%",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_027": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "HP 3%\n",
-            "Anomaly Proficlency 9\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "HP 3%",
+            "Anomaly Proficlency 9",
+            "Set Effect"
         ]
     },
     "images_6_disk_028": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "PEN 9\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "PEN 9",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_6_disk_029": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "ATK 3%\n",
-            "HP 112\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "HP 112",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_6_disk_030": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "ATK 19\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "ATK 19",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_6_disk_031": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "ATK 19\n",
-            "ATK 3%\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "ATK 3%",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_6_disk_032": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "HP 3%\n",
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "HP 3%",
+            "ATK 3%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_7_disk_001": {
-        "main_stat": "ATK 79\n",
+        "main_stat": "ATK 79",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "CRIT Rate 24%\n",
-            "PEN 3\n"
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "CRIT Rate 24%",
+            "PEN 3"
         ]
     },
     "images_7_disk_002": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "uP 3%\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "uP 3%",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_7_disk_003": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "HP 3%\n",
-            "Anomaly Proficiency 9\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "HP 3%",
+            "Anomaly Proficiency 9",
+            "Set Effect"
         ]
     },
     "images_7_disk_004": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "PEN 9\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "PEN 9",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_7_disk_005": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "ATK 3%\n",
-            "Ld 112\n",
-            "DEF 4.8%\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "Ld 112",
+            "DEF 4.8%",
+            "Set Effect"
         ]
     },
     "images_7_disk_006": {
-        "main_stat": "DEF 46\n",
+        "main_stat": "DEF 46",
         "sub_stats": [
-            "DEF 4.8%\n",
-            "ATK 19\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "DEF 4.8%",
+            "ATK 19",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_7_disk_007": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "ATK 19\n",
-            "ATK 3%\n",
-            "CRIT Rate 24%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "ATK 3%",
+            "CRIT Rate 24%",
+            "Set Effect"
         ]
     },
     "images_7_disk_008": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "HP 3%\n",
-            "ATK 3%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "HP 3%",
+            "ATK 3%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_7_disk_009": {
-        "main_stat": "CRIT DMG 12%\n",
+        "main_stat": "CRIT DMG 12%",
         "sub_stats": [
-            "ATK 19\n",
-            "hd 112\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "hd 112",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_7_disk_010": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "HP 112\n",
-            "ATK 19\n",
-            "DEF 15\n",
-            "HP 3%\n"
+            "HP 112",
+            "ATK 19",
+            "DEF 15",
+            "HP 3%"
         ]
     },
     "images_7_disk_011": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_7_disk_012": {
-        "main_stat": "CRIT Rate 6%\n",
+        "main_stat": "CRIT Rate 6%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "ATK 3%\n",
-            "DEF 15\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "ATK 3%",
+            "DEF 15",
+            "Set Effect"
         ]
     },
     "images_7_disk_013": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "Anomaly Proficiency 9\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "Anomaly Proficiency 9",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_7_disk_014": {
-        "main_stat": "Electric DMG Bonus 7.5%\n",
+        "main_stat": "Electric DMG Bonus 7.5%",
         "sub_stats": [
-            "HP 3%\n",
-            "DEF 15\n",
-            "ATK 3%\n",
-            "Set Effect\n"
+            "HP 3%",
+            "DEF 15",
+            "ATK 3%",
+            "Set Effect"
         ]
     },
     "images_7_disk_015": {
-        "main_stat": "HP 7.5%\n",
+        "main_stat": "HP 7.5%",
         "sub_stats": [
-            "ATK 3%\n",
-            "DEF 15\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "ATK 3%",
+            "DEF 15",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_7_disk_016": {
-        "main_stat": "PEN Ratio 6%\n",
+        "main_stat": "PEN Ratio 6%",
         "sub_stats": [
-            "CRIT Rate 24%\n",
-            "HP 112\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "CRIT Rate 24%",
+            "HP 112",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_7_disk_017": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "PEN 9\n",
-            "CRIT Rate 24%\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "PEN 9",
+            "CRIT Rate 24%",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_7_disk_018": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "CRIT DMG 4.8%\n",
-            "CRIT Rate 24%\n",
-            "HP 3%\n",
-            "Set Effect\n"
+            "CRIT DMG 4.8%",
+            "CRIT Rate 24%",
+            "HP 3%",
+            "Set Effect"
         ]
     },
     "images_7_disk_019": {
-        "main_stat": "Impact 45%\n",
+        "main_stat": "Impact 45%",
         "sub_stats": [
-            "HP 3%\n",
-            "DEF 15\n",
-            "Anomaly Proficlency 9\n",
-            "CRIT DMG 4.8%\n"
+            "HP 3%",
+            "DEF 15",
+            "Anomaly Proficlency 9",
+            "CRIT DMG 4.8%"
         ]
     },
     "images_7_disk_020": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "HP 3%\n",
-            "CRIT Rate 24%\n",
-            "HP 112\n",
-            "Set Effect\n"
+            "HP 3%",
+            "CRIT Rate 24%",
+            "HP 112",
+            "Set Effect"
         ]
     },
     "images_7_disk_021": {
-        "main_stat": "ATK 7.5%\n",
+        "main_stat": "ATK 7.5%",
         "sub_stats": [
-            "ATK 19\n",
-            "DEF 15\n",
-            "CRIT DMG 4.8%\n",
-            "Set Effect\n"
+            "ATK 19",
+            "DEF 15",
+            "CRIT DMG 4.8%",
+            "Set Effect"
         ]
     },
     "images_7_disk_022": {
-        "main_stat": "Energy Regen 15%\n",
+        "main_stat": "Energy Regen 15%",
         "sub_stats": [
-            "HP 3%\n",
-            "CRIT Rate 24%\n",
-            "ATK 19\n",
-            "Set Effect\n"
+            "HP 3%",
+            "CRIT Rate 24%",
+            "ATK 19",
+            "Set Effect"
         ]
     },
     "images_7_disk_023": {
-        "main_stat": "Energy Regen 15%\n",
+        "main_stat": "Energy Regen 15%",
         "sub_stats": [
-            "HP 112\n",
-            "HP 3%\n",
-            "DEF 15\n",
-            "ATK 3%\n"
+            "HP 112",
+            "HP 3%",
+            "DEF 15",
+            "ATK 3%"
         ]
     },
     "images_7_disk_024": {
-        "main_stat": "ATK 53\n",
+        "main_stat": "ATK 53",
         "sub_stats": [
-            "CRIT DMG 3.2%\n",
-            "DEF 10\n",
-            "DEF 3.2%\n",
-            "Set Effect\n"
+            "CRIT DMG 3.2%",
+            "DEF 10",
+            "DEF 3.2%",
+            "Set Effect"
         ]
     },
     "images_7_disk_025": {
-        "main_stat": "DEF 31\n",
+        "main_stat": "DEF 31",
         "sub_stats": [
-            "CRIT Rate 1.6%\n",
-            "Anomaly Proficiency 6\n",
-            "Set Effect\n",
-            "Shockstar Disco\n"
+            "CRIT Rate 1.6%",
+            "Anomaly Proficiency 6",
+            "Set Effect",
+            "Shockstar Disco"
         ]
     },
     "images_7_disk_026": {
-        "main_stat": "HP 5%\n",
+        "main_stat": "HP 5%",
         "sub_stats": [
-            "ATK 13\n",
-            "ATK 2%\n",
-            "HP 75\n",
-            "Set Effect\n"
+            "ATK 13",
+            "ATK 2%",
+            "HP 75",
+            "Set Effect"
         ]
     },
     "images_7_disk_027": {
-        "main_stat": "DEF 31\n",
+        "main_stat": "DEF 31",
         "sub_stats": [
-            "DEF 3.2%\n",
-            "ATK 13\n",
-            "HP 75\n",
-            "Set Effect\n"
-        ]
-    },
-    "images_7_disk_028": {
-        "main_stat": "HP 183\n",
-        "sub_stats": [
-            "ATK 6\n",
-            "Set Effect\n",
-            "Shockstar Disco\n",
-            "iLPlecoe: Beste Actacks, Dash\n"
-        ]
-    },
-    "images_7_disk_029": {
-        "main_stat": "DEF 4%\n",
-        "sub_stats": [
-            "CRIT DMG 1.6%\n",
-            "Set Effect\n",
-            "$Shockstar Disco\n",
-            "iLPrecoe: Beste Actacks, Dash\n"
-        ]
-    },
-    "images_7_disk_030": {
-        "main_stat": "DEF 4%\n",
-        "sub_stats": [
-            "CRIT DMG 1.6%\n",
-            "Set Effect\n",
-            "Shockstar Disco\n",
-            "iLPrecoe: Beste Actacks, Dash\n"
-        ]
-    },
-    "images_7_disk_031": {
-        "main_stat": "DEF 4%\n",
-        "sub_stats": [
-            "CRIT DMG 1.6%\n",
-            "Set Effect\n",
-            "Shockstar Disco\n",
-            "iLPrecoe: Beste Actacks, Dash\n"
-        ]
-    },
-    "images_7_disk_032": {
-        "main_stat": "DEF 4%\n",
-        "sub_stats": [
-            "CRIT DMG 1.6%\n",
-            "Set Effect\n",
-            "Shockstar Disco\n",
-            "iLPrecoe: Beste Actacks, Dash\n"
+            "DEF 3.2%",
+            "ATK 13",
+            "HP 75",
+            "Set Effect"
         ]
     }
 }

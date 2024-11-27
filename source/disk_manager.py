@@ -118,16 +118,16 @@ class DiskManager:
 
     def evaluate_disk(self, disk: Disk) -> dict:
         """
-        Evaluate a single disk using its methods.
+        Evaluate a single disk using its methods and the `disk_potential` function.
         :param disk: A Disk object.
         :return: Evaluation scores and total score as a dictionary.
         """
         # Fixed main stat score
         main_stat_score = 10
 
-        # Calculate scores using Disk methods
+        # Calculate current and potential substat scores
         current_score = disk.total_substat_score(SUBSTAT_WEIGHTS)
-        potential_score = disk.potential_score(SUBSTAT_WEIGHTS)
+        potential_score = disk.calculate_potential(SUBSTAT_WEIGHTS)
 
         if disk.main_stat.level >= 15:
             # Evaluate at 0 any disk that is maxed out
@@ -156,16 +156,16 @@ class DiskManager:
         # Sort by total score in descending order
         return sorted(evaluations, key=itemgetter("Total Score"), reverse=True)
 
-    def display_ranking(self, ranked_disks):
+    def display_ranking(self, ranked_disks_):
         """
         Display the ranked disks in a readable format, including main and substats.
-        :param ranked_disks: List of ranked disks.
+        :param ranked_disks_: List of ranked disks.
         """
         print(
             f"{'Rank':<5} {'Disk ID':<10} {'Main Score':<12} {'Current Score':<15} {'Potential Score':<18} {'Total Score':<12}")
         print("=" * 75)
 
-        top_disks = ranked_disks[:20]
+        top_disks = ranked_disks_[:20]
 
         for rank, disk_data in enumerate(top_disks, start=1):
             # Print general stats for the disk

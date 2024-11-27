@@ -7,7 +7,7 @@ from source.screen_scanner import ScreenScanner
 
 
 def main():
-    suffix = "_zhuyuan"  # "_test"
+    suffix = ""  # "_test"
 
     images_path = "../images" + suffix
     raw_json_path = "../output/raw_data" + suffix + ".json"
@@ -15,15 +15,15 @@ def main():
     database_path = "../db/disk_database" + suffix + ".db"
 
     # Screenshot and save all the images on the game screen
-    while True:
-        screen_scanner = ScreenScanner(images_path)
-        screen_scanner.capture_and_save_disk_images()
-        # Ask the user if they want to continue
-        user_input = input("Do you want to scan again? (yes/no) (y/n): ").strip().lower()
-        if user_input != 'yes' or user_input != 'y' or user_input != 'n' or user_input != 'no':
-            print("Invalid input. Please enter 'yes' or 'no'.")
-        if user_input == 'no' or user_input == 'n':
-            break
+    # while True:
+    #     screen_scanner = ScreenScanner(images_path)
+    #     screen_scanner.capture_and_save_disk_images()
+    #     # Ask the user if they want to continue
+    #     user_input = input("Do you want to scan again? (yes/no) (y/n): ").strip().lower()
+    #     if user_input != 'yes' or user_input != 'y' or user_input != 'n' or user_input != 'no':
+    #         print("Invalid input. Please enter 'yes' or 'no'.")
+    #     if user_input == 'no' or user_input == 'n':
+    #         break
 
     # Process all images with OCR and dump the raw data into a JSON file
     image_processor = OCRImageProcessor()
@@ -35,10 +35,13 @@ def main():
     # Convert the JSON data to the database
     convert_json_to_db(disk_json_path, database_path)
 
+    # Evaluate the disks in the database
+    evaluate_disks(database_path)
 
-def evaluate_disks():
+
+def evaluate_disks(db_path):
     # Initialize DiskDatabase (assumes implementation exists)
-    db = DiskDatabase("../db/disk_database_zhuyuan.db")
+    db = DiskDatabase(db_path)
     disk_manager = DiskManager(db)
 
     # Example: Add, rank, and display disks
@@ -47,5 +50,4 @@ def evaluate_disks():
 
 
 if __name__ == "__main__":
-    # main()
-    evaluate_disks()
+    main()

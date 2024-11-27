@@ -1,120 +1,4 @@
 {
-    "images_disk_001": {
-        "main_stat": {
-            "name": "Anomaly Mastery",
-            "value": 30.0,
-            "level": 15
-        },
-        "sub_stats": [
-            {
-                "name": "Flat ATK",
-                "level": 0,
-                "value": 19
-            },
-            {
-                "name": "CRIT DMG",
-                "level": 1,
-                "value": 9.6
-            },
-            {
-                "name": "PEN",
-                "level": 1,
-                "value": 18
-            },
-            {
-                "name": "CRIT Rate",
-                "level": 2,
-                "value": 7.2
-            }
-        ]
-    },
-    "images_disk_002": {
-        "main_stat": {
-            "name": "Anomaly Mastery",
-            "value": 30.0,
-            "level": 15
-        },
-        "sub_stats": [
-            {
-                "name": "Flat ATK",
-                "level": 0,
-                "value": 19
-            },
-            {
-                "name": "CRIT DMG",
-                "level": 1,
-                "value": 9.6
-            },
-            {
-                "name": "PEN",
-                "level": 1,
-                "value": 18
-            },
-            {
-                "name": "CRIT Rate",
-                "level": 2,
-                "value": 7.2
-            }
-        ]
-    },
-    "images_disk_003": {
-        "main_stat": {
-            "name": "Anomaly Mastery",
-            "value": 30.0,
-            "level": 15
-        },
-        "sub_stats": [
-            {
-                "name": "Flat ATK",
-                "level": 0,
-                "value": 19
-            },
-            {
-                "name": "CRIT DMG",
-                "level": 1,
-                "value": 9.6
-            },
-            {
-                "name": "PEN",
-                "level": 1,
-                "value": 18
-            },
-            {
-                "name": "CRIT Rate",
-                "level": 2,
-                "value": 7.2
-            }
-        ]
-    },
-    "images_disk_004": {
-        "main_stat": {
-            "name": "Anomaly Mastery",
-            "value": 30.0,
-            "level": 15
-        },
-        "sub_stats": [
-            {
-                "name": "Flat ATK",
-                "level": 0,
-                "value": 19
-            },
-            {
-                "name": "CRIT DMG",
-                "level": 1,
-                "value": 9.6
-            },
-            {
-                "name": "PEN",
-                "level": 1,
-                "value": 18
-            },
-            {
-                "name": "CRIT Rate",
-                "level": 2,
-                "value": 7.2
-            }
-        ]
-    },
     "images_1_disk_001": {
         "main_stat": {
             "name": "Flat HP",
@@ -133,9 +17,9 @@
                 "value": 9
             },
             {
-                "name": "Anomaly Proficlency",
+                "name": "Anomaly Proficiency",
                 "level": 2,
-                "value": 0
+                "value": 27
             },
             {
                 "name": "ATK%",
@@ -181,9 +65,9 @@
         },
         "sub_stats": [
             {
-                "name": "MP",
+                "name": "Flat HP",
                 "level": 1,
-                "value": 0
+                "value": 224
             },
             {
                 "name": "Anomaly Proficiency",
@@ -307,9 +191,9 @@
                 "value": 4.8
             },
             {
-                "name": "MP",
+                "name": "HP%",
                 "level": 1,
-                "value": 0
+                "value": 6
             },
             {
                 "name": "Anomaly Proficiency",
@@ -365,9 +249,9 @@
                 "value": 6
             },
             {
-                "name": "MP",
+                "name": "HP%",
                 "level": 1,
-                "value": 0
+                "value": 6
             },
             {
                 "name": "CRIT DMG",
@@ -394,9 +278,9 @@
                 "value": 4.8
             },
             {
-                "name": "MP",
+                "name": "HP%",
                 "level": 1,
-                "value": 0
+                "value": 6
             },
             {
                 "name": "CRIT DMG",
@@ -544,9 +428,9 @@
                 "value": 4.8
             },
             {
-                "name": "MP",
+                "name": "Flat HP",
                 "level": 1,
-                "value": 0
+                "value": 224
             }
         ]
     },
@@ -950,9 +834,9 @@
                 "value": 27
             },
             {
-                "name": "MP",
+                "name": "Flat HP",
                 "level": 2,
-                "value": 0
+                "value": 336
             }
         ]
     },
@@ -1206,9 +1090,9 @@
                 "value": 18
             },
             {
-                "name": "Anomaly Proficlency",
+                "name": "Anomaly Proficiency",
                 "level": 2,
-                "value": 0
+                "value": 27
             },
             {
                 "name": "CRIT DMG",
@@ -1322,9 +1206,9 @@
                 "value": 6
             },
             {
-                "name": "Anomaly Proficlency",
+                "name": "Anomaly Proficiency",
                 "level": 2,
-                "value": 0
+                "value": 27
             },
             {
                 "name": "CRIT DMG",
@@ -1438,9 +1322,9 @@
                 "value": 2.4
             },
             {
-                "name": "MP",
+                "name": "Flat HP",
                 "level": 1,
-                "value": 0
+                "value": 224
             },
             {
                 "name": "CRIT DMG",
@@ -1554,9 +1438,9 @@
                 "value": 2.4
             },
             {
-                "name": "MP",
+                "name": "Flat HP",
                 "level": 1,
-                "value": 0
+                "value": 224
             },
             {
                 "name": "Anomaly Proficiency",
@@ -1641,9 +1525,9 @@
                 "value": 9
             },
             {
-                "name": "MP",
+                "name": "Flat HP",
                 "level": 1,
-                "value": 0
+                "value": 224
             },
             {
                 "name": "Flat DEF",
@@ -3060,9 +2944,9 @@
                 "value": 3
             },
             {
-                "name": "Anomaly Proficlency",
+                "name": "Anomaly Proficiency",
                 "level": 0,
-                "value": 0
+                "value": 9
             },
             {
                 "name": "PEN",
@@ -3986,9 +3870,9 @@
                 "value": 9
             },
             {
-                "name": "MP",
+                "name": "Flat HP",
                 "level": 0,
-                "value": 0
+                "value": 112
             }
         ]
     },
@@ -4732,9 +4616,9 @@
                 "value": 9
             },
             {
-                "name": "MP",
+                "name": "Flat HP",
                 "level": 0,
-                "value": 0
+                "value": 112
             },
             {
                 "name": "Flat ATK",
@@ -4992,9 +4876,9 @@
                 "value": 3
             },
             {
-                "name": "Anomaly Proficlency",
+                "name": "Anomaly Proficiency",
                 "level": 0,
-                "value": 0
+                "value": 9
             }
         ]
     },
@@ -5578,9 +5462,9 @@
                 "value": 15
             },
             {
-                "name": "Anomaly Proficlency",
+                "name": "Anomaly Proficiency",
                 "level": 0,
-                "value": 0
+                "value": 9
             },
             {
                 "name": "CRIT DMG",
@@ -5711,6 +5595,30 @@
                 "name": "DEF%",
                 "level": 0,
                 "value": 4.8
+            }
+        ]
+    },
+    "images_7_disk_025": {
+        "main_stat": {
+            "name": "Flat DEF",
+            "value": 31.0,
+            "level": 0
+        },
+        "sub_stats": [
+            {
+                "name": "CRIT Rate",
+                "level": 0,
+                "value": 2.4
+            },
+            {
+                "name": "Anomaly Proficiency",
+                "level": 0,
+                "value": 9
+            },
+            {
+                "name": "Shockstar",
+                "level": 0,
+                "value": 0
             }
         ]
     },
