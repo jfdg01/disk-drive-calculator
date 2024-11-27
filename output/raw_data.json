@@ -1943,15 +1943,6 @@
             "Set Effect"
         ]
     },
-    "images_7_disk_025": {
-        "main_stat": "DEF 31",
-        "sub_stats": [
-            "CRIT Rate 1.6%",
-            "Anomaly Proficiency 6",
-            "Set Effect",
-            "Shockstar Disco"
-        ]
-    },
     "images_7_disk_026": {
         "main_stat": "HP 5%",
         "sub_stats": [

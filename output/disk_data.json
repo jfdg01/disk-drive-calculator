@@ -341,9 +341,9 @@
                 "value": 9.6
             },
             {
-                "name": "AP",
+                "name": "HP%",
                 "level": 1,
-                "value": 0
+                "value": 6
             }
         ]
     },
@@ -3040,9 +3040,9 @@
                 "value": 2.4
             },
             {
-                "name": "Ld",
+                "name": "Flat HP",
                 "level": 0,
-                "value": 0
+                "value": 112
             },
             {
                 "name": "PEN",
@@ -3668,9 +3668,9 @@
                 "value": 112
             },
             {
-                "name": "uP",
+                "name": "HP%",
                 "level": 0,
-                "value": 0
+                "value": 3
             },
             {
                 "name": "CRIT Rate",
@@ -4568,9 +4568,9 @@
                 "value": 9
             },
             {
-                "name": "uP",
+                "name": "HP%",
                 "level": 0,
-                "value": 0
+                "value": 3
             },
             {
                 "name": "ATK%",
@@ -5044,9 +5044,9 @@
                 "value": 4.8
             },
             {
-                "name": "uP",
+                "name": "HP%",
                 "level": 0,
-                "value": 0
+                "value": 3
             },
             {
                 "name": "ATK%",
@@ -5116,9 +5116,9 @@
                 "value": 3
             },
             {
-                "name": "Ld",
+                "name": "Flat HP",
                 "level": 0,
-                "value": 0
+                "value": 112
             },
             {
                 "name": "DEF%",
@@ -5212,9 +5212,9 @@
                 "value": 19
             },
             {
-                "name": "hd",
+                "name": "Flat HP",
                 "level": 0,
-                "value": 0
+                "value": 112
             },
             {
                 "name": "HP%",
@@ -5595,30 +5595,6 @@
                 "name": "DEF%",
                 "level": 0,
                 "value": 4.8
-            }
-        ]
-    },
-    "images_7_disk_025": {
-        "main_stat": {
-            "name": "Flat DEF",
-            "value": 31.0,
-            "level": 0
-        },
-        "sub_stats": [
-            {
-                "name": "CRIT Rate",
-                "level": 0,
-                "value": 2.4
-            },
-            {
-                "name": "Anomaly Proficiency",
-                "level": 0,
-                "value": 9
-            },
-            {
-                "name": "Shockstar",
-                "level": 0,
-                "value": 0
             }
         ]
     },

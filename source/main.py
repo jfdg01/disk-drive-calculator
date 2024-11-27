@@ -5,15 +5,15 @@ from source.ocr_data_parser import OCRDataParser
 from source.ocr_image_processor import OCRImageProcessor
 from source.screen_scanner import ScreenScanner
 
+suffix = ""  # "_test"
+
+images_path = "../images" + suffix
+raw_json_path = "../output/raw_data" + suffix + ".json"
+disk_json_path = "../output/disk_data" + suffix + ".json"
+database_path = "../db/disk_database" + suffix + ".db"
+
 
 def main():
-    suffix = ""  # "_test"
-
-    images_path = "../images" + suffix
-    raw_json_path = "../output/raw_data" + suffix + ".json"
-    disk_json_path = "../output/disk_data" + suffix + ".json"
-    database_path = "../db/disk_database" + suffix + ".db"
-
     # Screenshot and save all the images on the game screen
     # while True:
     #     screen_scanner = ScreenScanner(images_path)
@@ -49,5 +49,10 @@ def evaluate_disks(db_path):
     disk_manager.display_ranking(ranked_disks)
 
 
+def do():
+    OCRDataParser.load_and_parse_ocr_file(raw_json_path, disk_json_path)
+    convert_json_to_db(disk_json_path, database_path)
+    evaluate_disks(database_path)
+
 if __name__ == "__main__":
-    main()
+    do()
