@@ -1,3 +1,4 @@
+import logging
 from operator import itemgetter
 from typing import List
 
@@ -31,20 +32,29 @@ class DiskManager:
                 """, (disk_id, sub_stat.name, sub_stat.value, sub_stat.level))
 
     def get_disks(self) -> List[Disk]:
-        """Retrieve all disks from the database."""
-        disks = []
-        with self.database.connection as conn:
+        conn = self.database.get_connection()
+        try:
             cursor = conn.execute("SELECT id, main_stat_name, main_stat_value, main_stat_level FROM disks")
-            for row in cursor.fetchall():
-                disk_id, main_name, main_value, main_level = row
-                main_stat = Stat(name=main_name, value=main_value, level=main_level)
-
-                sub_cursor = conn.execute("SELECT name, value, level FROM sub_stats WHERE disk_id = ?", (disk_id,))
-                sub_stats = [Stat(name=sub_row[0], value=sub_row[1], level=sub_row[2]) for sub_row in sub_cursor]
-
-                disks.append(
-                    Disk(id=str(disk_id), main_stat=main_stat, sub_stats=sub_stats))  # Cast ID to str if needed
-        return disks
+            disks = cursor.fetchall()
+            result = []
+            for disk_row in disks:
+                disk_id, main_stat_name, main_stat_value, main_stat_level = disk_row
+                cursor = conn.execute("SELECT name, value, level FROM sub_stats WHERE disk_id = ?", (disk_id,))
+                sub_stats = cursor.fetchall()
+                sub_stats = [Stat(name=row[0], value=row[1], level=row[2]) for row in sub_stats]
+                disk = Disk(
+                    id=disk_id,
+                    main_stat=Stat(name=main_stat_name, value=main_stat_value, level=main_stat_level),
+                    sub_stats=sub_stats
+                )
+                result.append(disk)
+            # logging.info(f"Retrieved disks: First two: {result[:2]}, Last two: {result[-2:]}")
+            return result
+        except Exception as e:
+            # logging.error(f"Error retrieving disks: {e}")
+            raise
+        finally:
+            conn.close()
 
     def remove_disk(self, disk_id: str):
         """Remove a disk and its sub-stats from the database."""

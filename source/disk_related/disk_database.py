@@ -2,14 +2,15 @@ import sqlite3
 
 
 class DiskDatabase:
-    def __init__(self, db_file):
-        self.db_file = db_file
-        self.connection = sqlite3.connect(self.db_file)
-        self._create_tables()
+    def __init__(self, db_path: str):
+        self.db_path = db_path
+
+    def get_connection(self):
+        return sqlite3.connect(self.db_path)
 
     def _create_tables(self):
         """Create tables for disks and their stats."""
-        with self.connection as conn:
+        with self.get_connection() as conn:
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS disks (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
