@@ -1,17 +1,3 @@
-# ignore image folders and their contents
-# images/
-captured_images/
-temp/
-code.txt
 .idea/
-.idea/workspace.xml
-C:\Users\gara\Desktop\disc\.idea\workspace.xml
-C:\Users\gara\Desktop\disc\.idea\disc.iml
-/images/
-/images_1/
-/images_2/
-/images_3/
-/images_4/
-/images_5/
-/images_6/
-/images_7/
+code.txt
+images*/

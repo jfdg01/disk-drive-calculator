@@ -23,7 +23,7 @@ def _calculate_region_pixels(region_percent):
 
 
 class ScreenScanner:
-    def __init__(self):
+    def __init__(self, images_path):
         """Initialize ScreenScanner with grid parameters."""
         # Safety settings
         pydirectinput.FAILSAFE = True
@@ -39,16 +39,28 @@ class ScreenScanner:
         self.substat_region_4 = _calculate_region_pixels(SUB_STAT_REGION_4)
 
         # Directories for screenshots
-        self.image_dir = self._ensure_directory("../images")
+        self.image_dir = self._ensure_directory(images_path)
 
     @staticmethod
     def _ensure_directory(dir_name: str) -> str:
-        """Create directory if it doesn't exist and return its path."""
-        dir_path = os.path.join(os.path.dirname(__file__), dir_name)
-        os.makedirs(dir_path, exist_ok=True)
-        return dir_path
+        """Create a unique directory if the base directory exists and return its path."""
+        base_path = os.path.join(os.path.dirname(__file__), dir_name)
 
-    def capture_disk_images(self) -> None:
+        # If the directory does not exist, create it
+        if not os.path.exists(base_path):
+            os.makedirs(base_path)
+            return base_path
+
+        # If the directory exists, find the next available numbered folder
+        suffix = 1
+        while True:
+            new_dir_name = f"{base_path}_{suffix}"
+            if not os.path.exists(new_dir_name):
+                os.makedirs(new_dir_name)
+                return new_dir_name
+            suffix += 1
+
+    def capture_and_save_disk_images(self) -> None:
         """Capture screenshots for all disk positions in the grid."""
         print("Starting screen scanning in 5 seconds...")
         print("Move mouse to upper-left corner to abort.")
@@ -116,5 +128,5 @@ def capture_region(output_path: str, region: Dict) -> None:
 
 
 if __name__ == "__main__":
-    scanner = ScreenScanner()
-    scanner.capture_disk_images()
+    scanner = ScreenScanner("../images")
+    scanner.capture_and_save_disk_images()

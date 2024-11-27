@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Deleted unused files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data_migration.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/data_migration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ocr_data_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_data_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ocr_image_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_image_processor.py" afterDir="false" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Parametrized all file path data and combined every class in main">
+      <change beforePath="$PROJECT_DIR$/source/screen_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/screen_scanner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -616,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732705246549</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Parametrized all file path data and combined every class in main">
+      <option name="closed" value="true" />
+      <created>1732707368044</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1732707368044</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Refactored data structures" />
     <MESSAGE value="Fixed heuristic and added a massive disk generator" />
     <MESSAGE value="Added recognition, regions and gitignore" />
     <MESSAGE value="Modularized the code" />
@@ -660,7 +663,8 @@
     <MESSAGE value="Removed redundant utils.py" />
     <MESSAGE value="Combined migration and reading the images + modified disk_id to INTEGER in sub_stat table definition + made image processor read all directories in patter &quot;images*&quot;" />
     <MESSAGE value="Deleted unused files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted unused files" />
+    <MESSAGE value="Parametrized all file path data and combined every class in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parametrized all file path data and combined every class in main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

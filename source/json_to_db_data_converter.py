@@ -6,7 +6,7 @@ from source.disk_database import DiskDatabase
 from source.disk_manager import DiskManager
 
 
-def migrate_json_to_db(json_file):
+def convert_json_to_db(json_file):
 
     database = DiskDatabase()
 
@@ -54,4 +54,4 @@ def migrate_json_to_db(json_file):
 
 
 if __name__ == "__main__":
-    migrate_json_to_db("../output/disk_data.json")
+    convert_json_to_db("../output/disk_data.json")
