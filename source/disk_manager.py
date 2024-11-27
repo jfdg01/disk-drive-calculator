@@ -69,6 +69,54 @@ class DiskManager:
                     VALUES (?, ?, ?, ?)
                 """, (disk.id, sub_stat.name, sub_stat.value, sub_stat.level))
 
+    def disk_exists(self, disk: Disk) -> bool:
+        """Check if a disk with the same stats (main + ordered sub-stats) already exists in the database."""
+        with self.database.connection as conn:
+            # Step 1: Retrieve all disk IDs with matching main stats
+            cursor = conn.execute("""
+                SELECT id FROM disks
+                WHERE main_stat_name = ? 
+                AND ABS(main_stat_value - ?) < 0.0001
+                AND main_stat_level = ?
+            """, (disk.main_stat.name, disk.main_stat.value, disk.main_stat.level))
+
+            matching_main_stat_ids = [row[0] for row in cursor.fetchall()]
+            if not matching_main_stat_ids:
+                return False  # No disks with matching main stats
+
+            # Step 2: Check sub-stats for each matching disk ID
+            for disk_id in matching_main_stat_ids:
+                # Retrieve sub-stats for this disk ID, ordered by insertion (ID)
+                db_sub_stats = conn.execute("""
+                    SELECT name, value, level 
+                    FROM sub_stats
+                    WHERE disk_id = ?
+                    ORDER BY id ASC
+                """, (disk_id,)).fetchall()
+
+                # Convert database sub-stats to a list of Stat objects
+                db_sub_stats = [
+                    Stat(name=row[0], value=row[1], level=row[2])
+                    for row in db_sub_stats
+                ]
+
+                # Step 3: Compare sub-stats (length, order, and values)
+                if len(db_sub_stats) != len(disk.sub_stats):
+                    continue  # Skip this disk ID; sub-stat count doesn't match
+
+                match = all(
+                    db_stat.name == disk_stat.name and
+                    abs(db_stat.value - disk_stat.value) < 0.0001 and
+                    db_stat.level == disk_stat.level
+                    for db_stat, disk_stat in zip(db_sub_stats, disk.sub_stats)
+                )
+
+                if match:
+                    return True  # Found a matching disk
+
+            # No matching disk found
+            return False
+
     def evaluate_disk(self, disk: Disk) -> dict:
         """
         Evaluate a single disk using its methods.

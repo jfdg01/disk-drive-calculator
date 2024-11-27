@@ -21,7 +21,7 @@ class DiskDatabase:
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS sub_stats (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    disk_id TEXT,
+                    disk_id INTEGER,
                     name TEXT,
                     value REAL,
                     level INTEGER,

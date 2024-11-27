@@ -36,6 +36,12 @@ def migrate_json_to_db(json_file, database: DiskDatabase):
             sub_stats = [Stat(**sub_stat) for sub_stat in disk_data.get("sub_stats", [])]
             disk = Disk(id=disk_id, main_stat=main_stat, sub_stats=sub_stats)
 
+            # check if the disk is already in the database
+            if disk_manager.disk_exists(disk):
+                # print(f"Disk {disk_id} already exists in the database. Skipping this entry.")
+                continue
+
+            print(f"Adding disk {disk_id} to the database...")
             disk_manager.add_disk(disk)
         except KeyError as e:
             print(f"Missing key {e} in 'main_stat' or 'sub_stats' for disk {disk_id}. Skipping this entry.")
@@ -44,10 +50,9 @@ def migrate_json_to_db(json_file, database: DiskDatabase):
 
 def main():
     json_file = "../output/disk_data.json"
-    database_file = "../db/disk_database.db"
 
     # Initialize the database connection
-    database = DiskDatabase(database_file)
+    database = DiskDatabase()
 
     # Perform the migration
     migrate_json_to_db(json_file, database)

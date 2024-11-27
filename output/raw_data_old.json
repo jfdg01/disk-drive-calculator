@@ -1,0 +1,290 @@
+{
+    "disk_001": {
+        "main_stat": "DEF 12%\n",
+        "sub_stats": [
+            "ATK 19\n",
+            "CRIT DMG 4.8%\n",
+            "HP 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_002": {
+        "main_stat": "HP 7.5%\n",
+        "sub_stats": [
+            "ATK 19\n",
+            "PEN 9\n",
+            "CRIT Rate 24%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_003": {
+        "main_stat": "ATK 7.5%\n",
+        "sub_stats": [
+            "CRIT DMG 4.8%\n",
+            "HP 112\n",
+            "CRIT Rate 24%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_004": {
+        "main_stat": "Impact 45%\n",
+        "sub_stats": [
+            "DEF 4.8%\n",
+            "ATK 3%\n",
+            "HP 112\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_005": {
+        "main_stat": "DEF 12%\n",
+        "sub_stats": [
+            "CRIT DMG 4.8%\n",
+            "PEN 9\n",
+            "ATK 3%\n",
+            "HP 112\n"
+        ]
+    },
+    "disk_006": {
+        "main_stat": "HP 7.5%\n",
+        "sub_stats": [
+            "ATK 3%\n",
+            "DEF 4.8%\n",
+            "CRIT DMG 4.8%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_007": {
+        "main_stat": "DEF 12%\n",
+        "sub_stats": [
+            "HP 112\n",
+            "HP 3%\n",
+            "ATK 19\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_008": {
+        "main_stat": "HP 7.5%\n",
+        "sub_stats": [
+            "ATK 19\n",
+            "DEF 15\n",
+            "ATK 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_009": {
+        "main_stat": "",
+        "sub_stats": [
+            "CRIT DMG 4.8%\n",
+            "ATK 3%\n",
+            "PEN 9\n",
+            "Anomaly Proficiency 9\n"
+        ]
+    },
+    "disk_010": {
+        "main_stat": "",
+        "sub_stats": [
+            "ATK 19\n",
+            "ATK 3%\n",
+            "CRIT DMG 4.8%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_011": {
+        "main_stat": "ATK 79\n",
+        "sub_stats": [
+            "HP 112\n",
+            "CRIT DMG 4.8%\n",
+            "CRIT Rate 24%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_012": {
+        "main_stat": "ATK 79\n",
+        "sub_stats": [
+            "CRIT DMG 4.8%\n",
+            "ATK 3%\n",
+            "HP 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_013": {
+        "main_stat": "DEF 46\n",
+        "sub_stats": [
+            "Anomaly Proficiency 9\n",
+            "PEN 9\n",
+            "HP 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_014": {
+        "main_stat": "DEF 46\n",
+        "sub_stats": [
+            "HP 3%\n",
+            "ATK 3%\n",
+            "HP 112\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_015": {
+        "main_stat": "CRIT Rate 6%\n",
+        "sub_stats": [
+            "PEN 9\n",
+            "uP 3%\n",
+            "ATK 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_016": {
+        "main_stat": "Anomaly Proficiency 23\n",
+        "sub_stats": [
+            "CRIT DMG 48%\n",
+            "ATK 3%\n",
+            "HP 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_017": {
+        "main_stat": "HP 7.5%\n",
+        "sub_stats": [
+            "PEN 9\n",
+            "MP 112\n",
+            "ATK 19\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_018": {
+        "main_stat": "Electric DMG Bonus 7.5%\n",
+        "sub_stats": [
+            "Anomaly Proficiency 9\n",
+            "CRIT DMG 4.8%\n",
+            "CRIT Rate 24%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_019": {
+        "main_stat": "ATK 7.5%\n",
+        "sub_stats": [
+            "Anomaly Proficiency 3\n",
+            "DEF 15\n",
+            "PEN 9\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_020": {
+        "main_stat": "Electric DMG Bonus 7.5%\n",
+        "sub_stats": [
+            "CRIT DMG 4.8%\n",
+            "PEN 9\n",
+            "ATK 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_021": {
+        "main_stat": "HP 7.5%\n",
+        "sub_stats": [
+            "DEF 4.8%\n",
+            "DEF 15\n",
+            "HP 112\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_022": {
+        "main_stat": "Anomaly Mastery 7.5%\n",
+        "sub_stats": [
+            "HP 112\n",
+            "PEN 9\n",
+            "DEF 4.8%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_023": {
+        "main_stat": "ATK 7.5%\n",
+        "sub_stats": [
+            "CRIT DMG 4.8%\n",
+            "DEF 4.8%\n",
+            "DEF 15\n",
+            "HP 3%\n"
+        ]
+    },
+    "disk_024": {
+        "main_stat": "DEF 12%\n",
+        "sub_stats": [
+            "HP 3%\n",
+            "HP 112\n",
+            "ATK 19\n",
+            "ATK 3%\n"
+        ]
+    },
+    "disk_025": {
+        "main_stat": "ATK 73\n",
+        "sub_stats": [
+            "CRIT DMG 4.8%\n",
+            "ATK 3%\n",
+            "CRIT Rate 24%\n",
+            "PEN 9\n"
+        ]
+    },
+    "disk_026": {
+        "main_stat": "DEF 46\n",
+        "sub_stats": [
+            "CRIT DMG 4.8%\n",
+            "HP 3%\n",
+            "ATK 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_027": {
+        "main_stat": "DEF 46\n",
+        "sub_stats": [
+            "DEF 4.8%\n",
+            "HP 3%\n",
+            "Anomaly Proficlency 9\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_028": {
+        "main_stat": "DEF 46\n",
+        "sub_stats": [
+            "CRIT Rate 24%\n",
+            "PEN 9\n",
+            "ATK 3%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_029": {
+        "main_stat": "DEF 46\n",
+        "sub_stats": [
+            "ATK 3%\n",
+            "HP 112\n",
+            "DEF 4.8%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_030": {
+        "main_stat": "DEF 46\n",
+        "sub_stats": [
+            "DEF 4.8%\n",
+            "ATK 19\n",
+            "CRIT Rate 24%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_031": {
+        "main_stat": "HP 7.5%\n",
+        "sub_stats": [
+            "ATK 19\n",
+            "ATK 3%\n",
+            "CRIT Rate 24%\n",
+            "Set Effect\n"
+        ]
+    },
+    "disk_032": {
+        "main_stat": "CRIT Rate 6%\n",
+        "sub_stats": [
+            "HP 3%\n",
+            "ATK 3%\n",
+            "CRIT DMG 4.8%\n",
+            "Set Effect\n"
+        ]
+    }
+}
