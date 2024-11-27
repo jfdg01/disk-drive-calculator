@@ -123,7 +123,7 @@ class DiskManager:
         :return: Evaluation scores and total score as a dictionary.
         """
         # Fixed main stat score
-        main_stat_score = 0 if disk.main_stat.level == 15 else 10  # Example score for non-maxed main stat
+        main_stat_score = 0 if disk.main_stat.level >= 15 else 10  # Example score for non-maxed main stat
 
         # Calculate scores using Disk methods
         current_score = disk.total_substat_score(SUBSTAT_WEIGHTS)
