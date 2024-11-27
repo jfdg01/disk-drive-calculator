@@ -6,7 +6,10 @@ from source.disk_database import DiskDatabase
 from source.disk_manager import DiskManager
 
 
-def migrate_json_to_db(json_file, database: DiskDatabase):
+def migrate_json_to_db(json_file):
+
+    database = DiskDatabase()
+
     """Migrate data from JSON to SQLite database."""
     if not os.path.exists(json_file):
         print(f"File {json_file} does not exist.")
@@ -38,28 +41,17 @@ def migrate_json_to_db(json_file, database: DiskDatabase):
 
             # check if the disk is already in the database
             if disk_manager.disk_exists(disk):
-                # print(f"Disk {disk_id} already exists in the database. Skipping this entry.")
+                print(f"Disk {disk_id} already exists in the database. Skipping this entry.")
                 continue
 
-            print(f"Adding disk {disk_id} to the database...")
+            # print(f"Adding disk {disk_id} to the database...")
             disk_manager.add_disk(disk)
         except KeyError as e:
             print(f"Missing key {e} in 'main_stat' or 'sub_stats' for disk {disk_id}. Skipping this entry.")
 
-    print("Migration complete!")
-
-def main():
-    json_file = "../output/disk_data.json"
-
-    # Initialize the database connection
-    database = DiskDatabase()
-
-    # Perform the migration
-    migrate_json_to_db(json_file, database)
-
-    # Close the database connection
     database.close()
+    print("Migration complete!")
 
 
 if __name__ == "__main__":
-    main()
+    migrate_json_to_db("../output/disk_data.json")

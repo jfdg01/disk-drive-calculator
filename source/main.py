@@ -1,20 +1,20 @@
-import pytesseract
+from source.data_migration import migrate_json_to_db
+from source.ocr_data_parser import OCRDataParser
+from source.ocr_image_processor import OCRImageProcessor
 
-from constants import START_POS, CELL_SIZE, ROWS, COLS, TESSERACT_PATH
 
 def main():
-    # Create and run the automated scanner
-    pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+    images_path = "../images"
+    raw_output_path = "../output/raw_data.json"
+    disk_output_path = "../output/disk_data.json"
 
-    print(f"Scanner Parameters:")
-    print(f"Starting Position: {START_POS}")
-    print(f"Cell Size: {CELL_SIZE}")
-    print(f"Grid: {ROWS}x{COLS}")
 
-    # Start scanning sequence
 
-    print("\nScanning sequence complete!")
-    print(f"Total disks scanned: {len(disk_data)}")
+    image_processor = OCRImageProcessor()
+    image_processor.process_images(images_path, raw_output_path)
+
+    OCRDataParser.load_and_parse_ocr_file(raw_output_path, disk_output_path)
+    migrate_json_to_db(disk_output_path)
 
 
 if __name__ == "__main__":

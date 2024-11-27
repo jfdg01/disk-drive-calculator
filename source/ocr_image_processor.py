@@ -4,9 +4,6 @@ import cv2
 from pytesseract import pytesseract
 
 from constants import TESSERACT_PATH, GRAY_THRESHOLD, MAX_GRAY_VALUE, MAIN_STAT_CONFIG
-from source.disk import Stat, Disk
-from source.disk_database import DiskDatabase
-from source.disk_manager import DiskManager
 
 
 def preprocess_image(image_path: str):
@@ -25,21 +22,21 @@ def parse_main_stat(image_path: str) -> str:
 
 
 class OCRImageProcessor:
-    def __init__(self, base_dir="../"):
-        """Initialize OCRImageProcessor with paths and configurations."""
-        self.base_dir = base_dir
-        self.image_dirs = self._get_image_dirs()
-        self.output_dir = self._ensure_directory(os.path.join(base_dir, "output"))
+    def __init__(self):
+        """Initialize OCRImageProcessor with Tesseract path configuration."""
         pytesseract.tesseract_cmd = TESSERACT_PATH
 
-    def _get_image_dirs(self):
-        """Retrieve all directories matching the 'images*' pattern."""
-        dirs = [
-            os.path.join(self.base_dir, d)
-            for d in os.listdir(self.base_dir)
-            if os.path.isdir(os.path.join(self.base_dir, d)) and d.startswith("images")
+    @staticmethod
+    def _get_matching_image_dirs(base_pattern: str) -> list:
+        """Retrieve all directories matching the given pattern."""
+        base_dir = os.path.dirname(base_pattern)
+        prefix = os.path.basename(base_pattern)
+        matching_dirs = [
+            os.path.join(base_dir, d)
+            for d in os.listdir(base_dir)
+            if os.path.isdir(os.path.join(base_dir, d)) and d.startswith(prefix)
         ]
-        return dirs
+        return matching_dirs
 
     @staticmethod
     def _ensure_directory(dir_name: str) -> str:
@@ -48,11 +45,23 @@ class OCRImageProcessor:
         os.makedirs(dir_path, exist_ok=True)
         return dir_path
 
-    def process_images(self):
-        """Process images using OCR and save raw results to a JSON file."""
+    def process_images(self, base_pattern: str, output_file: str):
+        """Process images from directories matching the pattern and save results.
+
+        Args:
+            base_pattern (str): Base directory pattern to search for image folders.
+                                Example: "../images" will match "../images*", "../images_1", etc.
+            output_file (str): Path to the output JSON file for saving results.
+        """
+        image_dirs = self._get_matching_image_dirs(base_pattern)
+
+        if not image_dirs:
+            print(f"No directories found matching pattern: {base_pattern}")
+            return {}
+
         ocr_data = {}
 
-        for image_dir in self.image_dirs:
+        for image_dir in image_dirs:
             folder_name = os.path.basename(image_dir)
             print(f"Processing folder: {folder_name}")
 
@@ -87,56 +96,13 @@ class OCRImageProcessor:
                     "sub_stats": [parse_main_stat(path) for path in sub_stat_paths if os.path.exists(path)]
                 }
 
+        # Ensure the output directory exists
+        output_dir = os.path.dirname(output_file)
+        self._ensure_directory(output_dir)
+
         # Save raw OCR results
-        self._save_results(ocr_data, os.path.join(self.output_dir, "raw_data.json"))
+        self._save_results(ocr_data, output_file)
         return ocr_data
-
-    def migrate_json_to_db(self):
-
-        json_file = "../output/disk_data.json"
-        database = DiskDatabase()
-
-        """Migrate data from JSON to SQLite database."""
-        if not os.path.exists(json_file):
-            print(f"File {json_file} does not exist.")
-            return
-
-        with open(json_file, "r") as file:
-            raw_disks = json.load(file)
-
-        disk_manager = DiskManager(database)
-        for disk_id, disk_data in raw_disks.items():
-            main_stat_data = disk_data.get("main_stat")
-            if not main_stat_data:
-                print(f"Disk {disk_id} is missing 'main_stat' data. Using default value.")
-                main_stat = Stat(
-                    name="HP",
-                    value=550.0,
-                    level=1
-                )
-            else:
-                main_stat = Stat(
-                    name=main_stat_data["name"],
-                    value=main_stat_data["value"],
-                    level=main_stat_data["level"]
-                )
-
-            try:
-                sub_stats = [Stat(**sub_stat) for sub_stat in disk_data.get("sub_stats", [])]
-                disk = Disk(id=disk_id, main_stat=main_stat, sub_stats=sub_stats)
-
-                # check if the disk is already in the database
-                if disk_manager.disk_exists(disk):
-                    print(f"Disk {disk_id} already exists in the database. Skipping this entry.")
-                    continue
-
-                # print(f"Adding disk {disk_id} to the database...")
-                disk_manager.add_disk(disk)
-            except KeyError as e:
-                print(f"Missing key {e} in 'main_stat' or 'sub_stats' for disk {disk_id}. Skipping this entry.")
-
-        database.close()
-        print("Migration complete!")
 
     @staticmethod
     def _save_results(data, filename):
@@ -150,6 +116,9 @@ class OCRImageProcessor:
 
 
 if __name__ == "__main__":
+    # Example usage
+    base_pattern = "../images"  # Base directory to match patterns like "../images*", "../images_1", etc.
+    output_file_path = "../output/raw_data.json"  # Provide the output file path
+
     processor = OCRImageProcessor()
-    processor.process_images()
-    processor.migrate_json_to_db()
+    processor.process_images(base_pattern, output_file_path)

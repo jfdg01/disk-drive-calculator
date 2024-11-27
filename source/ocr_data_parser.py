@@ -1,4 +1,5 @@
 import json
+import os
 
 from constants import SUBSTATS, MAIN_STAT_LEVELS
 
@@ -122,6 +123,12 @@ class OCRDataParser:
     @staticmethod
     def load_and_parse_ocr_file(input_file, output_file):
         """Load OCR data, parse it, and save it as JSON."""
+
+        # Check for the existence of the input file
+        if not os.path.exists(input_file):
+            print(f"File {input_file} does not exist.")
+            return
+
         try:
             with open(input_file, 'r', encoding='utf-8') as file:
                 ocr_data = json.load(file)
@@ -137,4 +144,4 @@ class OCRDataParser:
 
 
 if __name__ == "__main__":
-    OCRDataParser.load_and_parse_ocr_file("../output/raw_data.json", "../output/disk_data.json")
+    OCRDataParser.load_and_parse_ocr_file("../output/raw_data.json","../output/disk_data.json")
