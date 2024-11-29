@@ -1,9 +1,5 @@
-import json
-
 import requests
-from typing import List, Dict, Any, Optional
-
-from constants import DATABASE_URL
+from typing import List, Dict, Optional
 
 
 class PocketBaseDatabase:
@@ -32,7 +28,7 @@ class PocketBaseDatabase:
         payload = {"requests": batch_requests}
 
         # Log payload for debugging
-        print("Payload being sent:", json.dumps(payload, indent=4))
+        # print("Payload being sent:", json.dumps(payload, indent=4))
 
         # Make the POST request
         response = requests.post(
@@ -83,7 +79,7 @@ class PocketBaseDatabase:
         payload = {"requests": batch_requests}
 
         # Log payload for debugging
-        print("Payload being sent for sub_stats:", json.dumps(payload, indent=4))
+        # print("Payload being sent for sub_stats:", json.dumps(payload, indent=4))
 
         # Make the POST request
         response = requests.post(

@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Added pocketbase to db folder">
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Updatede api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/pb_data/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/data.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/pb_data/data.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/data.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/pb_data/data.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/data.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/json_to_db_data_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/json_to_db_data_converter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/pocketbase_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/pocketbase_database.py" afterDir="false" />
     </list>
@@ -83,7 +85,7 @@
     "Python.disk_manager (1).executor": "Run",
     "Python.disk_manager.executor": "Debug",
     "Python.grid_clicker.executor": "Run",
-    "Python.json_to_db_data_converter (1).executor": "Debug",
+    "Python.json_to_db_data_converter (1).executor": "Run",
     "Python.json_to_db_data_converter.executor": "Run",
     "Python.main (1).executor": "Run",
     "Python.main.executor": "Run",
@@ -126,7 +128,7 @@
       <recent name="C:\Users\gara\Desktop\disc\disk_related" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api">
+  <component name="RunManager" selected="Python.json_to_db_data_converter (1)">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -165,6 +167,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/ui/disk_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="json_to_db_data_converter (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/json_to_db_data_converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,6 +246,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.json_to_db_data_converter (1)" />
         <item itemvalue="Python.json_to_db_data_converter" />
         <item itemvalue="Python.api" />
         <item itemvalue="Python.disk_app" />
@@ -274,15 +300,7 @@
       <workItem from="1732874323958" duration="7611000" />
       <workItem from="1732882086619" duration="584000" />
       <workItem from="1732882999392" duration="2500000" />
-      <workItem from="1732888613487" duration="933000" />
-    </task>
-    <task id="LOCAL-00008" summary="Modularized the code">
-      <option name="closed" value="true" />
-      <created>1732372058207</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1732372058207</updated>
+      <workItem from="1732888613487" duration="2069000" />
     </task>
     <task id="LOCAL-00009" summary="Beautified the code (+N suffixes still missing)">
       <option name="closed" value="true" />
@@ -668,7 +686,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732888249497</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Updatede api">
+      <option name="closed" value="true" />
+      <created>1732889808880</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1732889808880</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,7 +713,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Updated gitignore + merge" />
     <MESSAGE value="Prep test" />
     <MESSAGE value="idk" />
     <MESSAGE value="Moved functions around and messed with the timing of the screen capture" />
@@ -712,17 +737,11 @@
     <MESSAGE value="Changed api to use disk manager with pocketbase" />
     <MESSAGE value="Managed to convert JSON to Pocketbase" />
     <MESSAGE value="Added pocketbase to db folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pocketbase to db folder" />
+    <MESSAGE value="Updatede api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updatede api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/source/pocketbase_database.py</url>
-          <line>127</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -748,7 +767,7 @@
     <SUITE FILE_PATH="coverage/disc$api.coverage" NAME="api Coverage Results" MODIFIED="1732726410263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disc$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732550918792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$json_to_db_data_converter__1_.coverage" NAME="json_to_db_data_converter (1) Coverage Results" MODIFIED="1732888054676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$json_to_db_data_converter__1_.coverage" NAME="json_to_db_data_converter (1) Coverage Results" MODIFIED="1732890102782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732568451219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$.coverage" NAME=" Coverage Results" MODIFIED="1732550827631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/disc$disk_app.coverage" NAME="disk_app Coverage Results" MODIFIED="1732718593930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/ui" />
