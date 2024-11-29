@@ -117,12 +117,52 @@ class PocketBaseDatabase:
         return response.json()
 
     def get_disks(self) -> List[dict]:
-        response = requests.get(
+        # Fetch all disks
+        disks_response = requests.get(
             f"{self.base_url}/collections/disks/records",
             headers=self._headers()
         )
-        response.raise_for_status()
-        return response.json().get("items", [])
+        disks_response.raise_for_status()
+        disks = disks_response.json().get("items", [])
+
+        # Fetch all sub_stats
+        sub_stats_response = requests.get(
+            f"{self.base_url}/collections/sub_stats/records",
+            headers=self._headers()
+        )
+        sub_stats_response.raise_for_status()
+        sub_stats = sub_stats_response.json().get("items", [])
+
+        # Group sub_stats by disk_id for easier lookup
+        sub_stats_by_disk = {}
+        for sub_stat in sub_stats:
+            disk_id = sub_stat["disk_id"]
+            if disk_id not in sub_stats_by_disk:
+                sub_stats_by_disk[disk_id] = []
+            sub_stats_by_disk[disk_id].append(sub_stat)
+
+        # Build the result structure
+        result = []
+        for disk in disks:
+            disk_id = disk["id"]
+            result.append({
+                "id": disk_id,
+                "main_stat": {
+                    "name": disk["main_stat_name"],
+                    "value": disk["main_stat_value"],
+                    "level": disk["main_stat_level"]
+                },
+                "sub_stats": [
+                    {
+                        "name": sub_stat["name"],
+                        "value": sub_stat["value"],
+                        "level": sub_stat["level"]
+                    }
+                    for sub_stat in sub_stats_by_disk.get(disk_id, [])
+                ]
+            })
+
+        return result
 
     def update_disk(self, disk_id: str, disk_data: dict) -> dict:
         response = requests.patch(

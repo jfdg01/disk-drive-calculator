@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Updated cors policy">
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Fix fetch data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db-shm" afterDir="false" />
@@ -12,8 +12,8 @@
       <change beforePath="$PROJECT_DIR$/db/pb_data/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/data.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/data.db-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/data.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/data.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/disk_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/pocketbase_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/pocketbase_database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +73,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "FastAPI.run_api.executor": "Debug",
     "Python tests.Python tests in test_disk_scanner.py.executor": "Debug",
     "Python.api.executor": "Run",
     "Python.automated_disk_scanner.executor": "Run",
@@ -84,7 +85,7 @@
     "Python.disk_manager (1).executor": "Run",
     "Python.disk_manager.executor": "Debug",
     "Python.grid_clicker.executor": "Run",
-    "Python.json_to_db_data_converter (1).executor": "Run",
+    "Python.json_to_db_data_converter (1).executor": "Debug",
     "Python.json_to_db_data_converter.executor": "Run",
     "Python.main (1).executor": "Run",
     "Python.main.executor": "Run",
@@ -97,7 +98,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/gara/Documents/Projects/disc/db",
+    "last_opened_file_path": "C:/Users/gara/Documents/Projects/disc/source",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,7 +128,7 @@
       <recent name="C:\Users\gara\Desktop\disc\disk_related" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.json_to_db_data_converter (1)">
+  <component name="RunManager" selected="FastAPI.run_api">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -243,6 +244,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run_api" type="Python.FastAPI">
+      <option name="file" value="C:\Users\gara\Documents\Projects\disc\source\api.py" />
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/AppData/Local/Programs/Python/Python312/python.exe" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="FastAPI.run_api" />
+      <item itemvalue="Python.api" />
+      <item itemvalue="Python.disk_app" />
+      <item itemvalue="Python.json_to_db_data_converter" />
+      <item itemvalue="Python.json_to_db_data_converter (1)" />
+      <item itemvalue="Python.main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.json_to_db_data_converter (1)" />
@@ -299,23 +324,7 @@
       <workItem from="1732874323958" duration="7611000" />
       <workItem from="1732882086619" duration="584000" />
       <workItem from="1732882999392" duration="2500000" />
-      <workItem from="1732888613487" duration="2597000" />
-    </task>
-    <task id="LOCAL-00011" summary="Fixed beautification and moved functions to its own file">
-      <option name="closed" value="true" />
-      <created>1732374046091</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1732374046091</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added extractor for better AI management">
-      <option name="closed" value="true" />
-      <created>1732374265834</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1732374265834</updated>
+      <workItem from="1732888613487" duration="4022000" />
     </task>
     <task id="LOCAL-00013" summary="Added automatic clicker through the grid">
       <option name="closed" value="true" />
@@ -693,7 +702,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732890741547</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Fix fetch data">
+      <option name="closed" value="true" />
+      <created>1732891266516</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1732891266516</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Fix fetch data">
+      <option name="closed" value="true" />
+      <created>1732891299173</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1732891299173</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,7 +737,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="idk" />
     <MESSAGE value="Moved functions around and messed with the timing of the screen capture" />
     <MESSAGE value="Backed up pictures to use with OCR" />
     <MESSAGE value="Disk output to JSON correct" />
@@ -737,10 +761,18 @@
     <MESSAGE value="Added pocketbase to db folder" />
     <MESSAGE value="Updatede api" />
     <MESSAGE value="Updated cors policy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated cors policy" />
+    <MESSAGE value="Fix fetch data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix fetch data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/source/disk_manager.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -753,23 +785,24 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/disc$data_migration__1_.coverage" NAME="data_migration (1) Coverage Results" MODIFIED="1732704645537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$ocr_data_parser.coverage" NAME="ocr_data_parser Coverage Results" MODIFIED="1732716521828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732708021638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disc$data_migration.coverage" NAME="data_migration Coverage Results" MODIFIED="1732622405285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/disc$calc.coverage" NAME="calc Coverage Results" MODIFIED="1732712784416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1732717487851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/disk_related" />
-    <SUITE FILE_PATH="coverage/disc$disk.coverage" NAME="disk Coverage Results" MODIFIED="1732566667804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$json_to_db_data_converter.coverage" NAME="json_to_db_data_converter Coverage Results" MODIFIED="1732876745847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/ocr" />
     <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732716868936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$ocr_image_processor.coverage" NAME="ocr_image_processor Coverage Results" MODIFIED="1732704922851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732445477944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/disc$api.coverage" NAME="api Coverage Results" MODIFIED="1732726410263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disc$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732550918792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$json_to_db_data_converter__1_.coverage" NAME="json_to_db_data_converter (1) Coverage Results" MODIFIED="1732890102782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$json_to_db_data_converter__1_.coverage" NAME="json_to_db_data_converter (1) Coverage Results" MODIFIED="1732891501277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732568451219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$.coverage" NAME=" Coverage Results" MODIFIED="1732550827631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/disc$disk_app.coverage" NAME="disk_app Coverage Results" MODIFIED="1732718593930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/ui" />
+    <SUITE FILE_PATH="coverage/disc$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732708021638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$data_migration.coverage" NAME="data_migration Coverage Results" MODIFIED="1732622405285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/disc$disk.coverage" NAME="disk Coverage Results" MODIFIED="1732566667804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$json_to_db_data_converter.coverage" NAME="json_to_db_data_converter Coverage Results" MODIFIED="1732876745847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/ocr" />
+    <SUITE FILE_PATH="coverage/disc$run_api.coverage" NAME="run_api Coverage Results" MODIFIED="1732892646284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732550918792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disc$disk_manager.coverage" NAME="disk_manager Coverage Results" MODIFIED="1732715341615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$automated_disk_scanner.coverage" NAME="automated_disk_scanner Coverage Results" MODIFIED="1732377436862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disc$disk_manager__1_.coverage" NAME="disk_manager (1) Coverage Results" MODIFIED="1732622885167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />

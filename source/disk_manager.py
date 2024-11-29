@@ -26,26 +26,7 @@ class DiskManager:
 
     def get_disks(self) -> List[dict]:
         disks = self.database.get_disks()
-        result = []
-        for disk in disks:
-            sub_stats = self.database.get_sub_stats_by_disk(disk["id"])
-            result.append({
-                "id": disk["id"],
-                "main_stat": {
-                    "name": disk["main_stat_name"],
-                    "value": disk["main_stat_value"],
-                    "level": disk["main_stat_level"]
-                },
-                "sub_stats": [
-                    {
-                        "name": sub_stat["name"],
-                        "value": sub_stat["value"],
-                        "level": sub_stat["level"]
-                    }
-                    for sub_stat in sub_stats
-                ]
-            })
-        return result
+        return disks
 
     def remove_disk(self, disk_id: str):
         # Delete sub-stats and the disk

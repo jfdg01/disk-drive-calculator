@@ -2,5 +2,5 @@
 code.txt
 images*/
 /source/json_to_db_data_converter.py
-/db/pb_data/
-/db/pb_migrations/
+/db/pb_data/*
+/db/pb_migrations/*
