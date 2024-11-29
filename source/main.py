@@ -1,5 +1,5 @@
 from source.disk_related.disk_database import DiskDatabase
-from source.disk_related.disk_manager import DiskManager
+from source.disk_manager import DiskManager
 from source.ocr.json_to_db_data_converter import convert_json_to_db
 from source.ocr.ocr_data_parser import OCRDataParser
 from source.ocr.ocr_image_processor import OCRImageProcessor

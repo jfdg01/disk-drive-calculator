@@ -3,7 +3,7 @@ import math
 from dataclasses import dataclass, field
 from typing import List, Dict, Any
 
-from source.constants import SUBSTAT_WEIGHTS, SUBSTATS
+from constants import SUBSTAT_WEIGHTS, SUBSTATS
 
 
 @dataclass

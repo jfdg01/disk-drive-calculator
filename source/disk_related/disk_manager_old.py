@@ -1,9 +1,8 @@
-import logging
 from operator import itemgetter
 from typing import List
 
 from source.constants import SUBSTAT_WEIGHTS
-from source.disk_related.disk import Disk, Stat
+from source.disk import Disk, Stat
 from source.disk_related.disk_database import DiskDatabase
 
 
@@ -200,7 +199,7 @@ class DiskManager:
 # Example usage with database
 if __name__ == "__main__":
     # Initialize DiskDatabase (assumes implementation exists)
-    db = DiskDatabase("../db/disk_database.db")
+    db = DiskDatabase("../../db/disk_database.db")
     disk_manager = DiskManager(db)
 
     # Example: Add, rank, and display disks

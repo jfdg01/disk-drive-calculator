@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Moved everything to differentiated folders">
-      <change beforePath="$PROJECT_DIR$/.idea/disc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/disc.iml" afterDir="false" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Added apy for server">
+      <change afterPath="$PROJECT_DIR$/source/disk_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/pocketbase_database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/disk_related/disk_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_related/disk_database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/disk_related/disk_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_related/disk_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractor.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/extractor.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/disk_related/disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/disk_related/disk_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_related/disk_manager_old.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/ocr/json_to_db_data_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr/json_to_db_data_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/ui/disk_app.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +54,12 @@
     &quot;assignee&quot;: &quot;jfdg01&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jfdg01/disk-drive-calculator.git",
-    "accountId": "afadeaeb-3fbe-4b98-b2fd-1663a6202f0d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jfdg01/disk-drive-calculator.git&quot;,
+    &quot;accountId&quot;: &quot;afadeaeb-3fbe-4b98-b2fd-1663a6202f0d&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -65,60 +71,83 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python tests.Python tests in test_disk_scanner.py.executor": "Debug",
-    "Python.api.executor": "Run",
-    "Python.automated_disk_scanner.executor": "Run",
-    "Python.calc.executor": "Run",
-    "Python.data_migration (1).executor": "Run",
-    "Python.data_migration.executor": "Debug",
-    "Python.disk.executor": "Run",
-    "Python.disk_app.executor": "Run",
-    "Python.disk_manager (1).executor": "Run",
-    "Python.disk_manager.executor": "Debug",
-    "Python.grid_clicker.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.ocr_data_parser.executor": "Run",
-    "Python.ocr_image_processor.executor": "Run",
-    "Python.ocr_processor.executor": "Run",
-    "Python.run_scanner.executor": "Run",
-    "Python.screen_scanner.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/gara/Documents/Projects/disc",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in test_disk_scanner.py.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.automated_disk_scanner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_migration (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_migration.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.disk.executor&quot;: &quot;Run&quot;,
+    &quot;Python.disk_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.disk_manager (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.disk_manager.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.grid_clicker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ocr_data_parser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ocr_image_processor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ocr_processor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_scanner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.screen_scanner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gara/Documents/Projects/disc&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gara\Desktop\disc" />
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gara\Documents\Projects\disc\source\disk_related" />
+      <recent name="C:\Users\gara\Documents\Projects\disc\source" />
       <recent name="C:\Users\gara\Desktop\disc\source\ocr" />
       <recent name="C:\Users\gara\Desktop\disc\source" />
       <recent name="C:\Users\gara\Desktop\disc\disk_related" />
-      <recent name="C:\Users\gara\Desktop\disc\images" />
-      <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\db" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api">
+  <component name="RunManager" selected="Python.api (1)">
+    <configuration name="api (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -157,29 +186,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/ui/disk_app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="disk_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="disc" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\disk_related\disk_manager.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -259,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.api (1)" />
         <item itemvalue="Python.api" />
         <item itemvalue="Python.disk_app" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.ocr_data_parser" />
-        <item itemvalue="Python.disk_manager" />
       </list>
     </recent_temporary>
   </component>
@@ -308,15 +314,10 @@
       <workItem from="1732569001483" duration="2956000" />
       <workItem from="1732619942923" duration="1781000" />
       <workItem from="1732621749833" duration="1141000" />
-      <workItem from="1732724357028" duration="2124000" />
-    </task>
-    <task id="LOCAL-00003" summary="Removed html things and turned into CLI">
-      <option name="closed" value="true" />
-      <created>1732362338307</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1732362338307</updated>
+      <workItem from="1732724357028" duration="2506000" />
+      <workItem from="1732810899280" duration="698000" />
+      <workItem from="1732873068446" duration="2000" />
+      <workItem from="1732874323958" duration="2100000" />
     </task>
     <task id="LOCAL-00004" summary="Refactored data structures">
       <option name="closed" value="true" />
@@ -702,7 +703,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732717767771</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Added apy for server">
+      <option name="closed" value="true" />
+      <created>1732727325832</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1732727325832</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -721,7 +730,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added extractor for better AI management" />
     <MESSAGE value="Added automatic clicker through the grid" />
     <MESSAGE value="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY" />
     <MESSAGE value="Merge main" />
@@ -746,7 +754,8 @@
     <MESSAGE value="Trying to correct all OCR mistakes" />
     <MESSAGE value="Added conditions to fix incorrect OCR reading of value HP" />
     <MESSAGE value="Moved everything to differentiated folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved everything to differentiated folders" />
+    <MESSAGE value="Added apy for server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added apy for server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

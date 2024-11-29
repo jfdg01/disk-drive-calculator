@@ -10,9 +10,12 @@ def extract_code():
     # Update this list with patterns such as 'test/*.py' or 'scripts/example.py'
     root = 'source/'
     disk_related = root + 'disk_related/'
+    ocr_related = "source/ocr/"
 
     include_patterns = [
-        disk_related + "*.py",  # Example: include all .py files in the 'source/disk_related/' folder
+        root + "*.py",  # Example: include all .py files in the 'source/disk_related/' folder
+        # ocr_related + "json_to_db_data_converter.py",
+        # ocr_related + "ocr_data_paser.py",
     ]
 
     # Get a list of all .py files in the current directory except this script
