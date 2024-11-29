@@ -69,7 +69,7 @@ def get_disks():
         return disks
     except Exception as e:
         logging.error(f"Error retrieving disks: {e}")
-        raise HTTPException(status_code=500, detail="Failed to retrieve disks")
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve disks: {e}")
 
 
 @app.delete("/disks/{disk_id}", response_model=dict)

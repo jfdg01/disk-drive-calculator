@@ -33,7 +33,8 @@ class DiskManager:
                 "id": disk["id"],
                 "main_stat": {
                     "name": disk["main_stat_name"],
-                    "value": disk["main_stat_level"]
+                    "value": disk["main_stat_value"],
+                    "level": disk["main_stat_level"]
                 },
                 "sub_stats": [
                     {

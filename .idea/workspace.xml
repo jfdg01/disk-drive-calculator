@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Updatede api">
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Updated cors policy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db-shm" afterDir="false" />
@@ -13,8 +13,7 @@
       <change beforePath="$PROJECT_DIR$/db/pb_data/data.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/data.db-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pb_data/data.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/data.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/json_to_db_data_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/json_to_db_data_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/pocketbase_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/pocketbase_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/disk_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,23 +299,7 @@
       <workItem from="1732874323958" duration="7611000" />
       <workItem from="1732882086619" duration="584000" />
       <workItem from="1732882999392" duration="2500000" />
-      <workItem from="1732888613487" duration="2069000" />
-    </task>
-    <task id="LOCAL-00009" summary="Beautified the code (+N suffixes still missing)">
-      <option name="closed" value="true" />
-      <created>1732373671902</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1732373671902</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fixed beautification and moved functions to its own file">
-      <option name="closed" value="true" />
-      <created>1732374039338</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1732374039338</updated>
+      <workItem from="1732888613487" duration="2597000" />
     </task>
     <task id="LOCAL-00011" summary="Fixed beautification and moved functions to its own file">
       <option name="closed" value="true" />
@@ -694,7 +677,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732889808880</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Updated cors policy">
+      <option name="closed" value="true" />
+      <created>1732890734054</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1732890734054</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Updated cors policy">
+      <option name="closed" value="true" />
+      <created>1732890741547</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1732890741547</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,7 +712,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Prep test" />
     <MESSAGE value="idk" />
     <MESSAGE value="Moved functions around and messed with the timing of the screen capture" />
     <MESSAGE value="Backed up pictures to use with OCR" />
@@ -738,7 +736,8 @@
     <MESSAGE value="Managed to convert JSON to Pocketbase" />
     <MESSAGE value="Added pocketbase to db folder" />
     <MESSAGE value="Updatede api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updatede api" />
+    <MESSAGE value="Updated cors policy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated cors policy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
