@@ -126,5 +126,5 @@ def capture_region(output_path: str, region: Dict) -> None:
 
 
 if __name__ == "__main__":
-    scanner = ScreenScanner("../../images")
+    scanner = ScreenScanner("../images")
     scanner.capture_and_save_disk_images()

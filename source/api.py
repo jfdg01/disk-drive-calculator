@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 # Initialize database and disk manager
-pocketbase_db = PocketBaseDatabase(base_url="http://localhost:8090")
+pocketbase_db = PocketBaseDatabase(base_url="http://localhost:8090/api")
 disk_manager = DiskManager(pocketbase_db)
 
 
@@ -93,3 +93,14 @@ def update_disk(disk_id: str, disk: DiskModel):
 def delete_disk(disk_id: str):
     disk_manager.remove_disk(disk_id)
     return {"message": "Disk deleted successfully."}
+
+@app.post("/disks/batch")
+def create_disks_batch(disks: List[DiskModel]):
+    for disk in disks:
+        new_disk = Disk(
+            id=disk.id,
+            main_stat=Stat(**disk.main_stat.model_dump()),
+            sub_stats=[Stat(**stat.model_dump()) for stat in disk.sub_stats]
+        )
+        disk_manager.add_disk(new_disk.to_dict())
+    return {"message": f"Successfully added {len(disks)} disks."}

@@ -151,4 +151,4 @@ class OCRDataParser:
 
 
 if __name__ == "__main__":
-    OCRDataParser.load_and_parse_ocr_file("../../output/raw_data.json", "../output/disk_data.json")
+    OCRDataParser.load_and_parse_ocr_file("../output/raw_data.json", "../output/disk_data.json")

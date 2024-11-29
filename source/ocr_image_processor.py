@@ -119,8 +119,8 @@ class OCRImageProcessor:
 
 if __name__ == "__main__":
     # Example usage
-    base_dir = "../../images"  # Parent directory containing subdirectories like "images_1", "images_2", etc.
-    output_file_path = "../../output/raw_data.json"  # Provide the output file path
+    base_dir = "../images"  # Parent directory containing subdirectories like "images_1", "images_2", etc.
+    output_file_path = "../output/raw_data.json"  # Provide the output file path
 
     processor = OCRImageProcessor()
     processor.process_images(base_dir, output_file_path)

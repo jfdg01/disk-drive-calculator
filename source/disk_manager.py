@@ -1,6 +1,5 @@
 from typing import List
 
-from disk import Disk, Stat
 from pocketbase_database import PocketBaseDatabase
 
 
@@ -8,42 +7,63 @@ class DiskManager:
     def __init__(self, database: PocketBaseDatabase):
         self.database = database
 
-    def add_disk(self, disk: Disk):
-        """Add a new disk to the database."""
-        disk_data = {
-            "main_stat": disk.main_stat.to_dict(),
-            "sub_stats": [sub_stat.to_dict() for sub_stat in disk.sub_stats]
-        }
-        created_disk = self.database.create_disk(disk_data)
-        disk.id = created_disk["id"]  # Update the disk ID with the one assigned by PocketBase
+    def add_disk(self, disk: dict):
+        # Create the disk
+        created_disk = self.database.create_disk({
+            "main_stat_name": disk["main_stat"]["name"],
+            "main_stat_value": disk["main_stat"]["value"],
+            "main_stat_level": disk["main_stat"]["level"]
+        })
 
-    def get_disks(self) -> List[Disk]:
-        """Retrieve all disks from the database."""
-        disks_data = self.database.get_disks()
+        # Add sub-stats
+        for sub_stat in disk["sub_stats"]:
+            self.database.create_sub_stat({
+                "disk_id": created_disk["id"],
+                "name": sub_stat["name"],
+                "value": sub_stat["value"],
+                "level": sub_stat["level"]
+            })
+
+    def get_disks(self) -> List[dict]:
+        disks = self.database.get_disks()
         result = []
-        for disk_data in disks_data:
-            main_stat = Stat(**disk_data["main_stat"])
-            sub_stats = [Stat(**sub_stat) for sub_stat in disk_data["sub_stats"]]
-            disk = Disk(id=disk_data["id"], main_stat=main_stat, sub_stats=sub_stats)
-            result.append(disk)
+        for disk in disks:
+            sub_stats = self.database.get_sub_stats_by_disk(disk["id"])
+            result.append({
+                "id": disk["id"],
+                "main_stat": {
+                    "name": disk["main_stat_name"],
+                    "value": disk["main_stat_level"]
+                },
+                "sub_stats": [
+                    {
+                        "name": sub_stat["name"],
+                        "value": sub_stat["value"],
+                        "level": sub_stat["level"]
+                    }
+                    for sub_stat in sub_stats
+                ]
+            })
         return result
 
     def remove_disk(self, disk_id: str):
-        """Remove a disk and its sub-stats from the database."""
+        # Delete sub-stats and the disk
+        self.database.delete_sub_stats_by_disk(disk_id)
         self.database.delete_disk(disk_id)
 
-    def update_disk(self, disk: Disk):
-        """Update an existing disk."""
-        disk_data = {
-            "main_stat": disk.main_stat.to_dict(),
-            "sub_stats": [sub_stat.to_dict() for sub_stat in disk.sub_stats]
-        }
-        self.database.update_disk(disk.id, disk_data)
+    def update_disk(self, disk: dict):
+        # Update the disk
+        self.database.update_disk(disk["id"], {
+            "main_stat_name": disk["main_stat"]["name"],
+            "main_stat_level": disk["main_stat"]["value"]
+        })
 
-    def disk_exists(self, disk: Disk) -> bool:
-        """Check if a disk with the same stats exists in the database."""
-        disks = self.get_disks()
-        for existing_disk in disks:
-            if existing_disk.main_stat == disk.main_stat and existing_disk.sub_stats == disk.sub_stats:
-                return True
-        return False
+        # Delete existing sub-stats and add new ones
+        self.database.delete_sub_stats_by_disk(disk["id"])
+        for sub_stat in disk["sub_stats"]:
+            self.database.create_sub_stat({
+                "disk_id": disk["id"],
+                "name": sub_stat["name"],
+                "value": sub_stat["value"],
+                "level": sub_stat["level"]
+            })
