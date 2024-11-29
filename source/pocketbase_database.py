@@ -3,7 +3,7 @@ import json
 import requests
 from typing import List, Dict, Any, Optional
 
-from constants import BASE_URL
+from constants import DATABASE_URL
 
 
 class PocketBaseDatabase:

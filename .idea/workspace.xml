@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Changed api to use disk manager with pocketbase">
-      <change afterPath="$PROJECT_DIR$/db/run_database.bat" afterDir="false" />
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Added pocketbase to db folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/disk_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ocr/json_to_db_data_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/json_to_db_data_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ocr/ocr_data_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_data_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ocr/ocr_image_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/ocr_image_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ocr/screen_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/screen_scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/json_to_db_data_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/json_to_db_data_converter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/pocketbase_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/pocketbase_database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +83,7 @@
     "Python.disk_manager (1).executor": "Run",
     "Python.disk_manager.executor": "Debug",
     "Python.grid_clicker.executor": "Run",
-    "Python.json_to_db_data_converter (1).executor": "Run",
+    "Python.json_to_db_data_converter (1).executor": "Debug",
     "Python.json_to_db_data_converter.executor": "Run",
     "Python.main (1).executor": "Run",
     "Python.main.executor": "Run",
@@ -106,6 +103,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "debugger.dataViews.python.type.renderers",
+    "ts.external.directory.path": "C:\\Users\\gara\\AppData\\Local\\Programs\\PyCharm Professional\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -128,30 +126,7 @@
       <recent name="C:\Users\gara\Desktop\disc\disk_related" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.json_to_db_data_converter (1)">
-    <configuration name="api (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="disc" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/api.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.api">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
@@ -190,29 +165,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/ui/disk_app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="json_to_db_data_converter (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="disc" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/json_to_db_data_converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -269,9 +221,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.json_to_db_data_converter (1)" />
         <item itemvalue="Python.json_to_db_data_converter" />
-        <item itemvalue="Python.api (1)" />
         <item itemvalue="Python.api" />
         <item itemvalue="Python.disk_app" />
       </list>
@@ -323,31 +273,8 @@
       <workItem from="1732873068446" duration="2000" />
       <workItem from="1732874323958" duration="7611000" />
       <workItem from="1732882086619" duration="584000" />
-      <workItem from="1732882999392" duration="1967000" />
-    </task>
-    <task id="LOCAL-00005" summary="Modularized the code">
-      <option name="closed" value="true" />
-      <created>1732363519674</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1732363519674</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Fixed heuristic and added a massive disk generator">
-      <option name="closed" value="true" />
-      <created>1732365283031</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1732365283031</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added recognition, regions and gitignore">
-      <option name="closed" value="true" />
-      <created>1732371724116</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1732371724117</updated>
+      <workItem from="1732882999392" duration="2500000" />
+      <workItem from="1732888613487" duration="933000" />
     </task>
     <task id="LOCAL-00008" summary="Modularized the code">
       <option name="closed" value="true" />
@@ -717,7 +644,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732876508152</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Managed to convert JSON to Pocketbase">
+      <option name="closed" value="true" />
+      <created>1732888117075</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1732888117075</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Added pocketbase to db folder">
+      <option name="closed" value="true" />
+      <created>1732888151571</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1732888151571</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Added pocketbase to db folder">
+      <option name="closed" value="true" />
+      <created>1732888249497</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1732888249497</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -736,8 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY" />
-    <MESSAGE value="Merge main" />
     <MESSAGE value="Updated gitignore + merge" />
     <MESSAGE value="Prep test" />
     <MESSAGE value="idk" />
@@ -761,10 +710,19 @@
     <MESSAGE value="Moved everything to differentiated folders" />
     <MESSAGE value="Added apy for server" />
     <MESSAGE value="Changed api to use disk manager with pocketbase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed api to use disk manager with pocketbase" />
+    <MESSAGE value="Managed to convert JSON to Pocketbase" />
+    <MESSAGE value="Added pocketbase to db folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pocketbase to db folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/source/pocketbase_database.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

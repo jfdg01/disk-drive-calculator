@@ -2,7 +2,7 @@ import json
 import os
 from disk import Stat, Disk
 from pocketbase_database import PocketBaseDatabase
-from constants import BASE_URL
+from constants import DATABASE_URL
 
 
 def batch_upload_disks(disks, batch_size, database):
@@ -62,5 +62,5 @@ def convert_json_to_db(json_file, batch_size, database):
 
 
 if __name__ == "__main__":
-    db = PocketBaseDatabase(BASE_URL)
+    db = PocketBaseDatabase(DATABASE_URL)
     convert_json_to_db("../output/disk_data.json", 3000, db)

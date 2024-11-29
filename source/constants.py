@@ -1,3 +1,5 @@
+from xml.dom.xmlbuilder import DOMBuilder, DOMBuilderFilter
+
 SUBSTAT_WEIGHTS = {
     "CRIT Rate": 10,
     "CRIT DMG": 10,
@@ -30,7 +32,8 @@ VERTICAL_DIFF = int(VERTICAL_DIFF_PERCENTAGE * RESOLUTION[1])
 CELL_SIZE_PERCENTAGE = (HORIZONTAL_DIFF, VERTICAL_DIFF)
 CELL_SIZE = (int(HORIZONTAL_DIFF_PERCENTAGE * RESOLUTION[0]), int(VERTICAL_DIFF_PERCENTAGE * RESOLUTION[1]))
 
-BASE_URL = "http://localhost:8090/api"
+DATABASE_URL = "http://localhost:8090/api"
+API_URL = "http://localhost:8000"
 
 ROWS = 4
 COLS = 8
