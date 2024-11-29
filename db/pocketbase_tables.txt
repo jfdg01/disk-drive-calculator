@@ -1,0 +1,12 @@
+In my pocketbase db I have two collections, disks and sub_stats, structured like this:
+
+disks:
+text: id (nonempty)
+text: main_stat_name
+number: main_stat_level
+
+sub_stats:
+relation: disk_id (nonempty), disks, single
+text: name
+number: value
+number: level
