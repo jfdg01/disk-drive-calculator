@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Correct fetch substats">
+    <list default="true" id="a1a4de03-ee66-425f-b208-94d80471a334" name="Changes" comment="Captured Zhu Yuan data">
+      <change beforePath="$PROJECT_DIR$/.idea/disc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/disc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/pb_data/auxiliary.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/pb_data/auxiliary.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/disk_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/disk_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/json_to_db_data_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/json_to_db_data_converter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/pocketbase_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/pocketbase_database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="final" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +50,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/jfdg01/disk-drive-calculator.git&quot;,
-    &quot;accountId&quot;: &quot;afadeaeb-3fbe-4b98-b2fd-1663a6202f0d&quot;
+    &quot;accountId&quot;: &quot;491d0375-7e93-4430-ab60-d4ec2f4cfa0e&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -69,21 +67,15 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;FastAPI.run_api.executor&quot;: &quot;Debug&quot;,
+    &quot;FastAPI.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;FastAPI.my_api.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_disk_scanner.py.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.api.executor&quot;: &quot;Run&quot;,
     &quot;Python.automated_disk_scanner.executor&quot;: &quot;Run&quot;,
-    &quot;Python.calc.executor&quot;: &quot;Run&quot;,
     &quot;Python.data_migration (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.data_migration.executor&quot;: &quot;Debug&quot;,
     &quot;Python.disk.executor&quot;: &quot;Run&quot;,
-    &quot;Python.disk_app.executor&quot;: &quot;Run&quot;,
     &quot;Python.disk_manager (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.disk_manager.executor&quot;: &quot;Debug&quot;,
     &quot;Python.grid_clicker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.json_to_db_data_converter (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.json_to_db_data_converter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.ocr_data_parser.executor&quot;: &quot;Run&quot;,
     &quot;Python.ocr_image_processor.executor&quot;: &quot;Run&quot;,
@@ -94,14 +86,13 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gara/Documents/Projects/disc/source&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jfdg0/PycharmProjects/disk-drive-calculator/source/api.py&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;debugger.dataViews.python.type.renderers&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gara\\AppData\\Local\\Programs\\PyCharm Professional\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -112,66 +103,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gara\Documents\Projects\disc\db" />
       <recent name="C:\Users\gara\Desktop\disc" />
       <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gara\Documents\Projects\disc\source" />
-      <recent name="C:\Users\gara\Documents\Projects\disc\source\disk_related" />
-      <recent name="C:\Users\gara\Desktop\disc\source\ocr" />
+      <recent name="C:\Users\gara\Desktop\disc\images" />
+      <recent name="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\db" />
       <recent name="C:\Users\gara\Desktop\disc\source" />
-      <recent name="C:\Users\gara\Desktop\disc\disk_related" />
+      <recent name="C:\Users\gara\Desktop\disc\output" />
     </key>
   </component>
-  <component name="RunManager" selected="FastAPI.run_api">
-    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="disc" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\gara\Documents\Projects\disc\source\api.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="disk_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="disc" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/ui" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/ui/disk_app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="json_to_db_data_converter (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="FastAPI.my_api">
+    <configuration name="json_to_db_data_converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,7 +128,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/json_to_db_data_converter.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\source\json_to_db_data_converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,12 +146,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/ocr" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\gara\Documents\Projects\disc\source\json_to_db_data_converter.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\source\json_to_db_data_converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -231,7 +174,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\gara\Desktop\disc\disk_related\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,14 +183,83 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_api" type="Python.FastAPI">
-      <option name="file" value="C:\Users\gara\Documents\Projects\disc\source\api.py" />
+    <configuration name="ocr_data_parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="disc" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="$USER_HOME$/AppData/Local/Programs/Python/Python312/python.exe" />
-      <option name="SDK_NAME" value="Python 3.12" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/ocr_data_parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ocr_image_processor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/ocr_image_processor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="screen_scanner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/screen_scanner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_api" type="Python.FastAPI">
+      <option name="file" value="C:\Users\jfdg0\PycharmProjects\disk-drive-calculator\source\api.py" />
+      <module name="disc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/AppData/Local/Programs/Python/Python311/python.exe" />
+      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -257,27 +269,28 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="FastAPI.run_api" />
-      <item itemvalue="Python.api" />
-      <item itemvalue="Python.disk_app" />
+      <item itemvalue="FastAPI.my_api" />
       <item itemvalue="Python.json_to_db_data_converter" />
-      <item itemvalue="Python.json_to_db_data_converter (1)" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.ocr_data_parser" />
+      <item itemvalue="Python.ocr_image_processor" />
+      <item itemvalue="Python.screen_scanner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.json_to_db_data_converter (1)" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.screen_scanner" />
+        <item itemvalue="Python.ocr_data_parser" />
+        <item itemvalue="Python.ocr_image_processor" />
         <item itemvalue="Python.json_to_db_data_converter" />
-        <item itemvalue="Python.api" />
-        <item itemvalue="Python.disk_app" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
-        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -314,14 +327,154 @@
       <workItem from="1732569001483" duration="2956000" />
       <workItem from="1732619942923" duration="1781000" />
       <workItem from="1732621749833" duration="1141000" />
-      <workItem from="1732724357028" duration="2506000" />
-      <workItem from="1732810899280" duration="698000" />
-      <workItem from="1732873068446" duration="2000" />
-      <workItem from="1732874323958" duration="7611000" />
-      <workItem from="1732882086619" duration="584000" />
-      <workItem from="1732882999392" duration="2500000" />
-      <workItem from="1732888613487" duration="4746000" />
-      <workItem from="1732893496383" duration="1091000" />
+      <workItem from="1732960602111" duration="519000" />
+      <workItem from="1732961481516" duration="391000" />
+      <workItem from="1732961886615" duration="330000" />
+      <workItem from="1732962234310" duration="1175000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added html support">
+      <option name="closed" value="true" />
+      <created>1732312463495</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732312463495</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added editing">
+      <option name="closed" value="true" />
+      <created>1732312972637</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732312972637</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed html things and turned into CLI">
+      <option name="closed" value="true" />
+      <created>1732362338307</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732362338307</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactored data structures">
+      <option name="closed" value="true" />
+      <created>1732363011301</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732363011301</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Modularized the code">
+      <option name="closed" value="true" />
+      <created>1732363519674</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732363519674</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed heuristic and added a massive disk generator">
+      <option name="closed" value="true" />
+      <created>1732365283031</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732365283031</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added recognition, regions and gitignore">
+      <option name="closed" value="true" />
+      <created>1732371724116</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732371724117</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Modularized the code">
+      <option name="closed" value="true" />
+      <created>1732372058207</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732372058207</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Beautified the code (+N suffixes still missing)">
+      <option name="closed" value="true" />
+      <created>1732373671902</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732373671902</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed beautification and moved functions to its own file">
+      <option name="closed" value="true" />
+      <created>1732374039338</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732374039338</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed beautification and moved functions to its own file">
+      <option name="closed" value="true" />
+      <created>1732374046091</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732374046091</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added extractor for better AI management">
+      <option name="closed" value="true" />
+      <created>1732374265834</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732374265834</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added automatic clicker through the grid">
+      <option name="closed" value="true" />
+      <created>1732376776179</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732376776179</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY">
+      <option name="closed" value="true" />
+      <created>1732377193841</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732377193841</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merge main">
+      <option name="closed" value="true" />
+      <created>1732441399573</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1732441399573</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updated gitignore + merge">
+      <option name="closed" value="true" />
+      <created>1732441584108</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732441584108</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Updated gitignore + merge">
+      <option name="closed" value="true" />
+      <created>1732441593850</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732441593850</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Prep test">
+      <option name="closed" value="true" />
+      <created>1732441943639</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1732441943639</updated>
     </task>
     <task id="LOCAL-00019" summary="Prep test">
       <option name="closed" value="true" />
@@ -547,175 +700,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732707994293</updated>
     </task>
-    <task id="LOCAL-00047" summary="Make it display the best 20 non-maxed disks">
+    <task id="LOCAL-00047" summary="Captured Zhu Yuan data">
       <option name="closed" value="true" />
-      <created>1732711978534</created>
+      <created>1732711396259</created>
       <option name="number" value="00047" />
       <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
-      <updated>1732711978534</updated>
+      <updated>1732711396259</updated>
     </task>
-    <task id="LOCAL-00048" summary="Trying to correct all OCR mistakes">
-      <option name="closed" value="true" />
-      <created>1732716202303</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1732716202303</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Added conditions to fix incorrect OCR reading of value HP">
-      <option name="closed" value="true" />
-      <created>1732717235873</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1732717235873</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Moved everything to differentiated folders">
-      <option name="closed" value="true" />
-      <created>1732717519094</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1732717519094</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Moved everything to differentiated folders">
-      <option name="closed" value="true" />
-      <created>1732717767771</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1732717767771</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Added apy for server">
-      <option name="closed" value="true" />
-      <created>1732727325832</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1732727325832</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Changed api to use disk manager with pocketbase">
-      <option name="closed" value="true" />
-      <created>1732876508152</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1732876508152</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Managed to convert JSON to Pocketbase">
-      <option name="closed" value="true" />
-      <created>1732888117075</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1732888117075</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Added pocketbase to db folder">
-      <option name="closed" value="true" />
-      <created>1732888151571</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1732888151571</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Added pocketbase to db folder">
-      <option name="closed" value="true" />
-      <created>1732888249497</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1732888249497</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Updatede api">
-      <option name="closed" value="true" />
-      <created>1732889808880</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1732889808880</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Updated cors policy">
-      <option name="closed" value="true" />
-      <created>1732890734054</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1732890734054</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Updated cors policy">
-      <option name="closed" value="true" />
-      <created>1732890741547</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1732890741547</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Fix fetch data">
-      <option name="closed" value="true" />
-      <created>1732891266516</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1732891266516</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Fix fetch data">
-      <option name="closed" value="true" />
-      <created>1732891299173</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1732891299173</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Correct fetch substats">
-      <option name="closed" value="true" />
-      <created>1732892774829</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1732892774829</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Correct fetch substats">
-      <option name="closed" value="true" />
-      <created>1732892791835</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1732892791835</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Correct fetch substats">
-      <option name="closed" value="true" />
-      <created>1732892794596</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1732892794596</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Correct fetch substats">
-      <option name="closed" value="true" />
-      <created>1732892817626</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1732892817626</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Correct fetch substats">
-      <option name="closed" value="true" />
-      <created>1732893540473</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1732893540473</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Correct fetch substats">
-      <option name="closed" value="true" />
-      <created>1732893571713</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1732893571713</updated>
-    </task>
-    <option name="localTasksCounter" value="68" />
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -734,6 +727,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Modularized the code" />
+    <MESSAGE value="Beautified the code (+N suffixes still missing)" />
+    <MESSAGE value="Fixed beautification and moved functions to its own file" />
+    <MESSAGE value="Added extractor for better AI management" />
+    <MESSAGE value="Added automatic clicker through the grid" />
+    <MESSAGE value="Added library for images but THE PARSER IS NOT TAKING SUSBTATS INCORRECTLY" />
+    <MESSAGE value="Merge main" />
+    <MESSAGE value="Updated gitignore + merge" />
+    <MESSAGE value="Prep test" />
+    <MESSAGE value="idk" />
+    <MESSAGE value="Moved functions around and messed with the timing of the screen capture" />
     <MESSAGE value="Backed up pictures to use with OCR" />
     <MESSAGE value="Disk output to JSON correct" />
     <MESSAGE value="Forging data" />
@@ -747,37 +751,16 @@
     <MESSAGE value="Deleted unused files" />
     <MESSAGE value="Parametrized all file path data and combined every class in main" />
     <MESSAGE value="Modified screen scanner to create files sequentially" />
-    <MESSAGE value="Make it display the best 20 non-maxed disks" />
-    <MESSAGE value="Trying to correct all OCR mistakes" />
-    <MESSAGE value="Added conditions to fix incorrect OCR reading of value HP" />
-    <MESSAGE value="Moved everything to differentiated folders" />
-    <MESSAGE value="Added apy for server" />
-    <MESSAGE value="Changed api to use disk manager with pocketbase" />
-    <MESSAGE value="Managed to convert JSON to Pocketbase" />
-    <MESSAGE value="Added pocketbase to db folder" />
-    <MESSAGE value="Updatede api" />
-    <MESSAGE value="Updated cors policy" />
-    <MESSAGE value="Fix fetch data" />
-    <MESSAGE value="Correct fetch substats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct fetch substats" />
+    <MESSAGE value="Captured Zhu Yuan data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Captured Zhu Yuan data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/source/api.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/source/pocketbase_database.py</url>
-          <line>97</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/source/pocketbase_database.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="15" />
+          <line>202</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -790,29 +773,23 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/disc$data_migration__1_.coverage" NAME="data_migration (1) Coverage Results" MODIFIED="1732704645537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$ocr_data_parser.coverage" NAME="ocr_data_parser Coverage Results" MODIFIED="1732716521828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disc$calc.coverage" NAME="calc Coverage Results" MODIFIED="1732712784416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1732717487851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/disk_related" />
-    <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732716868936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$ocr_image_processor.coverage" NAME="ocr_image_processor Coverage Results" MODIFIED="1732704922851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732445477944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/disc$api.coverage" NAME="api Coverage Results" MODIFIED="1732726410263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732373968253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disc$json_to_db_data_converter__1_.coverage" NAME="json_to_db_data_converter (1) Coverage Results" MODIFIED="1732891501277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disk_drive_calculator$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732568451219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$.coverage" NAME=" Coverage Results" MODIFIED="1732550827631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/disc$disk_app.coverage" NAME="disk_app Coverage Results" MODIFIED="1732718593930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/ui" />
-    <SUITE FILE_PATH="coverage/disc$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732708021638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$data_migration.coverage" NAME="data_migration Coverage Results" MODIFIED="1732622405285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/disc$disk.coverage" NAME="disk Coverage Results" MODIFIED="1732566667804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$json_to_db_data_converter.coverage" NAME="json_to_db_data_converter Coverage Results" MODIFIED="1732876745847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source/ocr" />
-    <SUITE FILE_PATH="coverage/disc$run_api.coverage" NAME="run_api Coverage Results" MODIFIED="1732894557634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732550918792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/disc$disk_manager.coverage" NAME="disk_manager Coverage Results" MODIFIED="1732715341615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$data_migration.coverage" NAME="data_migration Coverage Results" MODIFIED="1732622405285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/disc$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732708021638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$automated_disk_scanner.coverage" NAME="automated_disk_scanner Coverage Results" MODIFIED="1732377436862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disc$disk_manager__1_.coverage" NAME="disk_manager (1) Coverage Results" MODIFIED="1732622885167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$ocr_data_parser.coverage" NAME="ocr_data_parser Coverage Results" MODIFIED="1732707054499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$screen_scanner.coverage" NAME="screen_scanner Coverage Results" MODIFIED="1732568451219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$.coverage" NAME=" Coverage Results" MODIFIED="1732445477944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/disc$main.coverage" NAME="main Coverage Results" MODIFIED="1732708800116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$my_api.coverage" NAME="my_api Coverage Results" MODIFIED="1732963395735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$.coverage" NAME=" Coverage Results" MODIFIED="1732550827631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/disc$ocr_image_processor.coverage" NAME="ocr_image_processor Coverage Results" MODIFIED="1732704922851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1732961639552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$run_scanner.coverage" NAME="run_scanner Coverage Results" MODIFIED="1732375934764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/disk_drive_calculator$main.coverage" NAME="main Coverage Results" MODIFIED="1732711216677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
     <SUITE FILE_PATH="coverage/disk_drive_calculator$grid_clicker.coverage" NAME="grid_clicker Coverage Results" MODIFIED="1732376335129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/disc$ocr_processor.coverage" NAME="ocr_processor Coverage Results" MODIFIED="1732550918792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$data_migration__1_.coverage" NAME="data_migration (1) Coverage Results" MODIFIED="1732704645537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/disc$disk_manager__1_.coverage" NAME="disk_manager (1) Coverage Results" MODIFIED="1732622885167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
   </component>
 </project>

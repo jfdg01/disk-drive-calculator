@@ -2,12 +2,15 @@ import json
 
 import requests
 from typing import List, Dict, Optional
+from pocketbase import PocketBase
+from pocketbase.models.utils import ListResult
 
 
 class PocketBaseDatabase:
     def __init__(self, base_url: str, auth_token: Optional[str] = None):
         self.base_url = base_url
         self.auth_token = auth_token
+        self.client = PocketBase(base_url)
 
     def create_disks_and_get_ids(self, disks: List[dict]) -> List[dict]:
 
@@ -195,7 +198,11 @@ class PocketBaseDatabase:
         response.raise_for_status()
         return response.json().get("items", [])
 
-    def get_disks(self) -> List[dict]:
+    def get_disks(self) -> ListResult:
+        disks = self.client.collection("disks").get_list(1,50)
+        return disks
+
+    def get_disks_2(self) -> List[dict]:
         response = requests.get(
             f"{self.base_url}/collections/disks/records",
             headers=self._headers()
