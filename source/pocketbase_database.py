@@ -1,3 +1,5 @@
+import json
+
 import requests
 from typing import List, Dict, Optional
 
@@ -42,8 +44,6 @@ class PocketBaseDatabase:
             print("Response status code:", response.status_code)
             print("Error response body:", response.text)
 
-        # returns "Something went wrong while processing your request."
-
         # Raise error for bad status codes
         response.raise_for_status()
 
@@ -56,6 +56,77 @@ class PocketBaseDatabase:
                 sub_stat["disk_id"] = disk_id
 
         return disks
+
+    def get_disks_and_substats(self) -> List[dict]:
+
+        batch_requests = [
+            {
+                "method": "GET",
+                "url": "/api/collections/disks/records",
+                "headers": {"Content-Type": "application/json"},
+                "body": {}
+            },
+            {
+                "method": "GET",
+                "url": "/api/collections/sub_stats/records",
+                "headers": {"Content-Type": "application/json"},
+                "body": {}
+            }
+
+        ]
+
+        payload = {"requests": batch_requests}
+
+        # Log payload for debugging
+        print("Payload being sent:", json.dumps(payload, indent=4))
+
+        response = requests.post(
+            f"{self.base_url}/batch",
+            json=payload,
+            headers=self._headers(),
+        )
+
+        # Log response
+        if not response.ok:
+            print("Response status code:", response.status_code)
+            print("Error response body:", response.text)
+
+        # Raise error for bad status codes
+        response.raise_for_status()
+
+        disks = None
+        sub_stats = None
+
+        # Group sub_stats by disk_id for easier lookup
+        sub_stats_by_disk = {}
+        for sub_stat in sub_stats:
+            disk_id = sub_stat["disk_id"]
+            if disk_id not in sub_stats_by_disk:
+                sub_stats_by_disk[disk_id] = []
+            sub_stats_by_disk[disk_id].append(sub_stat)
+
+        # Build the result structure
+        result = []
+        for disk in disks:
+            disk_id = disk["id"]
+            result.append({
+                "id": disk_id,
+                "main_stat": {
+                    "name": disk["main_stat_name"],
+                    "value": disk["main_stat_value"],
+                    "level": disk["main_stat_level"]
+                },
+                "sub_stats": [
+                    {
+                        "name": sub_stat["name"],
+                        "value": sub_stat["value"],
+                        "level": sub_stat["level"]
+                    }
+                    for sub_stat in sub_stats_by_disk.get(disk_id, [])
+                ]
+            })
+
+        return result
 
     def create_sub_stats_batch(self, disks_with_ids: List[dict]) -> dict:
         # Construct batch requests
@@ -116,53 +187,21 @@ class PocketBaseDatabase:
         response.raise_for_status()
         return response.json()
 
-    def get_disks(self) -> List[dict]:
-        # Fetch all disks
-        disks_response = requests.get(
-            f"{self.base_url}/collections/disks/records",
-            headers=self._headers()
-        )
-        disks_response.raise_for_status()
-        disks = disks_response.json().get("items", [])
-
-        # Fetch all sub_stats
-        sub_stats_response = requests.get(
+    def get_substats(self) -> List[dict]:
+        response = requests.get(
             f"{self.base_url}/collections/sub_stats/records",
             headers=self._headers()
         )
-        sub_stats_response.raise_for_status()
-        sub_stats = sub_stats_response.json().get("items", [])
+        response.raise_for_status()
+        return response.json().get("items", [])
 
-        # Group sub_stats by disk_id for easier lookup
-        sub_stats_by_disk = {}
-        for sub_stat in sub_stats:
-            disk_id = sub_stat["disk_id"]
-            if disk_id not in sub_stats_by_disk:
-                sub_stats_by_disk[disk_id] = []
-            sub_stats_by_disk[disk_id].append(sub_stat)
-
-        # Build the result structure
-        result = []
-        for disk in disks:
-            disk_id = disk["id"]
-            result.append({
-                "id": disk_id,
-                "main_stat": {
-                    "name": disk["main_stat_name"],
-                    "value": disk["main_stat_value"],
-                    "level": disk["main_stat_level"]
-                },
-                "sub_stats": [
-                    {
-                        "name": sub_stat["name"],
-                        "value": sub_stat["value"],
-                        "level": sub_stat["level"]
-                    }
-                    for sub_stat in sub_stats_by_disk.get(disk_id, [])
-                ]
-            })
-
-        return result
+    def get_disks(self) -> List[dict]:
+        response = requests.get(
+            f"{self.base_url}/collections/disks/records",
+            headers=self._headers()
+        )
+        response.raise_for_status()
+        return response.json().get("items", [])
 
     def update_disk(self, disk_id: str, disk_data: dict) -> dict:
         response = requests.patch(
@@ -213,47 +252,3 @@ class PocketBaseDatabase:
         )
         response.raise_for_status()
         return response.status_code == 204
-
-    def create_disks_batch(self, disks: List[dict]) -> dict:
-        batch_requests = []
-
-        for disk in disks:
-            # Prepare the request for the main record
-            main_request = {
-                "method": "POST",
-                "url": "/api/collections/disks/records",
-                "body": {
-                    "main_stat_name": disk["main_stat"]["name"],
-                    "main_stat_value": disk["main_stat"]["value"],
-                    "main_stat_level": disk["main_stat"]["level"]
-                }
-            }
-            batch_requests.append(main_request)
-
-            # Prepare the requests for the sub-stats
-            for sub_stat in disk["sub_stats"]:
-                sub_stat_request = {
-                    "method": "POST",
-                    "url": "/api/collections/sub_stats/records",
-                    "body": {
-                        "disk_id": disk["id"],  # Assuming the disk's ID is already known or set.
-                        "name": sub_stat["name"],
-                        "value": sub_stat["value"],
-                        "level": sub_stat["level"]
-                    }
-                }
-                batch_requests.append(sub_stat_request)
-
-        # Construct the batch payload
-        payload = {
-            "requests": batch_requests
-        }
-
-        # Send the batch request
-        response = requests.post(
-            f"{self.base_url}/batch",
-            json=payload,
-            headers=self._headers()
-        )
-        response.raise_for_status()
-        return response.json()

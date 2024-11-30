@@ -44,7 +44,7 @@ def convert_json_to_db(json_file, batch_size, database):
     for disk_id, disk_data in raw_disks.items():
         main_stat_data = disk_data.get("main_stat")
         if not main_stat_data:
-            print(f"Disk {disk_id} is missing 'main_stat' data. Using default value.")
+            # print(f"Disk {disk_id} is missing 'main_stat' data. Using default value.")
             main_stat = Stat(
                 name="HP",
                 value=550.0,

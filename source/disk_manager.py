@@ -25,7 +25,7 @@ class DiskManager:
             })
 
     def get_disks(self) -> List[dict]:
-        disks = self.database.get_disks()
+        disks = self.database.get_disks_and_substats()
         return disks
 
     def remove_disk(self, disk_id: str):
